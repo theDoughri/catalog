@@ -26,7 +26,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["slug", "icon", "category", "name", "image"],
+        "required": ["slug", "icon", "category", "unit", "name", "image"],
         "properties": {
           "slug": {
             "$ref": "#/$defs/slug"
@@ -36,6 +36,9 @@
           },
           "category": {
             "$ref": "#/$defs/slug"
+          },
+          "unit": {
+            "$ref": "#/$defs/unit"
           },
           "name": {
             "$ref": "#/$defs/localizedName"
@@ -53,9 +56,24 @@
       "type": "string",
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
     },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "pcs",
+        "pack",
+        "kg",
+        "g",
+        "l",
+        "ml",
+        "bottle",
+        "can",
+        "bag",
+        "box"
+      ]
+    },
     "localizedName": {
       "type": "object",
-      "required": ["en", "ar"],
+      "required": ["en", "fr", "es", "de", "ar"],
       "additionalProperties": false,
       "patternProperties": {
         "^[a-z]{2}(-[A-Z]{2})?$": {

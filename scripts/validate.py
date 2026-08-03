@@ -10,7 +10,8 @@ Checks performed:
      own slug matches.
   4. Images: an item.image that EXISTS must be JPEG and exactly 1024x1024.
      A missing file is a warning, not a failure.
-  5. Locales: every name map carries non-empty "en" and "ar".
+  5. Locales: every name map carries a non-empty value for all five locales
+     the app ships (en, fr, es, de, ar).
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
@@ -25,7 +26,7 @@ import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA_DIR = os.path.join(REPO_ROOT, "schema")
-REQUIRED_LOCALES = ("en", "ar")
+REQUIRED_LOCALES = ("en", "fr", "es", "de", "ar")
 IMAGE_SIZE = (1024, 1024)
 
 errors: list[str] = []
