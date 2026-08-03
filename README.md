@@ -12,8 +12,10 @@ schema/                        JSON Schema (draft 2020-12) for each file type
 lists/
   default/
     manifest.json              the "Groceries" list
+    items_images.csv           hand-picked photo link per item (name,link)
     images/                    1024x1024 JPEG item images
 scripts/validate.py            validator (run locally and in CI)
+scripts/fetch_images.py        downloads + crops the images listed in the CSV
 .github/workflows/validate.yml CI entry point
 ```
 
@@ -43,10 +45,41 @@ manifest. The path is declared even when the file has not been produced yet:
 missing images are expected and valid — the app falls back to the item's icon,
 and the validator reports them as warnings rather than failures.
 
+## Fetching item images
+
+Item photos are hand-picked. Each list directory carries an
+`items_images.csv` next to its manifest (e.g. `lists/default/items_images.csv`)
+with one row per item (`name` is the item slug, `link` is the photo URL); fill
+the `link` column from sources such as pixabay.com or unsplash.com, then run:
+
+```bash
+pip install Pillow
+python scripts/fetch_images.py
+# redo one item after changing its link:
+python scripts/fetch_images.py --force --only apples
+```
+
+For each row with a link, the script downloads the photo, center-crops it to
+exactly 1024x1024, and saves the JPEG at the item's declared `image` path.
+Links may be pasted straight from the browser: an Unsplash photo page is
+resolved through its full-resolution download endpoint, a Pixabay photo page
+or cdn.pixabay.com link is resolved to its largest rendition, and any direct
+image URL works as-is. Sources must be at least 1024x1024 — the script never
+upscales; too-small or broken links are reported as failed and the file is
+left missing (which the validator treats as a warning, not an error).
+
+Re-running is safe: rows with an empty link and items whose image file
+already exists are skipped, so the CSV can be filled gradually. The summary
+also flags CSV rows that match no item and items missing from the CSV. When
+adding new items to a list, add a matching CSV row. Check each source's
+license terms when picking (Pixabay and Unsplash images are free to use in
+apps without attribution).
+
 ## Running the validator
 
 ```bash
-pip install Pillow          # only needed once image files exist
+# Pillow is only needed once image files exist
+pip install Pillow
 python scripts/validate.py
 ```
 
@@ -58,7 +91,8 @@ pull request.
 ## Adding another list later
 
 Create `lists/<slug>/` with a `manifest.json` following
-`schema/list-manifest.schema.json` and an `images/` directory beside it, add any
+`schema/list-manifest.schema.json`, an `images/` directory and an
+`items_images.csv` beside it, add any
 categories the new items need to `categories.json` (reusing existing category
 slugs wherever they fit), then append an entry to the `lists` array in the root
 manifest pointing at the new manifest path and bump the root `version`. Item
