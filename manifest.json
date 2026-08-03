@@ -3,18 +3,24 @@
   "catalog_id": "baggo-official",
   "name": {
     "en": "Baggo Official Catalog",
+    "fr": "Catalogue officiel Baggo",
+    "es": "Catálogo oficial de Baggo",
+    "de": "Offizieller Baggo-Katalog",
     "ar": "كتالوج باغو الرسمي"
   },
-  "version": 1,
+  "version": 2,
   "lists": [
     {
       "slug": "default",
       "path": "lists/default/manifest.json",
       "name": {
         "en": "Groceries",
+        "fr": "Courses",
+        "es": "Compra",
+        "de": "Lebensmittel",
         "ar": "بقالة"
       },
-      "version": 1
+      "version": 2
     }
   ]
 }

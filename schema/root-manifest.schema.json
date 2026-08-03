@@ -53,7 +53,7 @@
     },
     "localizedName": {
       "type": "object",
-      "required": ["en", "ar"],
+      "required": ["en", "fr", "es", "de", "ar"],
       "additionalProperties": false,
       "patternProperties": {
         "^[a-z]{2}(-[A-Z]{2})?$": {

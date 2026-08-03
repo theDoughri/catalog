@@ -3,6 +3,11 @@
 Data-only repository for the item catalog shipped with the Baggo shopping list
 app: JSON manifests plus item images. No application code lives here.
 
+The app reads these files over the network from `raw.githubusercontent.com` on
+this repo's `main` branch — it does not vendor a copy — so a merge here is a
+release. Bump the relevant `version` when content changes: clients compare it
+against their cached copy to decide whether to re-fetch.
+
 ## Layout
 
 ```
@@ -25,9 +30,15 @@ scripts/fetch_images.py        downloads + crops the images listed in the CSV
 are all `^[a-z0-9]+(-[a-z0-9]+)*$` and are never renamed once merged — clients
 key off them. A wrong slug is retired by adding a new one, not by renaming.
 
-**Names are locale maps.** Every `name` object carries non-empty `en` and `ar`
-values from the start. Additional locales may be added later; `en` and `ar`
-stay required.
+**Names are locale maps.** Every `name` object carries a non-empty value for
+each of the five locales the Baggo app ships: `en`, `fr`, `es`, `de`, `ar`.
+All five are required — a name map missing one fails validation, because the
+app seeds directly from these values and has no other translation source for
+catalog items. Further locales may be added later.
+
+**Items carry a unit.** `unit` is one of `pcs`, `pack`, `kg`, `g`, `l`, `ml`,
+`bottle`, `can`, `bag`, `box`, matching the unit set the app seeds. It is the
+quantity unit an item defaults to when it lands in a shopping list.
 
 **Categories are global.** `categories.json` is shared by every list. An item's
 `category` must resolve to a slug defined there.

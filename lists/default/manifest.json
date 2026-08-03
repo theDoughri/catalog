@@ -3,16 +3,23 @@
   "slug": "default",
   "name": {
     "en": "Groceries",
+    "fr": "Courses",
+    "es": "Compra",
+    "de": "Lebensmittel",
     "ar": "بقالة"
   },
-  "version": 1,
+  "version": 2,
   "items": [
     {
       "slug": "apples",
       "icon": "apple",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Apples",
+        "fr": "Pommes",
+        "es": "Manzanas",
+        "de": "Äpfel",
         "ar": "تفاح"
       },
       "image": "images/apples.jpg"
@@ -21,8 +28,12 @@
       "slug": "bananas",
       "icon": "apple",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Bananas",
+        "fr": "Bananes",
+        "es": "Plátanos",
+        "de": "Bananen",
         "ar": "موز"
       },
       "image": "images/bananas.jpg"
@@ -31,8 +42,12 @@
       "slug": "oranges",
       "icon": "orange",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Oranges",
+        "fr": "Oranges",
+        "es": "Naranjas",
+        "de": "Orangen",
         "ar": "برتقال"
       },
       "image": "images/oranges.jpg"
@@ -41,8 +56,12 @@
       "slug": "lemons",
       "icon": "orange",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Lemons",
+        "fr": "Citrons",
+        "es": "Limones",
+        "de": "Zitronen",
         "ar": "ليمون"
       },
       "image": "images/lemons.jpg"
@@ -51,8 +70,12 @@
       "slug": "strawberries",
       "icon": "apple",
       "category": "produce",
+      "unit": "pack",
       "name": {
         "en": "Strawberries",
+        "fr": "Fraises",
+        "es": "Fresas",
+        "de": "Erdbeeren",
         "ar": "فراولة"
       },
       "image": "images/strawberries.jpg"
@@ -61,8 +84,12 @@
       "slug": "grapes",
       "icon": "apple",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Grapes",
+        "fr": "Raisins",
+        "es": "Uvas",
+        "de": "Trauben",
         "ar": "عنب"
       },
       "image": "images/grapes.jpg"
@@ -71,8 +98,12 @@
       "slug": "avocados",
       "icon": "apple",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Avocados",
+        "fr": "Avocats",
+        "es": "Aguacates",
+        "de": "Avocados",
         "ar": "أفوكادو"
       },
       "image": "images/avocados.jpg"
@@ -81,8 +112,12 @@
       "slug": "tomatoes",
       "icon": "pepper",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Tomatoes",
+        "fr": "Tomates",
+        "es": "Tomates",
+        "de": "Tomaten",
         "ar": "طماطم"
       },
       "image": "images/tomatoes.jpg"
@@ -91,8 +126,12 @@
       "slug": "cucumbers",
       "icon": "carrot",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Cucumbers",
+        "fr": "Concombres",
+        "es": "Pepinos",
+        "de": "Gurken",
         "ar": "خيار"
       },
       "image": "images/cucumbers.jpg"
@@ -101,8 +140,12 @@
       "slug": "carrots",
       "icon": "carrot",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Carrots",
+        "fr": "Carottes",
+        "es": "Zanahorias",
+        "de": "Karotten",
         "ar": "جزر"
       },
       "image": "images/carrots.jpg"
@@ -111,8 +154,12 @@
       "slug": "potatoes",
       "icon": "carrot",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Potatoes",
+        "fr": "Pommes de terre",
+        "es": "Patatas",
+        "de": "Kartoffeln",
         "ar": "بطاطس"
       },
       "image": "images/potatoes.jpg"
@@ -121,8 +168,12 @@
       "slug": "onions",
       "icon": "carrot",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Onions",
+        "fr": "Oignons",
+        "es": "Cebollas",
+        "de": "Zwiebeln",
         "ar": "بصل"
       },
       "image": "images/onions.jpg"
@@ -131,8 +182,12 @@
       "slug": "garlic",
       "icon": "carrot",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Garlic",
+        "fr": "Ail",
+        "es": "Ajo",
+        "de": "Knoblauch",
         "ar": "ثوم"
       },
       "image": "images/garlic.jpg"
@@ -141,8 +196,12 @@
       "slug": "bell-peppers",
       "icon": "pepper",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Bell Peppers",
+        "fr": "Poivrons",
+        "es": "Pimientos",
+        "de": "Paprika",
         "ar": "فلفل حلو"
       },
       "image": "images/bell-peppers.jpg"
@@ -151,8 +210,12 @@
       "slug": "lettuce",
       "icon": "plant",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Lettuce",
+        "fr": "Laitue",
+        "es": "Lechuga",
+        "de": "Kopfsalat",
         "ar": "خس"
       },
       "image": "images/lettuce.jpg"
@@ -161,8 +224,12 @@
       "slug": "spinach",
       "icon": "plant",
       "category": "produce",
+      "unit": "pack",
       "name": {
         "en": "Spinach",
+        "fr": "Épinards",
+        "es": "Espinacas",
+        "de": "Spinat",
         "ar": "سبانخ"
       },
       "image": "images/spinach.jpg"
@@ -171,8 +238,12 @@
       "slug": "broccoli",
       "icon": "plant",
       "category": "produce",
+      "unit": "pcs",
       "name": {
         "en": "Broccoli",
+        "fr": "Brocoli",
+        "es": "Brócoli",
+        "de": "Brokkoli",
         "ar": "بروكلي"
       },
       "image": "images/broccoli.jpg"
@@ -181,8 +252,12 @@
       "slug": "mushrooms",
       "icon": "plant",
       "category": "produce",
+      "unit": "pack",
       "name": {
         "en": "Mushrooms",
+        "fr": "Champignons",
+        "es": "Champiñones",
+        "de": "Champignons",
         "ar": "فطر"
       },
       "image": "images/mushrooms.jpg"
@@ -191,8 +266,12 @@
       "slug": "zucchini",
       "icon": "carrot",
       "category": "produce",
+      "unit": "kg",
       "name": {
         "en": "Zucchini",
+        "fr": "Courgettes",
+        "es": "Calabacines",
+        "de": "Zucchini",
         "ar": "كوسة"
       },
       "image": "images/zucchini.jpg"
@@ -201,8 +280,12 @@
       "slug": "milk",
       "icon": "milk",
       "category": "dairy-eggs",
+      "unit": "l",
       "name": {
         "en": "Milk",
+        "fr": "Lait",
+        "es": "Leche",
+        "de": "Milch",
         "ar": "حليب"
       },
       "image": "images/milk.jpg"
@@ -211,8 +294,12 @@
       "slug": "eggs",
       "icon": "egg",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Eggs",
+        "fr": "Œufs",
+        "es": "Huevos",
+        "de": "Eier",
         "ar": "بيض"
       },
       "image": "images/eggs.jpg"
@@ -221,8 +308,12 @@
       "slug": "butter",
       "icon": "cheese",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Butter",
+        "fr": "Beurre",
+        "es": "Mantequilla",
+        "de": "Butter",
         "ar": "زبدة"
       },
       "image": "images/butter.jpg"
@@ -231,8 +322,12 @@
       "slug": "cheddar-cheese",
       "icon": "cheese",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Cheddar Cheese",
+        "fr": "Cheddar",
+        "es": "Queso cheddar",
+        "de": "Cheddar-Käse",
         "ar": "جبن شيدر"
       },
       "image": "images/cheddar-cheese.jpg"
@@ -241,8 +336,12 @@
       "slug": "yogurt",
       "icon": "cup",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Yogurt",
+        "fr": "Yaourt",
+        "es": "Yogur",
+        "de": "Joghurt",
         "ar": "زبادي"
       },
       "image": "images/yogurt.jpg"
@@ -251,8 +350,12 @@
       "slug": "cream",
       "icon": "milk",
       "category": "dairy-eggs",
+      "unit": "ml",
       "name": {
         "en": "Cream",
+        "fr": "Crème",
+        "es": "Nata",
+        "de": "Sahne",
         "ar": "كريمة"
       },
       "image": "images/cream.jpg"
@@ -261,8 +364,12 @@
       "slug": "feta-cheese",
       "icon": "cheese",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Feta Cheese",
+        "fr": "Feta",
+        "es": "Queso feta",
+        "de": "Feta-Käse",
         "ar": "جبن فيتا"
       },
       "image": "images/feta-cheese.jpg"
@@ -271,8 +378,12 @@
       "slug": "cream-cheese",
       "icon": "cheese",
       "category": "dairy-eggs",
+      "unit": "pack",
       "name": {
         "en": "Cream Cheese",
+        "fr": "Fromage à tartiner",
+        "es": "Queso crema",
+        "de": "Frischkäse",
         "ar": "جبن كريمي"
       },
       "image": "images/cream-cheese.jpg"
@@ -281,8 +392,12 @@
       "slug": "chicken-breast",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "kg",
       "name": {
         "en": "Chicken Breast",
+        "fr": "Blanc de poulet",
+        "es": "Pechuga de pollo",
+        "de": "Hähnchenbrust",
         "ar": "صدور دجاج"
       },
       "image": "images/chicken-breast.jpg"
@@ -291,8 +406,12 @@
       "slug": "ground-beef",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "kg",
       "name": {
         "en": "Ground Beef",
+        "fr": "Bœuf haché",
+        "es": "Carne picada de res",
+        "de": "Rinderhackfleisch",
         "ar": "لحم بقري مفروم"
       },
       "image": "images/ground-beef.jpg"
@@ -301,8 +420,12 @@
       "slug": "beef-steak",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "kg",
       "name": {
         "en": "Beef Steak",
+        "fr": "Steak de bœuf",
+        "es": "Filete de res",
+        "de": "Rindersteak",
         "ar": "شريحة لحم بقري"
       },
       "image": "images/beef-steak.jpg"
@@ -311,8 +434,12 @@
       "slug": "lamb-chops",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "kg",
       "name": {
         "en": "Lamb Chops",
+        "fr": "Côtelettes d'agneau",
+        "es": "Chuletas de cordero",
+        "de": "Lammkoteletts",
         "ar": "ريش ضأن"
       },
       "image": "images/lamb-chops.jpg"
@@ -321,8 +448,12 @@
       "slug": "sausages",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "pack",
       "name": {
         "en": "Sausages",
+        "fr": "Saucisses",
+        "es": "Salchichas",
+        "de": "Würstchen",
         "ar": "نقانق"
       },
       "image": "images/sausages.jpg"
@@ -331,8 +462,12 @@
       "slug": "bacon",
       "icon": "meat",
       "category": "meat-poultry",
+      "unit": "pack",
       "name": {
         "en": "Bacon",
+        "fr": "Bacon",
+        "es": "Bacon",
+        "de": "Speck",
         "ar": "لحم مقدد"
       },
       "image": "images/bacon.jpg"
@@ -341,8 +476,12 @@
       "slug": "salmon",
       "icon": "fish",
       "category": "seafood",
+      "unit": "kg",
       "name": {
         "en": "Salmon",
+        "fr": "Saumon",
+        "es": "Salmón",
+        "de": "Lachs",
         "ar": "سلمون"
       },
       "image": "images/salmon.jpg"
@@ -351,8 +490,12 @@
       "slug": "shrimp",
       "icon": "fish",
       "category": "seafood",
+      "unit": "kg",
       "name": {
         "en": "Shrimp",
+        "fr": "Crevettes",
+        "es": "Gambas",
+        "de": "Garnelen",
         "ar": "روبيان"
       },
       "image": "images/shrimp.jpg"
@@ -361,8 +504,12 @@
       "slug": "sea-bass",
       "icon": "fish",
       "category": "seafood",
+      "unit": "kg",
       "name": {
         "en": "Sea Bass",
+        "fr": "Bar",
+        "es": "Lubina",
+        "de": "Wolfsbarsch",
         "ar": "قاروص"
       },
       "image": "images/sea-bass.jpg"
@@ -371,8 +518,12 @@
       "slug": "squid",
       "icon": "fish",
       "category": "seafood",
+      "unit": "kg",
       "name": {
         "en": "Squid",
+        "fr": "Calamar",
+        "es": "Calamares",
+        "de": "Tintenfisch",
         "ar": "حبار"
       },
       "image": "images/squid.jpg"
@@ -381,8 +532,12 @@
       "slug": "bread",
       "icon": "bread",
       "category": "bakery",
+      "unit": "pcs",
       "name": {
         "en": "Bread",
+        "fr": "Pain",
+        "es": "Pan",
+        "de": "Brot",
         "ar": "خبز"
       },
       "image": "images/bread.jpg"
@@ -391,8 +546,12 @@
       "slug": "baguette",
       "icon": "baguette",
       "category": "bakery",
+      "unit": "pcs",
       "name": {
         "en": "Baguette",
+        "fr": "Baguette",
+        "es": "Baguete",
+        "de": "Baguette",
         "ar": "خبز باغيت"
       },
       "image": "images/baguette.jpg"
@@ -401,8 +560,12 @@
       "slug": "pita-bread",
       "icon": "bread",
       "category": "bakery",
+      "unit": "pack",
       "name": {
         "en": "Pita Bread",
+        "fr": "Pain pita",
+        "es": "Pan de pita",
+        "de": "Pitabrot",
         "ar": "خبز عربي"
       },
       "image": "images/pita-bread.jpg"
@@ -411,8 +574,12 @@
       "slug": "croissants",
       "icon": "bread",
       "category": "bakery",
+      "unit": "pack",
       "name": {
         "en": "Croissants",
+        "fr": "Croissants",
+        "es": "Cruasanes",
+        "de": "Croissants",
         "ar": "كرواسون"
       },
       "image": "images/croissants.jpg"
@@ -421,8 +588,12 @@
       "slug": "bagels",
       "icon": "bread",
       "category": "bakery",
+      "unit": "pack",
       "name": {
         "en": "Bagels",
+        "fr": "Bagels",
+        "es": "Bagels",
+        "de": "Bagels",
         "ar": "خبز بيغل"
       },
       "image": "images/bagels.jpg"
@@ -431,8 +602,12 @@
       "slug": "tortillas",
       "icon": "bread",
       "category": "bakery",
+      "unit": "pack",
       "name": {
         "en": "Tortillas",
+        "fr": "Tortillas",
+        "es": "Tortillas",
+        "de": "Tortillas",
         "ar": "خبز تورتيلا"
       },
       "image": "images/tortillas.jpg"
@@ -441,8 +616,12 @@
       "slug": "sugar",
       "icon": "jar",
       "category": "pantry",
+      "unit": "bag",
       "name": {
         "en": "Sugar",
+        "fr": "Sucre",
+        "es": "Azúcar",
+        "de": "Zucker",
         "ar": "سكر"
       },
       "image": "images/sugar.jpg"
@@ -451,8 +630,12 @@
       "slug": "flour",
       "icon": "packages",
       "category": "pantry",
+      "unit": "bag",
       "name": {
         "en": "Flour",
+        "fr": "Farine",
+        "es": "Harina",
+        "de": "Mehl",
         "ar": "دقيق"
       },
       "image": "images/flour.jpg"
@@ -461,8 +644,12 @@
       "slug": "salt",
       "icon": "salt",
       "category": "pantry",
+      "unit": "pack",
       "name": {
         "en": "Salt",
+        "fr": "Sel",
+        "es": "Sal",
+        "de": "Salz",
         "ar": "ملح"
       },
       "image": "images/salt.jpg"
@@ -471,8 +658,12 @@
       "slug": "baking-powder",
       "icon": "packages",
       "category": "pantry",
+      "unit": "pack",
       "name": {
         "en": "Baking Powder",
+        "fr": "Levure chimique",
+        "es": "Levadura en polvo",
+        "de": "Backpulver",
         "ar": "مسحوق الخبز"
       },
       "image": "images/baking-powder.jpg"
@@ -481,8 +672,12 @@
       "slug": "honey",
       "icon": "jar",
       "category": "pantry",
+      "unit": "bottle",
       "name": {
         "en": "Honey",
+        "fr": "Miel",
+        "es": "Miel",
+        "de": "Honig",
         "ar": "عسل"
       },
       "image": "images/honey.jpg"
@@ -491,8 +686,12 @@
       "slug": "peanut-butter",
       "icon": "jar",
       "category": "pantry",
+      "unit": "pack",
       "name": {
         "en": "Peanut Butter",
+        "fr": "Beurre de cacahuète",
+        "es": "Mantequilla de cacahuete",
+        "de": "Erdnussbutter",
         "ar": "زبدة الفول السوداني"
       },
       "image": "images/peanut-butter.jpg"
@@ -501,8 +700,12 @@
       "slug": "yeast",
       "icon": "packages",
       "category": "pantry",
+      "unit": "pack",
       "name": {
         "en": "Yeast",
+        "fr": "Levure",
+        "es": "Levadura",
+        "de": "Hefe",
         "ar": "خميرة"
       },
       "image": "images/yeast.jpg"
@@ -511,8 +714,12 @@
       "slug": "cornstarch",
       "icon": "packages",
       "category": "pantry",
+      "unit": "pack",
       "name": {
         "en": "Cornstarch",
+        "fr": "Fécule de maïs",
+        "es": "Maicena",
+        "de": "Speisestärke",
         "ar": "نشا الذرة"
       },
       "image": "images/cornstarch.jpg"
@@ -521,8 +728,12 @@
       "slug": "rice",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "bag",
       "name": {
         "en": "Rice",
+        "fr": "Riz",
+        "es": "Arroz",
+        "de": "Reis",
         "ar": "أرز"
       },
       "image": "images/rice.jpg"
@@ -531,8 +742,12 @@
       "slug": "spaghetti",
       "icon": "bowl",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Spaghetti",
+        "fr": "Spaghettis",
+        "es": "Espaguetis",
+        "de": "Spaghetti",
         "ar": "سباغيتي"
       },
       "image": "images/spaghetti.jpg"
@@ -541,8 +756,12 @@
       "slug": "penne",
       "icon": "bowl",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Penne",
+        "fr": "Penne",
+        "es": "Penne",
+        "de": "Penne",
         "ar": "معكرونة بيني"
       },
       "image": "images/penne.jpg"
@@ -551,8 +770,12 @@
       "slug": "couscous",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Couscous",
+        "fr": "Couscous",
+        "es": "Cuscús",
+        "de": "Couscous",
         "ar": "كسكس"
       },
       "image": "images/couscous.jpg"
@@ -561,8 +784,12 @@
       "slug": "quinoa",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Quinoa",
+        "fr": "Quinoa",
+        "es": "Quinoa",
+        "de": "Quinoa",
         "ar": "كينوا"
       },
       "image": "images/quinoa.jpg"
@@ -571,8 +798,12 @@
       "slug": "bulgur",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Bulgur",
+        "fr": "Boulgour",
+        "es": "Bulgur",
+        "de": "Bulgur",
         "ar": "برغل"
       },
       "image": "images/bulgur.jpg"
@@ -581,8 +812,12 @@
       "slug": "noodles",
       "icon": "bowl",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Noodles",
+        "fr": "Nouilles",
+        "es": "Fideos",
+        "de": "Nudeln",
         "ar": "نودلز"
       },
       "image": "images/noodles.jpg"
@@ -591,8 +826,12 @@
       "slug": "lentils",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Lentils",
+        "fr": "Lentilles",
+        "es": "Lentejas",
+        "de": "Linsen",
         "ar": "عدس"
       },
       "image": "images/lentils.jpg"
@@ -601,8 +840,12 @@
       "slug": "dried-chickpeas",
       "icon": "grain",
       "category": "grains-pasta",
+      "unit": "pack",
       "name": {
         "en": "Dried Chickpeas",
+        "fr": "Pois chiches secs",
+        "es": "Garbanzos secos",
+        "de": "Getrocknete Kichererbsen",
         "ar": "حمص جاف"
       },
       "image": "images/dried-chickpeas.jpg"
@@ -611,8 +854,12 @@
       "slug": "canned-tomatoes",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Canned Tomatoes",
+        "fr": "Tomates en conserve",
+        "es": "Tomate en conserva",
+        "de": "Dosentomaten",
         "ar": "طماطم معلبة"
       },
       "image": "images/canned-tomatoes.jpg"
@@ -621,8 +868,12 @@
       "slug": "tomato-paste",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Tomato Paste",
+        "fr": "Concentré de tomate",
+        "es": "Concentrado de tomate",
+        "de": "Tomatenmark",
         "ar": "معجون طماطم"
       },
       "image": "images/tomato-paste.jpg"
@@ -631,8 +882,12 @@
       "slug": "canned-tuna",
       "icon": "fish",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Canned Tuna",
+        "fr": "Thon en conserve",
+        "es": "Atún en lata",
+        "de": "Thunfisch aus der Dose",
         "ar": "تونة معلبة"
       },
       "image": "images/canned-tuna.jpg"
@@ -641,8 +896,12 @@
       "slug": "canned-corn",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Canned Corn",
+        "fr": "Maïs en conserve",
+        "es": "Maíz en lata",
+        "de": "Dosenmais",
         "ar": "ذرة معلبة"
       },
       "image": "images/canned-corn.jpg"
@@ -651,8 +910,12 @@
       "slug": "canned-beans",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Canned Beans",
+        "fr": "Haricots en conserve",
+        "es": "Alubias en lata",
+        "de": "Bohnen aus der Dose",
         "ar": "فاصولياء معلبة"
       },
       "image": "images/canned-beans.jpg"
@@ -661,8 +924,12 @@
       "slug": "olives",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Olives",
+        "fr": "Olives",
+        "es": "Aceitunas",
+        "de": "Oliven",
         "ar": "زيتون"
       },
       "image": "images/olives.jpg"
@@ -671,8 +938,12 @@
       "slug": "pickles",
       "icon": "jar",
       "category": "canned-jarred",
+      "unit": "can",
       "name": {
         "en": "Pickles",
+        "fr": "Cornichons",
+        "es": "Pepinillos",
+        "de": "Essiggurken",
         "ar": "مخللات"
       },
       "image": "images/pickles.jpg"
@@ -681,8 +952,12 @@
       "slug": "frozen-peas",
       "icon": "snowflake",
       "category": "frozen",
+      "unit": "bag",
       "name": {
         "en": "Frozen Peas",
+        "fr": "Petits pois surgelés",
+        "es": "Guisantes congelados",
+        "de": "Tiefkühlerbsen",
         "ar": "بازلاء مجمدة"
       },
       "image": "images/frozen-peas.jpg"
@@ -691,8 +966,12 @@
       "slug": "frozen-mixed-vegetables",
       "icon": "snowflake",
       "category": "frozen",
+      "unit": "bag",
       "name": {
         "en": "Frozen Mixed Vegetables",
+        "fr": "Légumes surgelés",
+        "es": "Verduras congeladas",
+        "de": "Tiefkühlgemüse",
         "ar": "خضار مشكلة مجمدة"
       },
       "image": "images/frozen-mixed-vegetables.jpg"
@@ -701,8 +980,12 @@
       "slug": "frozen-pizza",
       "icon": "pizza",
       "category": "frozen",
+      "unit": "pcs",
       "name": {
         "en": "Frozen Pizza",
+        "fr": "Pizza surgelée",
+        "es": "Pizza congelada",
+        "de": "Tiefkühlpizza",
         "ar": "بيتزا مجمدة"
       },
       "image": "images/frozen-pizza.jpg"
@@ -711,8 +994,12 @@
       "slug": "ice-cream",
       "icon": "ice-cream",
       "category": "frozen",
+      "unit": "box",
       "name": {
         "en": "Ice Cream",
+        "fr": "Glace",
+        "es": "Helado",
+        "de": "Eiscreme",
         "ar": "آيس كريم"
       },
       "image": "images/ice-cream.jpg"
@@ -721,8 +1008,12 @@
       "slug": "frozen-fries",
       "icon": "snowflake",
       "category": "frozen",
+      "unit": "bag",
       "name": {
         "en": "Frozen Fries",
+        "fr": "Frites surgelées",
+        "es": "Patatas fritas congeladas",
+        "de": "Tiefkühlpommes",
         "ar": "بطاطس مقلية مجمدة"
       },
       "image": "images/frozen-fries.jpg"
@@ -731,8 +1022,12 @@
       "slug": "frozen-berries",
       "icon": "snowflake",
       "category": "frozen",
+      "unit": "bag",
       "name": {
         "en": "Frozen Berries",
+        "fr": "Fruits rouges surgelés",
+        "es": "Frutos rojos congelados",
+        "de": "Tiefkühlbeeren",
         "ar": "توت مجمد"
       },
       "image": "images/frozen-berries.jpg"
@@ -741,8 +1036,12 @@
       "slug": "potato-chips",
       "icon": "packages",
       "category": "snacks",
+      "unit": "bag",
       "name": {
         "en": "Potato Chips",
+        "fr": "Chips",
+        "es": "Patatas fritas de bolsa",
+        "de": "Kartoffelchips",
         "ar": "رقائق بطاطس"
       },
       "image": "images/potato-chips.jpg"
@@ -751,8 +1050,12 @@
       "slug": "popcorn",
       "icon": "popcorn",
       "category": "snacks",
+      "unit": "bag",
       "name": {
         "en": "Popcorn",
+        "fr": "Pop-corn",
+        "es": "Palomitas",
+        "de": "Popcorn",
         "ar": "فشار"
       },
       "image": "images/popcorn.jpg"
@@ -761,8 +1064,12 @@
       "slug": "chocolate-bar",
       "icon": "candy",
       "category": "snacks",
+      "unit": "pcs",
       "name": {
         "en": "Chocolate Bar",
+        "fr": "Tablette de chocolat",
+        "es": "Tableta de chocolate",
+        "de": "Schokoladentafel",
         "ar": "لوح شوكولاتة"
       },
       "image": "images/chocolate-bar.jpg"
@@ -771,8 +1078,12 @@
       "slug": "biscuits",
       "icon": "cookie",
       "category": "snacks",
+      "unit": "pack",
       "name": {
         "en": "Biscuits",
+        "fr": "Biscuits",
+        "es": "Galletas",
+        "de": "Kekse",
         "ar": "بسكويت"
       },
       "image": "images/biscuits.jpg"
@@ -781,8 +1092,12 @@
       "slug": "crackers",
       "icon": "cookie",
       "category": "snacks",
+      "unit": "pack",
       "name": {
         "en": "Crackers",
+        "fr": "Crackers",
+        "es": "Crackers",
+        "de": "Cracker",
         "ar": "مقرمشات"
       },
       "image": "images/crackers.jpg"
@@ -791,8 +1106,12 @@
       "slug": "mixed-nuts",
       "icon": "nut",
       "category": "snacks",
+      "unit": "bag",
       "name": {
         "en": "Mixed Nuts",
+        "fr": "Fruits secs mélangés",
+        "es": "Frutos secos variados",
+        "de": "Nussmischung",
         "ar": "مكسرات مشكلة"
       },
       "image": "images/mixed-nuts.jpg"
@@ -801,8 +1120,12 @@
       "slug": "granola-bars",
       "icon": "candy",
       "category": "snacks",
+      "unit": "box",
       "name": {
         "en": "Granola Bars",
+        "fr": "Barres de céréales",
+        "es": "Barritas de cereales",
+        "de": "Müsliriegel",
         "ar": "ألواح جرانولا"
       },
       "image": "images/granola-bars.jpg"
@@ -811,8 +1134,12 @@
       "slug": "bottled-water",
       "icon": "bottle",
       "category": "beverages",
+      "unit": "bottle",
       "name": {
         "en": "Bottled Water",
+        "fr": "Eau en bouteille",
+        "es": "Agua embotellada",
+        "de": "Wasser in Flaschen",
         "ar": "مياه معبأة"
       },
       "image": "images/bottled-water.jpg"
@@ -821,8 +1148,12 @@
       "slug": "sparkling-water",
       "icon": "bottle",
       "category": "beverages",
+      "unit": "bottle",
       "name": {
         "en": "Sparkling Water",
+        "fr": "Eau gazeuse",
+        "es": "Agua con gas",
+        "de": "Sprudelwasser",
         "ar": "مياه فوارة"
       },
       "image": "images/sparkling-water.jpg"
@@ -831,8 +1162,12 @@
       "slug": "orange-juice",
       "icon": "cup",
       "category": "beverages",
+      "unit": "l",
       "name": {
         "en": "Orange Juice",
+        "fr": "Jus d'orange",
+        "es": "Zumo de naranja",
+        "de": "Orangensaft",
         "ar": "عصير برتقال"
       },
       "image": "images/orange-juice.jpg"
@@ -841,8 +1176,12 @@
       "slug": "apple-juice",
       "icon": "cup",
       "category": "beverages",
+      "unit": "l",
       "name": {
         "en": "Apple Juice",
+        "fr": "Jus de pomme",
+        "es": "Zumo de manzana",
+        "de": "Apfelsaft",
         "ar": "عصير تفاح"
       },
       "image": "images/apple-juice.jpg"
@@ -851,8 +1190,12 @@
       "slug": "cola",
       "icon": "bottle",
       "category": "beverages",
+      "unit": "bottle",
       "name": {
         "en": "Cola",
+        "fr": "Cola",
+        "es": "Cola",
+        "de": "Cola",
         "ar": "كولا"
       },
       "image": "images/cola.jpg"
@@ -861,8 +1204,12 @@
       "slug": "coffee",
       "icon": "coffee",
       "category": "beverages",
+      "unit": "pack",
       "name": {
         "en": "Coffee",
+        "fr": "Café",
+        "es": "Café",
+        "de": "Kaffee",
         "ar": "قهوة"
       },
       "image": "images/coffee.jpg"
@@ -871,8 +1218,12 @@
       "slug": "tea",
       "icon": "tea-bag",
       "category": "beverages",
+      "unit": "box",
       "name": {
         "en": "Tea",
+        "fr": "Thé",
+        "es": "Té",
+        "de": "Tee",
         "ar": "شاي"
       },
       "image": "images/tea.jpg"
@@ -881,8 +1232,12 @@
       "slug": "iced-tea",
       "icon": "cup",
       "category": "beverages",
+      "unit": "bottle",
       "name": {
         "en": "Iced Tea",
+        "fr": "Thé glacé",
+        "es": "Té helado",
+        "de": "Eistee",
         "ar": "شاي مثلج"
       },
       "image": "images/iced-tea.jpg"
@@ -891,8 +1246,12 @@
       "slug": "ketchup",
       "icon": "bottle",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Ketchup",
+        "fr": "Ketchup",
+        "es": "Kétchup",
+        "de": "Ketchup",
         "ar": "كاتشب"
       },
       "image": "images/ketchup.jpg"
@@ -901,8 +1260,12 @@
       "slug": "mayonnaise",
       "icon": "jar",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Mayonnaise",
+        "fr": "Mayonnaise",
+        "es": "Mayonesa",
+        "de": "Mayonnaise",
         "ar": "مايونيز"
       },
       "image": "images/mayonnaise.jpg"
@@ -911,8 +1274,12 @@
       "slug": "mustard",
       "icon": "bottle",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Mustard",
+        "fr": "Moutarde",
+        "es": "Mostaza",
+        "de": "Senf",
         "ar": "خردل"
       },
       "image": "images/mustard.jpg"
@@ -921,8 +1288,12 @@
       "slug": "soy-sauce",
       "icon": "bottle",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Soy Sauce",
+        "fr": "Sauce soja",
+        "es": "Salsa de soja",
+        "de": "Sojasauce",
         "ar": "صلصة الصويا"
       },
       "image": "images/soy-sauce.jpg"
@@ -931,8 +1302,12 @@
       "slug": "hot-sauce",
       "icon": "bottle",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Hot Sauce",
+        "fr": "Sauce piquante",
+        "es": "Salsa picante",
+        "de": "Scharfe Sauce",
         "ar": "صلصة حارة"
       },
       "image": "images/hot-sauce.jpg"
@@ -941,8 +1316,12 @@
       "slug": "pasta-sauce",
       "icon": "jar",
       "category": "condiments-sauces",
+      "unit": "can",
       "name": {
         "en": "Pasta Sauce",
+        "fr": "Sauce pour pâtes",
+        "es": "Salsa para pasta",
+        "de": "Nudelsauce",
         "ar": "صلصة معكرونة"
       },
       "image": "images/pasta-sauce.jpg"
@@ -951,8 +1330,12 @@
       "slug": "tahini",
       "icon": "jar",
       "category": "condiments-sauces",
+      "unit": "bottle",
       "name": {
         "en": "Tahini",
+        "fr": "Tahini",
+        "es": "Tahini",
+        "de": "Tahini",
         "ar": "طحينة"
       },
       "image": "images/tahini.jpg"
@@ -961,8 +1344,12 @@
       "slug": "black-pepper",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Black Pepper",
+        "fr": "Poivre noir",
+        "es": "Pimienta negra",
+        "de": "Schwarzer Pfeffer",
         "ar": "فلفل أسود"
       },
       "image": "images/black-pepper.jpg"
@@ -971,8 +1358,12 @@
       "slug": "cumin",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Cumin",
+        "fr": "Cumin",
+        "es": "Comino",
+        "de": "Kreuzkümmel",
         "ar": "كمون"
       },
       "image": "images/cumin.jpg"
@@ -981,8 +1372,12 @@
       "slug": "paprika",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Paprika",
+        "fr": "Paprika",
+        "es": "Pimentón",
+        "de": "Paprikapulver",
         "ar": "بابريكا"
       },
       "image": "images/paprika.jpg"
@@ -991,8 +1386,12 @@
       "slug": "cinnamon",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Cinnamon",
+        "fr": "Cannelle",
+        "es": "Canela",
+        "de": "Zimt",
         "ar": "قرفة"
       },
       "image": "images/cinnamon.jpg"
@@ -1001,8 +1400,12 @@
       "slug": "turmeric",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Turmeric",
+        "fr": "Curcuma",
+        "es": "Cúrcuma",
+        "de": "Kurkuma",
         "ar": "كركم"
       },
       "image": "images/turmeric.jpg"
@@ -1011,8 +1414,12 @@
       "slug": "oregano",
       "icon": "plant",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Oregano",
+        "fr": "Origan",
+        "es": "Orégano",
+        "de": "Oregano",
         "ar": "أوريغانو"
       },
       "image": "images/oregano.jpg"
@@ -1021,8 +1428,12 @@
       "slug": "chili-powder",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Chili Powder",
+        "fr": "Piment en poudre",
+        "es": "Chile en polvo",
+        "de": "Chilipulver",
         "ar": "مسحوق الفلفل الحار"
       },
       "image": "images/chili-powder.jpg"
@@ -1031,8 +1442,12 @@
       "slug": "bay-leaves",
       "icon": "plant",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Bay Leaves",
+        "fr": "Feuilles de laurier",
+        "es": "Hojas de laurel",
+        "de": "Lorbeerblätter",
         "ar": "ورق الغار"
       },
       "image": "images/bay-leaves.jpg"
@@ -1041,8 +1456,12 @@
       "slug": "ginger-powder",
       "icon": "salt",
       "category": "spices",
+      "unit": "pack",
       "name": {
         "en": "Ginger Powder",
+        "fr": "Gingembre moulu",
+        "es": "Jengibre molido",
+        "de": "Gemahlener Ingwer",
         "ar": "زنجبيل مطحون"
       },
       "image": "images/ginger-powder.jpg"
@@ -1051,8 +1470,12 @@
       "slug": "cereal",
       "icon": "bowl",
       "category": "breakfast",
+      "unit": "box",
       "name": {
         "en": "Cereal",
+        "fr": "Céréales",
+        "es": "Cereales",
+        "de": "Frühstücksflocken",
         "ar": "حبوب الإفطار"
       },
       "image": "images/cereal.jpg"
@@ -1061,8 +1484,12 @@
       "slug": "oats",
       "icon": "bowl",
       "category": "breakfast",
+      "unit": "pack",
       "name": {
         "en": "Oats",
+        "fr": "Flocons d'avoine",
+        "es": "Avena",
+        "de": "Haferflocken",
         "ar": "شوفان"
       },
       "image": "images/oats.jpg"
@@ -1071,8 +1498,12 @@
       "slug": "granola",
       "icon": "bowl",
       "category": "breakfast",
+      "unit": "pack",
       "name": {
         "en": "Granola",
+        "fr": "Granola",
+        "es": "Granola",
+        "de": "Granola",
         "ar": "جرانولا"
       },
       "image": "images/granola.jpg"
@@ -1081,8 +1512,12 @@
       "slug": "jam",
       "icon": "jar",
       "category": "breakfast",
+      "unit": "pack",
       "name": {
         "en": "Jam",
+        "fr": "Confiture",
+        "es": "Mermelada",
+        "de": "Marmelade",
         "ar": "مربى"
       },
       "image": "images/jam.jpg"
@@ -1091,8 +1526,12 @@
       "slug": "chocolate-spread",
       "icon": "jar",
       "category": "breakfast",
+      "unit": "pack",
       "name": {
         "en": "Chocolate Spread",
+        "fr": "Pâte à tartiner",
+        "es": "Crema de chocolate",
+        "de": "Schokoaufstrich",
         "ar": "شوكولاتة قابلة للدهن"
       },
       "image": "images/chocolate-spread.jpg"
@@ -1101,8 +1540,12 @@
       "slug": "pancake-mix",
       "icon": "packages",
       "category": "breakfast",
+      "unit": "box",
       "name": {
         "en": "Pancake Mix",
+        "fr": "Préparation pour pancakes",
+        "es": "Preparado para tortitas",
+        "de": "Pfannkuchenmischung",
         "ar": "خليط البانكيك"
       },
       "image": "images/pancake-mix.jpg"
@@ -1111,8 +1554,12 @@
       "slug": "olive-oil",
       "icon": "bottle",
       "category": "oils-vinegars",
+      "unit": "bottle",
       "name": {
         "en": "Olive Oil",
+        "fr": "Huile d'olive",
+        "es": "Aceite de oliva",
+        "de": "Olivenöl",
         "ar": "زيت زيتون"
       },
       "image": "images/olive-oil.jpg"
@@ -1121,8 +1568,12 @@
       "slug": "sunflower-oil",
       "icon": "bottle",
       "category": "oils-vinegars",
+      "unit": "bottle",
       "name": {
         "en": "Sunflower Oil",
+        "fr": "Huile de tournesol",
+        "es": "Aceite de girasol",
+        "de": "Sonnenblumenöl",
         "ar": "زيت دوار الشمس"
       },
       "image": "images/sunflower-oil.jpg"
@@ -1131,8 +1582,12 @@
       "slug": "white-vinegar",
       "icon": "bottle",
       "category": "oils-vinegars",
+      "unit": "bottle",
       "name": {
         "en": "White Vinegar",
+        "fr": "Vinaigre blanc",
+        "es": "Vinagre blanco",
+        "de": "Weißer Essig",
         "ar": "خل أبيض"
       },
       "image": "images/white-vinegar.jpg"
@@ -1141,8 +1596,12 @@
       "slug": "apple-cider-vinegar",
       "icon": "bottle",
       "category": "oils-vinegars",
+      "unit": "bottle",
       "name": {
         "en": "Apple Cider Vinegar",
+        "fr": "Vinaigre de cidre",
+        "es": "Vinagre de manzana",
+        "de": "Apfelessig",
         "ar": "خل التفاح"
       },
       "image": "images/apple-cider-vinegar.jpg"
@@ -1151,8 +1610,12 @@
       "slug": "balsamic-vinegar",
       "icon": "bottle",
       "category": "oils-vinegars",
+      "unit": "bottle",
       "name": {
         "en": "Balsamic Vinegar",
+        "fr": "Vinaigre balsamique",
+        "es": "Vinagre balsámico",
+        "de": "Balsamico-Essig",
         "ar": "خل بلسمي"
       },
       "image": "images/balsamic-vinegar.jpg"

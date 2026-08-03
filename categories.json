@@ -4,6 +4,9 @@
     "icon": "carrot",
     "name": {
       "en": "Produce",
+      "fr": "Fruits et légumes",
+      "es": "Frutas y verduras",
+      "de": "Obst & Gemüse",
       "ar": "خضار وفواكه"
     }
   },
@@ -12,6 +15,9 @@
     "icon": "milk",
     "name": {
       "en": "Dairy & Eggs",
+      "fr": "Produits laitiers et œufs",
+      "es": "Lácteos y huevos",
+      "de": "Milchprodukte & Eier",
       "ar": "ألبان وبيض"
     }
   },
@@ -20,6 +26,9 @@
     "icon": "meat",
     "name": {
       "en": "Meat & Poultry",
+      "fr": "Viande et volaille",
+      "es": "Carne y aves",
+      "de": "Fleisch & Geflügel",
       "ar": "لحوم ودواجن"
     }
   },
@@ -28,6 +37,9 @@
     "icon": "fish",
     "name": {
       "en": "Seafood",
+      "fr": "Produits de la mer",
+      "es": "Pescados y mariscos",
+      "de": "Fisch & Meeresfrüchte",
       "ar": "مأكولات بحرية"
     }
   },
@@ -36,6 +48,9 @@
     "icon": "bread",
     "name": {
       "en": "Bakery",
+      "fr": "Boulangerie",
+      "es": "Panadería",
+      "de": "Backwaren",
       "ar": "مخبوزات"
     }
   },
@@ -44,6 +59,9 @@
     "icon": "packages",
     "name": {
       "en": "Pantry",
+      "fr": "Épicerie de base",
+      "es": "Despensa",
+      "de": "Vorratskammer",
       "ar": "مؤن أساسية"
     }
   },
@@ -52,6 +70,9 @@
     "icon": "grain",
     "name": {
       "en": "Grains & Pasta",
+      "fr": "Céréales et pâtes",
+      "es": "Cereales y pasta",
+      "de": "Getreide & Nudeln",
       "ar": "حبوب ومعكرونة"
     }
   },
@@ -60,6 +81,9 @@
     "icon": "jar",
     "name": {
       "en": "Canned & Jarred",
+      "fr": "Conserves et bocaux",
+      "es": "Conservas",
+      "de": "Konserven & Gläser",
       "ar": "معلبات ومحفوظات"
     }
   },
@@ -68,6 +92,9 @@
     "icon": "snowflake",
     "name": {
       "en": "Frozen",
+      "fr": "Surgelés",
+      "es": "Congelados",
+      "de": "Tiefkühl",
       "ar": "مجمدات"
     }
   },
@@ -76,6 +103,9 @@
     "icon": "cookie",
     "name": {
       "en": "Snacks",
+      "fr": "Snacks",
+      "es": "Aperitivos",
+      "de": "Snacks",
       "ar": "وجبات خفيفة"
     }
   },
@@ -84,6 +114,9 @@
     "icon": "bottle",
     "name": {
       "en": "Beverages",
+      "fr": "Boissons",
+      "es": "Bebidas",
+      "de": "Getränke",
       "ar": "مشروبات"
     }
   },
@@ -92,6 +125,9 @@
     "icon": "bowl",
     "name": {
       "en": "Condiments & Sauces",
+      "fr": "Condiments et sauces",
+      "es": "Condimentos y salsas",
+      "de": "Saucen & Würzmittel",
       "ar": "صلصات وإضافات"
     }
   },
@@ -100,6 +136,9 @@
     "icon": "salt",
     "name": {
       "en": "Spices",
+      "fr": "Épices",
+      "es": "Especias",
+      "de": "Gewürze",
       "ar": "بهارات"
     }
   },
@@ -108,6 +147,9 @@
     "icon": "fried-egg",
     "name": {
       "en": "Breakfast",
+      "fr": "Petit-déjeuner",
+      "es": "Desayuno",
+      "de": "Frühstück",
       "ar": "إفطار"
     }
   },
@@ -116,6 +158,9 @@
     "icon": "droplet",
     "name": {
       "en": "Oils & Vinegars",
+      "fr": "Huiles et vinaigres",
+      "es": "Aceites y vinagres",
+      "de": "Öle & Essig",
       "ar": "زيوت وخل"
     }
   }
