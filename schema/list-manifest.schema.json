@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baggo.app/catalog/schema/list-manifest.schema.json",
+  "title": "Baggo catalog list manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "slug", "name", "version", "items"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "slug": {
+      "$ref": "#/$defs/slug"
+    },
+    "name": {
+      "$ref": "#/$defs/localizedName"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "icon", "category", "name", "image"],
+        "properties": {
+          "slug": {
+            "$ref": "#/$defs/slug"
+          },
+          "icon": {
+            "$ref": "#/$defs/slug"
+          },
+          "category": {
+            "$ref": "#/$defs/slug"
+          },
+          "name": {
+            "$ref": "#/$defs/localizedName"
+          },
+          "image": {
+            "type": "string",
+            "pattern": "^images/[a-z0-9]+(-[a-z0-9]+)*\\.jpg$"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "localizedName": {
+      "type": "object",
+      "required": ["en", "ar"],
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z]{2}(-[A-Z]{2})?$": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

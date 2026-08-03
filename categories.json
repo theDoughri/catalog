@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "produce",
+    "icon": "carrot",
+    "name": {
+      "en": "Produce",
+      "ar": "خضار وفواكه"
+    }
+  },
+  {
+    "slug": "dairy-eggs",
+    "icon": "milk",
+    "name": {
+      "en": "Dairy & Eggs",
+      "ar": "ألبان وبيض"
+    }
+  },
+  {
+    "slug": "meat-poultry",
+    "icon": "meat",
+    "name": {
+      "en": "Meat & Poultry",
+      "ar": "لحوم ودواجن"
+    }
+  },
+  {
+    "slug": "seafood",
+    "icon": "fish",
+    "name": {
+      "en": "Seafood",
+      "ar": "مأكولات بحرية"
+    }
+  },
+  {
+    "slug": "bakery",
+    "icon": "bread",
+    "name": {
+      "en": "Bakery",
+      "ar": "مخبوزات"
+    }
+  },
+  {
+    "slug": "pantry",
+    "icon": "packages",
+    "name": {
+      "en": "Pantry",
+      "ar": "مؤن أساسية"
+    }
+  },
+  {
+    "slug": "grains-pasta",
+    "icon": "grain",
+    "name": {
+      "en": "Grains & Pasta",
+      "ar": "حبوب ومعكرونة"
+    }
+  },
+  {
+    "slug": "canned-jarred",
+    "icon": "jar",
+    "name": {
+      "en": "Canned & Jarred",
+      "ar": "معلبات ومحفوظات"
+    }
+  },
+  {
+    "slug": "frozen",
+    "icon": "snowflake",
+    "name": {
+      "en": "Frozen",
+      "ar": "مجمدات"
+    }
+  },
+  {
+    "slug": "snacks",
+    "icon": "cookie",
+    "name": {
+      "en": "Snacks",
+      "ar": "وجبات خفيفة"
+    }
+  },
+  {
+    "slug": "beverages",
+    "icon": "bottle",
+    "name": {
+      "en": "Beverages",
+      "ar": "مشروبات"
+    }
+  },
+  {
+    "slug": "condiments-sauces",
+    "icon": "bowl",
+    "name": {
+      "en": "Condiments & Sauces",
+      "ar": "صلصات وإضافات"
+    }
+  },
+  {
+    "slug": "spices",
+    "icon": "salt",
+    "name": {
+      "en": "Spices",
+      "ar": "بهارات"
+    }
+  },
+  {
+    "slug": "breakfast",
+    "icon": "fried-egg",
+    "name": {
+      "en": "Breakfast",
+      "ar": "إفطار"
+    }
+  },
+  {
+    "slug": "oils-vinegars",
+    "icon": "droplet",
+    "name": {
+      "en": "Oils & Vinegars",
+      "ar": "زيوت وخل"
+    }
+  }
+]

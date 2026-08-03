@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "catalog_id": "baggo-official",
+  "name": {
+    "en": "Baggo Official Catalog",
+    "ar": "كتالوج باغو الرسمي"
+  },
+  "version": 1,
+  "lists": [
+    {
+      "slug": "default",
+      "path": "lists/default/manifest.json",
+      "name": {
+        "en": "Groceries",
+        "ar": "بقالة"
+      },
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,1161 @@
+{
+  "schema_version": 1,
+  "slug": "default",
+  "name": {
+    "en": "Groceries",
+    "ar": "بقالة"
+  },
+  "version": 1,
+  "items": [
+    {
+      "slug": "apples",
+      "icon": "apple",
+      "category": "produce",
+      "name": {
+        "en": "Apples",
+        "ar": "تفاح"
+      },
+      "image": "images/apples.jpg"
+    },
+    {
+      "slug": "bananas",
+      "icon": "apple",
+      "category": "produce",
+      "name": {
+        "en": "Bananas",
+        "ar": "موز"
+      },
+      "image": "images/bananas.jpg"
+    },
+    {
+      "slug": "oranges",
+      "icon": "orange",
+      "category": "produce",
+      "name": {
+        "en": "Oranges",
+        "ar": "برتقال"
+      },
+      "image": "images/oranges.jpg"
+    },
+    {
+      "slug": "lemons",
+      "icon": "orange",
+      "category": "produce",
+      "name": {
+        "en": "Lemons",
+        "ar": "ليمون"
+      },
+      "image": "images/lemons.jpg"
+    },
+    {
+      "slug": "strawberries",
+      "icon": "apple",
+      "category": "produce",
+      "name": {
+        "en": "Strawberries",
+        "ar": "فراولة"
+      },
+      "image": "images/strawberries.jpg"
+    },
+    {
+      "slug": "grapes",
+      "icon": "apple",
+      "category": "produce",
+      "name": {
+        "en": "Grapes",
+        "ar": "عنب"
+      },
+      "image": "images/grapes.jpg"
+    },
+    {
+      "slug": "avocados",
+      "icon": "apple",
+      "category": "produce",
+      "name": {
+        "en": "Avocados",
+        "ar": "أفوكادو"
+      },
+      "image": "images/avocados.jpg"
+    },
+    {
+      "slug": "tomatoes",
+      "icon": "pepper",
+      "category": "produce",
+      "name": {
+        "en": "Tomatoes",
+        "ar": "طماطم"
+      },
+      "image": "images/tomatoes.jpg"
+    },
+    {
+      "slug": "cucumbers",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Cucumbers",
+        "ar": "خيار"
+      },
+      "image": "images/cucumbers.jpg"
+    },
+    {
+      "slug": "carrots",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Carrots",
+        "ar": "جزر"
+      },
+      "image": "images/carrots.jpg"
+    },
+    {
+      "slug": "potatoes",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Potatoes",
+        "ar": "بطاطس"
+      },
+      "image": "images/potatoes.jpg"
+    },
+    {
+      "slug": "onions",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Onions",
+        "ar": "بصل"
+      },
+      "image": "images/onions.jpg"
+    },
+    {
+      "slug": "garlic",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Garlic",
+        "ar": "ثوم"
+      },
+      "image": "images/garlic.jpg"
+    },
+    {
+      "slug": "bell-peppers",
+      "icon": "pepper",
+      "category": "produce",
+      "name": {
+        "en": "Bell Peppers",
+        "ar": "فلفل حلو"
+      },
+      "image": "images/bell-peppers.jpg"
+    },
+    {
+      "slug": "lettuce",
+      "icon": "plant",
+      "category": "produce",
+      "name": {
+        "en": "Lettuce",
+        "ar": "خس"
+      },
+      "image": "images/lettuce.jpg"
+    },
+    {
+      "slug": "spinach",
+      "icon": "plant",
+      "category": "produce",
+      "name": {
+        "en": "Spinach",
+        "ar": "سبانخ"
+      },
+      "image": "images/spinach.jpg"
+    },
+    {
+      "slug": "broccoli",
+      "icon": "plant",
+      "category": "produce",
+      "name": {
+        "en": "Broccoli",
+        "ar": "بروكلي"
+      },
+      "image": "images/broccoli.jpg"
+    },
+    {
+      "slug": "mushrooms",
+      "icon": "plant",
+      "category": "produce",
+      "name": {
+        "en": "Mushrooms",
+        "ar": "فطر"
+      },
+      "image": "images/mushrooms.jpg"
+    },
+    {
+      "slug": "zucchini",
+      "icon": "carrot",
+      "category": "produce",
+      "name": {
+        "en": "Zucchini",
+        "ar": "كوسة"
+      },
+      "image": "images/zucchini.jpg"
+    },
+    {
+      "slug": "milk",
+      "icon": "milk",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Milk",
+        "ar": "حليب"
+      },
+      "image": "images/milk.jpg"
+    },
+    {
+      "slug": "eggs",
+      "icon": "egg",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Eggs",
+        "ar": "بيض"
+      },
+      "image": "images/eggs.jpg"
+    },
+    {
+      "slug": "butter",
+      "icon": "cheese",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Butter",
+        "ar": "زبدة"
+      },
+      "image": "images/butter.jpg"
+    },
+    {
+      "slug": "cheddar-cheese",
+      "icon": "cheese",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Cheddar Cheese",
+        "ar": "جبن شيدر"
+      },
+      "image": "images/cheddar-cheese.jpg"
+    },
+    {
+      "slug": "yogurt",
+      "icon": "cup",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Yogurt",
+        "ar": "زبادي"
+      },
+      "image": "images/yogurt.jpg"
+    },
+    {
+      "slug": "cream",
+      "icon": "milk",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Cream",
+        "ar": "كريمة"
+      },
+      "image": "images/cream.jpg"
+    },
+    {
+      "slug": "feta-cheese",
+      "icon": "cheese",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Feta Cheese",
+        "ar": "جبن فيتا"
+      },
+      "image": "images/feta-cheese.jpg"
+    },
+    {
+      "slug": "cream-cheese",
+      "icon": "cheese",
+      "category": "dairy-eggs",
+      "name": {
+        "en": "Cream Cheese",
+        "ar": "جبن كريمي"
+      },
+      "image": "images/cream-cheese.jpg"
+    },
+    {
+      "slug": "chicken-breast",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Chicken Breast",
+        "ar": "صدور دجاج"
+      },
+      "image": "images/chicken-breast.jpg"
+    },
+    {
+      "slug": "ground-beef",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Ground Beef",
+        "ar": "لحم بقري مفروم"
+      },
+      "image": "images/ground-beef.jpg"
+    },
+    {
+      "slug": "beef-steak",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Beef Steak",
+        "ar": "شريحة لحم بقري"
+      },
+      "image": "images/beef-steak.jpg"
+    },
+    {
+      "slug": "lamb-chops",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Lamb Chops",
+        "ar": "ريش ضأن"
+      },
+      "image": "images/lamb-chops.jpg"
+    },
+    {
+      "slug": "sausages",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Sausages",
+        "ar": "نقانق"
+      },
+      "image": "images/sausages.jpg"
+    },
+    {
+      "slug": "bacon",
+      "icon": "meat",
+      "category": "meat-poultry",
+      "name": {
+        "en": "Bacon",
+        "ar": "لحم مقدد"
+      },
+      "image": "images/bacon.jpg"
+    },
+    {
+      "slug": "salmon",
+      "icon": "fish",
+      "category": "seafood",
+      "name": {
+        "en": "Salmon",
+        "ar": "سلمون"
+      },
+      "image": "images/salmon.jpg"
+    },
+    {
+      "slug": "shrimp",
+      "icon": "fish",
+      "category": "seafood",
+      "name": {
+        "en": "Shrimp",
+        "ar": "روبيان"
+      },
+      "image": "images/shrimp.jpg"
+    },
+    {
+      "slug": "sea-bass",
+      "icon": "fish",
+      "category": "seafood",
+      "name": {
+        "en": "Sea Bass",
+        "ar": "قاروص"
+      },
+      "image": "images/sea-bass.jpg"
+    },
+    {
+      "slug": "squid",
+      "icon": "fish",
+      "category": "seafood",
+      "name": {
+        "en": "Squid",
+        "ar": "حبار"
+      },
+      "image": "images/squid.jpg"
+    },
+    {
+      "slug": "bread",
+      "icon": "bread",
+      "category": "bakery",
+      "name": {
+        "en": "Bread",
+        "ar": "خبز"
+      },
+      "image": "images/bread.jpg"
+    },
+    {
+      "slug": "baguette",
+      "icon": "baguette",
+      "category": "bakery",
+      "name": {
+        "en": "Baguette",
+        "ar": "خبز باغيت"
+      },
+      "image": "images/baguette.jpg"
+    },
+    {
+      "slug": "pita-bread",
+      "icon": "bread",
+      "category": "bakery",
+      "name": {
+        "en": "Pita Bread",
+        "ar": "خبز عربي"
+      },
+      "image": "images/pita-bread.jpg"
+    },
+    {
+      "slug": "croissants",
+      "icon": "bread",
+      "category": "bakery",
+      "name": {
+        "en": "Croissants",
+        "ar": "كرواسون"
+      },
+      "image": "images/croissants.jpg"
+    },
+    {
+      "slug": "bagels",
+      "icon": "bread",
+      "category": "bakery",
+      "name": {
+        "en": "Bagels",
+        "ar": "خبز بيغل"
+      },
+      "image": "images/bagels.jpg"
+    },
+    {
+      "slug": "tortillas",
+      "icon": "bread",
+      "category": "bakery",
+      "name": {
+        "en": "Tortillas",
+        "ar": "خبز تورتيلا"
+      },
+      "image": "images/tortillas.jpg"
+    },
+    {
+      "slug": "sugar",
+      "icon": "jar",
+      "category": "pantry",
+      "name": {
+        "en": "Sugar",
+        "ar": "سكر"
+      },
+      "image": "images/sugar.jpg"
+    },
+    {
+      "slug": "flour",
+      "icon": "packages",
+      "category": "pantry",
+      "name": {
+        "en": "Flour",
+        "ar": "دقيق"
+      },
+      "image": "images/flour.jpg"
+    },
+    {
+      "slug": "salt",
+      "icon": "salt",
+      "category": "pantry",
+      "name": {
+        "en": "Salt",
+        "ar": "ملح"
+      },
+      "image": "images/salt.jpg"
+    },
+    {
+      "slug": "baking-powder",
+      "icon": "packages",
+      "category": "pantry",
+      "name": {
+        "en": "Baking Powder",
+        "ar": "مسحوق الخبز"
+      },
+      "image": "images/baking-powder.jpg"
+    },
+    {
+      "slug": "honey",
+      "icon": "jar",
+      "category": "pantry",
+      "name": {
+        "en": "Honey",
+        "ar": "عسل"
+      },
+      "image": "images/honey.jpg"
+    },
+    {
+      "slug": "peanut-butter",
+      "icon": "jar",
+      "category": "pantry",
+      "name": {
+        "en": "Peanut Butter",
+        "ar": "زبدة الفول السوداني"
+      },
+      "image": "images/peanut-butter.jpg"
+    },
+    {
+      "slug": "yeast",
+      "icon": "packages",
+      "category": "pantry",
+      "name": {
+        "en": "Yeast",
+        "ar": "خميرة"
+      },
+      "image": "images/yeast.jpg"
+    },
+    {
+      "slug": "cornstarch",
+      "icon": "packages",
+      "category": "pantry",
+      "name": {
+        "en": "Cornstarch",
+        "ar": "نشا الذرة"
+      },
+      "image": "images/cornstarch.jpg"
+    },
+    {
+      "slug": "rice",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Rice",
+        "ar": "أرز"
+      },
+      "image": "images/rice.jpg"
+    },
+    {
+      "slug": "spaghetti",
+      "icon": "bowl",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Spaghetti",
+        "ar": "سباغيتي"
+      },
+      "image": "images/spaghetti.jpg"
+    },
+    {
+      "slug": "penne",
+      "icon": "bowl",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Penne",
+        "ar": "معكرونة بيني"
+      },
+      "image": "images/penne.jpg"
+    },
+    {
+      "slug": "couscous",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Couscous",
+        "ar": "كسكس"
+      },
+      "image": "images/couscous.jpg"
+    },
+    {
+      "slug": "quinoa",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Quinoa",
+        "ar": "كينوا"
+      },
+      "image": "images/quinoa.jpg"
+    },
+    {
+      "slug": "bulgur",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Bulgur",
+        "ar": "برغل"
+      },
+      "image": "images/bulgur.jpg"
+    },
+    {
+      "slug": "noodles",
+      "icon": "bowl",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Noodles",
+        "ar": "نودلز"
+      },
+      "image": "images/noodles.jpg"
+    },
+    {
+      "slug": "lentils",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Lentils",
+        "ar": "عدس"
+      },
+      "image": "images/lentils.jpg"
+    },
+    {
+      "slug": "dried-chickpeas",
+      "icon": "grain",
+      "category": "grains-pasta",
+      "name": {
+        "en": "Dried Chickpeas",
+        "ar": "حمص جاف"
+      },
+      "image": "images/dried-chickpeas.jpg"
+    },
+    {
+      "slug": "canned-tomatoes",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Canned Tomatoes",
+        "ar": "طماطم معلبة"
+      },
+      "image": "images/canned-tomatoes.jpg"
+    },
+    {
+      "slug": "tomato-paste",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Tomato Paste",
+        "ar": "معجون طماطم"
+      },
+      "image": "images/tomato-paste.jpg"
+    },
+    {
+      "slug": "canned-tuna",
+      "icon": "fish",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Canned Tuna",
+        "ar": "تونة معلبة"
+      },
+      "image": "images/canned-tuna.jpg"
+    },
+    {
+      "slug": "canned-corn",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Canned Corn",
+        "ar": "ذرة معلبة"
+      },
+      "image": "images/canned-corn.jpg"
+    },
+    {
+      "slug": "canned-beans",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Canned Beans",
+        "ar": "فاصولياء معلبة"
+      },
+      "image": "images/canned-beans.jpg"
+    },
+    {
+      "slug": "olives",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Olives",
+        "ar": "زيتون"
+      },
+      "image": "images/olives.jpg"
+    },
+    {
+      "slug": "pickles",
+      "icon": "jar",
+      "category": "canned-jarred",
+      "name": {
+        "en": "Pickles",
+        "ar": "مخللات"
+      },
+      "image": "images/pickles.jpg"
+    },
+    {
+      "slug": "frozen-peas",
+      "icon": "snowflake",
+      "category": "frozen",
+      "name": {
+        "en": "Frozen Peas",
+        "ar": "بازلاء مجمدة"
+      },
+      "image": "images/frozen-peas.jpg"
+    },
+    {
+      "slug": "frozen-mixed-vegetables",
+      "icon": "snowflake",
+      "category": "frozen",
+      "name": {
+        "en": "Frozen Mixed Vegetables",
+        "ar": "خضار مشكلة مجمدة"
+      },
+      "image": "images/frozen-mixed-vegetables.jpg"
+    },
+    {
+      "slug": "frozen-pizza",
+      "icon": "pizza",
+      "category": "frozen",
+      "name": {
+        "en": "Frozen Pizza",
+        "ar": "بيتزا مجمدة"
+      },
+      "image": "images/frozen-pizza.jpg"
+    },
+    {
+      "slug": "ice-cream",
+      "icon": "ice-cream",
+      "category": "frozen",
+      "name": {
+        "en": "Ice Cream",
+        "ar": "آيس كريم"
+      },
+      "image": "images/ice-cream.jpg"
+    },
+    {
+      "slug": "frozen-fries",
+      "icon": "snowflake",
+      "category": "frozen",
+      "name": {
+        "en": "Frozen Fries",
+        "ar": "بطاطس مقلية مجمدة"
+      },
+      "image": "images/frozen-fries.jpg"
+    },
+    {
+      "slug": "frozen-berries",
+      "icon": "snowflake",
+      "category": "frozen",
+      "name": {
+        "en": "Frozen Berries",
+        "ar": "توت مجمد"
+      },
+      "image": "images/frozen-berries.jpg"
+    },
+    {
+      "slug": "potato-chips",
+      "icon": "packages",
+      "category": "snacks",
+      "name": {
+        "en": "Potato Chips",
+        "ar": "رقائق بطاطس"
+      },
+      "image": "images/potato-chips.jpg"
+    },
+    {
+      "slug": "popcorn",
+      "icon": "popcorn",
+      "category": "snacks",
+      "name": {
+        "en": "Popcorn",
+        "ar": "فشار"
+      },
+      "image": "images/popcorn.jpg"
+    },
+    {
+      "slug": "chocolate-bar",
+      "icon": "candy",
+      "category": "snacks",
+      "name": {
+        "en": "Chocolate Bar",
+        "ar": "لوح شوكولاتة"
+      },
+      "image": "images/chocolate-bar.jpg"
+    },
+    {
+      "slug": "biscuits",
+      "icon": "cookie",
+      "category": "snacks",
+      "name": {
+        "en": "Biscuits",
+        "ar": "بسكويت"
+      },
+      "image": "images/biscuits.jpg"
+    },
+    {
+      "slug": "crackers",
+      "icon": "cookie",
+      "category": "snacks",
+      "name": {
+        "en": "Crackers",
+        "ar": "مقرمشات"
+      },
+      "image": "images/crackers.jpg"
+    },
+    {
+      "slug": "mixed-nuts",
+      "icon": "nut",
+      "category": "snacks",
+      "name": {
+        "en": "Mixed Nuts",
+        "ar": "مكسرات مشكلة"
+      },
+      "image": "images/mixed-nuts.jpg"
+    },
+    {
+      "slug": "granola-bars",
+      "icon": "candy",
+      "category": "snacks",
+      "name": {
+        "en": "Granola Bars",
+        "ar": "ألواح جرانولا"
+      },
+      "image": "images/granola-bars.jpg"
+    },
+    {
+      "slug": "bottled-water",
+      "icon": "bottle",
+      "category": "beverages",
+      "name": {
+        "en": "Bottled Water",
+        "ar": "مياه معبأة"
+      },
+      "image": "images/bottled-water.jpg"
+    },
+    {
+      "slug": "sparkling-water",
+      "icon": "bottle",
+      "category": "beverages",
+      "name": {
+        "en": "Sparkling Water",
+        "ar": "مياه فوارة"
+      },
+      "image": "images/sparkling-water.jpg"
+    },
+    {
+      "slug": "orange-juice",
+      "icon": "cup",
+      "category": "beverages",
+      "name": {
+        "en": "Orange Juice",
+        "ar": "عصير برتقال"
+      },
+      "image": "images/orange-juice.jpg"
+    },
+    {
+      "slug": "apple-juice",
+      "icon": "cup",
+      "category": "beverages",
+      "name": {
+        "en": "Apple Juice",
+        "ar": "عصير تفاح"
+      },
+      "image": "images/apple-juice.jpg"
+    },
+    {
+      "slug": "cola",
+      "icon": "bottle",
+      "category": "beverages",
+      "name": {
+        "en": "Cola",
+        "ar": "كولا"
+      },
+      "image": "images/cola.jpg"
+    },
+    {
+      "slug": "coffee",
+      "icon": "coffee",
+      "category": "beverages",
+      "name": {
+        "en": "Coffee",
+        "ar": "قهوة"
+      },
+      "image": "images/coffee.jpg"
+    },
+    {
+      "slug": "tea",
+      "icon": "tea-bag",
+      "category": "beverages",
+      "name": {
+        "en": "Tea",
+        "ar": "شاي"
+      },
+      "image": "images/tea.jpg"
+    },
+    {
+      "slug": "iced-tea",
+      "icon": "cup",
+      "category": "beverages",
+      "name": {
+        "en": "Iced Tea",
+        "ar": "شاي مثلج"
+      },
+      "image": "images/iced-tea.jpg"
+    },
+    {
+      "slug": "ketchup",
+      "icon": "bottle",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Ketchup",
+        "ar": "كاتشب"
+      },
+      "image": "images/ketchup.jpg"
+    },
+    {
+      "slug": "mayonnaise",
+      "icon": "jar",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Mayonnaise",
+        "ar": "مايونيز"
+      },
+      "image": "images/mayonnaise.jpg"
+    },
+    {
+      "slug": "mustard",
+      "icon": "bottle",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Mustard",
+        "ar": "خردل"
+      },
+      "image": "images/mustard.jpg"
+    },
+    {
+      "slug": "soy-sauce",
+      "icon": "bottle",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Soy Sauce",
+        "ar": "صلصة الصويا"
+      },
+      "image": "images/soy-sauce.jpg"
+    },
+    {
+      "slug": "hot-sauce",
+      "icon": "bottle",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Hot Sauce",
+        "ar": "صلصة حارة"
+      },
+      "image": "images/hot-sauce.jpg"
+    },
+    {
+      "slug": "pasta-sauce",
+      "icon": "jar",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Pasta Sauce",
+        "ar": "صلصة معكرونة"
+      },
+      "image": "images/pasta-sauce.jpg"
+    },
+    {
+      "slug": "tahini",
+      "icon": "jar",
+      "category": "condiments-sauces",
+      "name": {
+        "en": "Tahini",
+        "ar": "طحينة"
+      },
+      "image": "images/tahini.jpg"
+    },
+    {
+      "slug": "black-pepper",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Black Pepper",
+        "ar": "فلفل أسود"
+      },
+      "image": "images/black-pepper.jpg"
+    },
+    {
+      "slug": "cumin",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Cumin",
+        "ar": "كمون"
+      },
+      "image": "images/cumin.jpg"
+    },
+    {
+      "slug": "paprika",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Paprika",
+        "ar": "بابريكا"
+      },
+      "image": "images/paprika.jpg"
+    },
+    {
+      "slug": "cinnamon",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Cinnamon",
+        "ar": "قرفة"
+      },
+      "image": "images/cinnamon.jpg"
+    },
+    {
+      "slug": "turmeric",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Turmeric",
+        "ar": "كركم"
+      },
+      "image": "images/turmeric.jpg"
+    },
+    {
+      "slug": "oregano",
+      "icon": "plant",
+      "category": "spices",
+      "name": {
+        "en": "Oregano",
+        "ar": "أوريغانو"
+      },
+      "image": "images/oregano.jpg"
+    },
+    {
+      "slug": "chili-powder",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Chili Powder",
+        "ar": "مسحوق الفلفل الحار"
+      },
+      "image": "images/chili-powder.jpg"
+    },
+    {
+      "slug": "bay-leaves",
+      "icon": "plant",
+      "category": "spices",
+      "name": {
+        "en": "Bay Leaves",
+        "ar": "ورق الغار"
+      },
+      "image": "images/bay-leaves.jpg"
+    },
+    {
+      "slug": "ginger-powder",
+      "icon": "salt",
+      "category": "spices",
+      "name": {
+        "en": "Ginger Powder",
+        "ar": "زنجبيل مطحون"
+      },
+      "image": "images/ginger-powder.jpg"
+    },
+    {
+      "slug": "cereal",
+      "icon": "bowl",
+      "category": "breakfast",
+      "name": {
+        "en": "Cereal",
+        "ar": "حبوب الإفطار"
+      },
+      "image": "images/cereal.jpg"
+    },
+    {
+      "slug": "oats",
+      "icon": "bowl",
+      "category": "breakfast",
+      "name": {
+        "en": "Oats",
+        "ar": "شوفان"
+      },
+      "image": "images/oats.jpg"
+    },
+    {
+      "slug": "granola",
+      "icon": "bowl",
+      "category": "breakfast",
+      "name": {
+        "en": "Granola",
+        "ar": "جرانولا"
+      },
+      "image": "images/granola.jpg"
+    },
+    {
+      "slug": "jam",
+      "icon": "jar",
+      "category": "breakfast",
+      "name": {
+        "en": "Jam",
+        "ar": "مربى"
+      },
+      "image": "images/jam.jpg"
+    },
+    {
+      "slug": "chocolate-spread",
+      "icon": "jar",
+      "category": "breakfast",
+      "name": {
+        "en": "Chocolate Spread",
+        "ar": "شوكولاتة قابلة للدهن"
+      },
+      "image": "images/chocolate-spread.jpg"
+    },
+    {
+      "slug": "pancake-mix",
+      "icon": "packages",
+      "category": "breakfast",
+      "name": {
+        "en": "Pancake Mix",
+        "ar": "خليط البانكيك"
+      },
+      "image": "images/pancake-mix.jpg"
+    },
+    {
+      "slug": "olive-oil",
+      "icon": "bottle",
+      "category": "oils-vinegars",
+      "name": {
+        "en": "Olive Oil",
+        "ar": "زيت زيتون"
+      },
+      "image": "images/olive-oil.jpg"
+    },
+    {
+      "slug": "sunflower-oil",
+      "icon": "bottle",
+      "category": "oils-vinegars",
+      "name": {
+        "en": "Sunflower Oil",
+        "ar": "زيت دوار الشمس"
+      },
+      "image": "images/sunflower-oil.jpg"
+    },
+    {
+      "slug": "white-vinegar",
+      "icon": "bottle",
+      "category": "oils-vinegars",
+      "name": {
+        "en": "White Vinegar",
+        "ar": "خل أبيض"
+      },
+      "image": "images/white-vinegar.jpg"
+    },
+    {
+      "slug": "apple-cider-vinegar",
+      "icon": "bottle",
+      "category": "oils-vinegars",
+      "name": {
+        "en": "Apple Cider Vinegar",
+        "ar": "خل التفاح"
+      },
+      "image": "images/apple-cider-vinegar.jpg"
+    },
+    {
+      "slug": "balsamic-vinegar",
+      "icon": "bottle",
+      "category": "oils-vinegars",
+      "name": {
+        "en": "Balsamic Vinegar",
+        "ar": "خل بلسمي"
+      },
+      "image": "images/balsamic-vinegar.jpg"
+    }
+  ]
+}
