@@ -23,6 +23,11 @@ link is still empty are reported and skipped; existing image files are
 skipped too unless --force is given, so the script is safe to re-run as the
 CSV fills up.
 
+At the end of every run the script also refreshes a `thumbnails/` folder
+next to each list's `images/` folder: every available image gets a 128x128
+thumbnail under the same file name, stale thumbnails are regenerated, and
+thumbnails whose source image no longer exists are removed.
+
 Usage:
   python3 scripts/fetch_images.py
   python3 scripts/fetch_images.py --force --only apples
@@ -52,6 +57,7 @@ import urllib.request
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_NAME = "items_images.csv"
 TARGET = 1024
+THUMB = 128
 MAX_DOWNLOAD_BYTES = 40 * 1024 * 1024
 REQUEST_DELAY = 0.3  # polite pause between downloads, seconds
 
@@ -298,6 +304,55 @@ def crop_to_target(data: bytes) -> bytes | None:
     return output.getvalue()
 
 
+def make_thumbnails(list_dir: str) -> tuple[int, int]:
+    """Sync <list_dir>/thumbnails with <list_dir>/images.
+
+    Every .jpg in images/ gets a THUMB x THUMB thumbnail of the same name;
+    stale thumbnails (older than their source) are regenerated and orphaned
+    thumbnails (source image gone) are deleted.
+    Returns (created_or_updated, removed).
+    """
+    from PIL import Image, ImageOps
+
+    images_dir = os.path.join(list_dir, "images")
+    thumbs_dir = os.path.join(list_dir, "thumbnails")
+    if not os.path.isdir(images_dir):
+        return 0, 0
+    os.makedirs(thumbs_dir, exist_ok=True)
+
+    updated = removed = 0
+    sources = sorted(
+        f for f in os.listdir(images_dir) if f.lower().endswith(".jpg")
+    )
+    for name in sources:
+        src = os.path.join(images_dir, name)
+        dst = os.path.join(thumbs_dir, name)
+        if os.path.isfile(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
+            continue
+        try:
+            with Image.open(src) as image:
+                image = ImageOps.exif_transpose(image)
+                if image.mode != "RGB":
+                    image = image.convert("RGB")
+                width, height = image.size
+                side = min(width, height)
+                left = (width - side) // 2
+                top = (height - side) // 2
+                image = image.crop((left, top, left + side, top + side))
+                image = image.resize((THUMB, THUMB), Image.LANCZOS)
+                image.save(dst, format="JPEG", quality=85, optimize=True)
+            updated += 1
+        except Exception as exc:  # noqa: BLE001 - a bad file must not stop the run
+            print(f"  ! thumbnail failed for {name}: {exc}")
+
+    source_names = set(sources)
+    for name in os.listdir(thumbs_dir):
+        if name.lower().endswith(".jpg") and name not in source_names:
+            os.remove(os.path.join(thumbs_dir, name))
+            removed += 1
+    return updated, removed
+
+
 # --------------------------------------------------------------------------
 # CSV + manifests.
 # --------------------------------------------------------------------------
@@ -349,6 +404,7 @@ def main() -> int:
     unknown: list[str] = []
     missing_rows: list[str] = []
     missing_csv: list[str] = []
+    thumbs_updated = thumbs_removed = 0
 
     for list_slug, list_dir, items in iter_lists():
         print(f"list: {list_slug}")
@@ -403,12 +459,18 @@ def main() -> int:
         unknown += sorted(set(links) - seen_slugs)
         missing_rows += sorted(s for s in seen_slugs if s not in links)
 
+        if not args.dry_run:
+            created, removed = make_thumbnails(list_dir)
+            thumbs_updated += created
+            thumbs_removed += removed
+
     print()
     print("Fetch summary")
     print(f"  saved             {saved}")
     print(f"  already present   {present}")
     print(f"  no link yet       {len(no_link)}")
     print(f"  failed            {len(failed)}")
+    print(f"  thumbnails        {thumbs_updated} updated, {thumbs_removed} removed")
     if failed:
         print("  failed items: " + ", ".join(failed))
     if unknown:
