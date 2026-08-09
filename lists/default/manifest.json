@@ -8,7 +8,7 @@
     "de": "Lebensmittel",
     "ar": "بقالة"
   },
-  "version": 3,
+  "version": 4,
   "items": [
     {
       "slug": "apples",
@@ -529,6 +529,90 @@
       "image": "images/squid.jpg"
     },
     {
+      "slug": "bread",
+      "icon": "bread",
+      "category": "bakery",
+      "unit": "pcs",
+      "name": {
+        "en": "Bread",
+        "fr": "Pain",
+        "es": "Pan",
+        "de": "Brot",
+        "ar": "خبز"
+      },
+      "image": "images/bread.jpg"
+    },
+    {
+      "slug": "baguette",
+      "icon": "baguette",
+      "category": "bakery",
+      "unit": "pcs",
+      "name": {
+        "en": "Baguette",
+        "fr": "Baguette",
+        "es": "Baguete",
+        "de": "Baguette",
+        "ar": "خبز باغيت"
+      },
+      "image": "images/baguette.jpg"
+    },
+    {
+      "slug": "pita-bread",
+      "icon": "bread",
+      "category": "bakery",
+      "unit": "pack",
+      "name": {
+        "en": "Pita Bread",
+        "fr": "Pain pita",
+        "es": "Pan de pita",
+        "de": "Pitabrot",
+        "ar": "خبز عربي"
+      },
+      "image": "images/pita-bread.jpg"
+    },
+    {
+      "slug": "croissants",
+      "icon": "bread",
+      "category": "bakery",
+      "unit": "pack",
+      "name": {
+        "en": "Croissants",
+        "fr": "Croissants",
+        "es": "Cruasanes",
+        "de": "Croissants",
+        "ar": "كرواسون"
+      },
+      "image": "images/croissants.jpg"
+    },
+    {
+      "slug": "bagels",
+      "icon": "bread",
+      "category": "bakery",
+      "unit": "pack",
+      "name": {
+        "en": "Bagels",
+        "fr": "Bagels",
+        "es": "Bagels",
+        "de": "Bagels",
+        "ar": "خبز بيغل"
+      },
+      "image": "images/bagels.jpg"
+    },
+    {
+      "slug": "tortillas",
+      "icon": "bread",
+      "category": "bakery",
+      "unit": "pack",
+      "name": {
+        "en": "Tortillas",
+        "fr": "Tortillas",
+        "es": "Tortillas",
+        "de": "Tortillas",
+        "ar": "خبز تورتيلا"
+      },
+      "image": "images/tortillas.jpg"
+    },
+    {
       "slug": "sugar",
       "icon": "jar",
       "category": "pantry",
@@ -639,6 +723,48 @@
         "ar": "نشا الذرة"
       },
       "image": "images/cornstarch.jpg"
+    },
+    {
+      "slug": "jam",
+      "icon": "jar",
+      "category": "pantry",
+      "unit": "pack",
+      "name": {
+        "en": "Jam",
+        "fr": "Confiture",
+        "es": "Mermelada",
+        "de": "Marmelade",
+        "ar": "مربى"
+      },
+      "image": "images/jam.jpg"
+    },
+    {
+      "slug": "chocolate-spread",
+      "icon": "jar",
+      "category": "pantry",
+      "unit": "pack",
+      "name": {
+        "en": "Chocolate Spread",
+        "fr": "Pâte à tartiner",
+        "es": "Crema de chocolate",
+        "de": "Schokoaufstrich",
+        "ar": "شوكولاتة قابلة للدهن"
+      },
+      "image": "images/chocolate-spread.jpg"
+    },
+    {
+      "slug": "pancake-mix",
+      "icon": "packages",
+      "category": "pantry",
+      "unit": "box",
+      "name": {
+        "en": "Pancake Mix",
+        "fr": "Préparation pour pancakes",
+        "es": "Preparado para tortitas",
+        "de": "Pfannkuchenmischung",
+        "ar": "خليط البانكيك"
+      },
+      "image": "images/pancake-mix.jpg"
     },
     {
       "slug": "rice",
@@ -767,60 +893,46 @@
       "image": "images/dried-chickpeas.jpg"
     },
     {
-      "slug": "bread",
-      "icon": "bread",
+      "slug": "cereal",
+      "icon": "bowl",
       "category": "grains-pasta",
-      "unit": "pcs",
+      "unit": "box",
       "name": {
-        "en": "Bread",
-        "fr": "Pain",
-        "es": "Pan",
-        "de": "Brot",
-        "ar": "خبز"
+        "en": "Cereal",
+        "fr": "Céréales",
+        "es": "Cereales",
+        "de": "Frühstücksflocken",
+        "ar": "حبوب الإفطار"
       },
-      "image": "images/bread.jpg"
+      "image": "images/cereal.jpg"
     },
     {
-      "slug": "baguette",
-      "icon": "baguette",
-      "category": "grains-pasta",
-      "unit": "pcs",
-      "name": {
-        "en": "Baguette",
-        "fr": "Baguette",
-        "es": "Baguete",
-        "de": "Baguette",
-        "ar": "خبز باغيت"
-      },
-      "image": "images/baguette.jpg"
-    },
-    {
-      "slug": "pita-bread",
-      "icon": "bread",
+      "slug": "oats",
+      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
-        "en": "Pita Bread",
-        "fr": "Pain pita",
-        "es": "Pan de pita",
-        "de": "Pitabrot",
-        "ar": "خبز عربي"
+        "en": "Oats",
+        "fr": "Flocons d'avoine",
+        "es": "Avena",
+        "de": "Haferflocken",
+        "ar": "شوفان"
       },
-      "image": "images/pita-bread.jpg"
+      "image": "images/oats.jpg"
     },
     {
-      "slug": "tortillas",
-      "icon": "bread",
+      "slug": "granola",
+      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
-        "en": "Tortillas",
-        "fr": "Tortillas",
-        "es": "Tortillas",
-        "de": "Tortillas",
-        "ar": "خبز تورتيلا"
+        "en": "Granola",
+        "fr": "Granola",
+        "es": "Granola",
+        "de": "Granola",
+        "ar": "جرانولا"
       },
-      "image": "images/tortillas.jpg"
+      "image": "images/granola.jpg"
     },
     {
       "slug": "canned-tomatoes",
@@ -1437,118 +1549,6 @@
         "ar": "زنجبيل مطحون"
       },
       "image": "images/ginger-powder.jpg"
-    },
-    {
-      "slug": "cereal",
-      "icon": "bowl",
-      "category": "breakfast",
-      "unit": "box",
-      "name": {
-        "en": "Cereal",
-        "fr": "Céréales",
-        "es": "Cereales",
-        "de": "Frühstücksflocken",
-        "ar": "حبوب الإفطار"
-      },
-      "image": "images/cereal.jpg"
-    },
-    {
-      "slug": "oats",
-      "icon": "bowl",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Oats",
-        "fr": "Flocons d'avoine",
-        "es": "Avena",
-        "de": "Haferflocken",
-        "ar": "شوفان"
-      },
-      "image": "images/oats.jpg"
-    },
-    {
-      "slug": "granola",
-      "icon": "bowl",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Granola",
-        "fr": "Granola",
-        "es": "Granola",
-        "de": "Granola",
-        "ar": "جرانولا"
-      },
-      "image": "images/granola.jpg"
-    },
-    {
-      "slug": "jam",
-      "icon": "jar",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Jam",
-        "fr": "Confiture",
-        "es": "Mermelada",
-        "de": "Marmelade",
-        "ar": "مربى"
-      },
-      "image": "images/jam.jpg"
-    },
-    {
-      "slug": "chocolate-spread",
-      "icon": "jar",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Chocolate Spread",
-        "fr": "Pâte à tartiner",
-        "es": "Crema de chocolate",
-        "de": "Schokoaufstrich",
-        "ar": "شوكولاتة قابلة للدهن"
-      },
-      "image": "images/chocolate-spread.jpg"
-    },
-    {
-      "slug": "pancake-mix",
-      "icon": "packages",
-      "category": "breakfast",
-      "unit": "box",
-      "name": {
-        "en": "Pancake Mix",
-        "fr": "Préparation pour pancakes",
-        "es": "Preparado para tortitas",
-        "de": "Pfannkuchenmischung",
-        "ar": "خليط البانكيك"
-      },
-      "image": "images/pancake-mix.jpg"
-    },
-    {
-      "slug": "croissants",
-      "icon": "bread",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Croissants",
-        "fr": "Croissants",
-        "es": "Cruasanes",
-        "de": "Croissants",
-        "ar": "كرواسون"
-      },
-      "image": "images/croissants.jpg"
-    },
-    {
-      "slug": "bagels",
-      "icon": "bread",
-      "category": "breakfast",
-      "unit": "pack",
-      "name": {
-        "en": "Bagels",
-        "fr": "Bagels",
-        "es": "Bagels",
-        "de": "Bagels",
-        "ar": "خبز بيغل"
-      },
-      "image": "images/bagels.jpg"
     },
     {
       "slug": "olive-oil",

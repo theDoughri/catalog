@@ -44,6 +44,17 @@
     }
   },
   {
+    "slug": "bakery",
+    "icon": "bread",
+    "name": {
+      "en": "Bakery",
+      "fr": "Boulangerie",
+      "es": "Panadería",
+      "de": "Backwaren",
+      "ar": "مخبوزات"
+    }
+  },
+  {
     "slug": "pantry",
     "icon": "packages",
     "name": {
@@ -129,17 +140,6 @@
       "es": "Especias",
       "de": "Gewürze",
       "ar": "بهارات"
-    }
-  },
-  {
-    "slug": "breakfast",
-    "icon": "fried-egg",
-    "name": {
-      "en": "Breakfast",
-      "fr": "Petit-déjeuner",
-      "es": "Desayuno",
-      "de": "Frühstück",
-      "ar": "إفطار"
     }
   },
   {
