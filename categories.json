@@ -44,17 +44,6 @@
     }
   },
   {
-    "slug": "bakery",
-    "icon": "bread",
-    "name": {
-      "en": "Bakery",
-      "fr": "Boulangerie",
-      "es": "Panadería",
-      "de": "Backwaren",
-      "ar": "مخبوزات"
-    }
-  },
-  {
     "slug": "pantry",
     "icon": "packages",
     "name": {

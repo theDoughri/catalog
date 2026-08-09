@@ -8,7 +8,7 @@
     "de": "Offizieller Baggo-Katalog",
     "ar": "كتالوج باغو الرسمي"
   },
-  "version": 2,
+  "version": 3,
   "lists": [
     {
       "slug": "default",
@@ -20,7 +20,7 @@
         "de": "Lebensmittel",
         "ar": "بقالة"
       },
-      "version": 2
+      "version": 3
     }
   ]
 }
