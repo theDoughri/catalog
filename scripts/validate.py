@@ -12,9 +12,11 @@ Checks performed:
      A missing file is a warning, not a failure.
   5. Locales: every name map — and every optional item note — carries a
      non-empty value for all five locales the app ships (en, fr, es, de, ar).
-  6. Note length: no translation of an item note exceeds NOTE_MAX_LENGTH.
-     The app stores a note in a user-editable field with that cap, so a
-     longer one could not be saved again after the shopper touched it.
+  6. Text length: no translation of a category name, item name or item note
+     exceeds the matching *_MAX_LENGTH. The app seeds all three into
+     user-editable fields with those caps, so a longer one is truncated the
+     moment the shopper edits that row. List names are not checked: the app
+     never seeds one into a field.
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
@@ -31,6 +33,14 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA_DIR = os.path.join(REPO_ROOT, "schema")
 REQUIRED_LOCALES = ("en", "fr", "es", "de", "ar")
 IMAGE_SIZE = (1024, 1024)
+
+# Mirrors InputLimits.categoryName in the Baggo app.
+CATEGORY_NAME_MAX_LENGTH = 34
+
+# Mirrors InputLimits.itemName in the Baggo app. Same reasoning as the note
+# cap below: the name is seeded into the field the shopper renames items in,
+# so a longer one is truncated the first time they edit it.
+ITEM_NAME_MAX_LENGTH = 34
 
 # Mirrors InputLimits.note in the Baggo app. A note is seeded into the same
 # field the shopper writes their own notes in, so anything longer would be
@@ -181,14 +191,14 @@ def check_locales(name_map, path: str) -> None:
             error(f"{path}: locale {locale!r} is missing or empty")
 
 
-def check_note_length(note_map, path: str) -> None:
-    if not isinstance(note_map, dict):
+def check_length(text_map, limit: int, path: str) -> None:
+    if not isinstance(text_map, dict):
         return
-    for locale, value in note_map.items():
-        if isinstance(value, str) and len(value) > NOTE_MAX_LENGTH:
+    for locale, value in text_map.items():
+        if isinstance(value, str) and len(value) > limit:
             error(
                 f"{path}: locale {locale!r} is {len(value)} characters, "
-                f"over the {NOTE_MAX_LENGTH} the app can store"
+                f"over the {limit} the app can store"
             )
 
 
@@ -252,6 +262,11 @@ def main() -> int:
             elif isinstance(slug, str):
                 category_slugs.add(slug)
             check_locales(category.get("name"), f"categories.json[{index}].name")
+            check_length(
+                category.get("name"),
+                CATEGORY_NAME_MAX_LENGTH,
+                f"categories.json[{index}].name",
+            )
 
     check_locales(
         root_manifest.get("name") if isinstance(root_manifest, dict) else None,
@@ -315,12 +330,17 @@ def main() -> int:
                 )
 
             check_locales(item.get("name"), f"{item_where}.name")
+            check_length(
+                item.get("name"), ITEM_NAME_MAX_LENGTH, f"{item_where}.name"
+            )
 
             # note is optional, but once present it ships in every locale.
             if "note" in item:
                 stats["notes"] += 1
                 check_locales(item.get("note"), f"{item_where}.note")
-                check_note_length(item.get("note"), f"{item_where}.note")
+                check_length(
+                    item.get("note"), NOTE_MAX_LENGTH, f"{item_where}.note"
+                )
 
             image = item.get("image")
             if isinstance(image, str):
