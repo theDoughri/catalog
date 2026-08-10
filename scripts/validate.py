@@ -12,6 +12,9 @@ Checks performed:
      A missing file is a warning, not a failure.
   5. Locales: every name map — and every optional item note — carries a
      non-empty value for all five locales the app ships (en, fr, es, de, ar).
+  6. Note length: no translation of an item note exceeds NOTE_MAX_LENGTH.
+     The app stores a note in a user-editable field with that cap, so a
+     longer one could not be saved again after the shopper touched it.
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
@@ -28,6 +31,13 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA_DIR = os.path.join(REPO_ROOT, "schema")
 REQUIRED_LOCALES = ("en", "fr", "es", "de", "ar")
 IMAGE_SIZE = (1024, 1024)
+
+# Mirrors InputLimits.note in the Baggo app. A note is seeded into the same
+# field the shopper writes their own notes in, so anything longer would be
+# truncated the moment they edited that item. Translations run longer than
+# the English they came from — French and German especially — so the cap is
+# checked per locale, not on the source text.
+NOTE_MAX_LENGTH = 144
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -171,6 +181,17 @@ def check_locales(name_map, path: str) -> None:
             error(f"{path}: locale {locale!r} is missing or empty")
 
 
+def check_note_length(note_map, path: str) -> None:
+    if not isinstance(note_map, dict):
+        return
+    for locale, value in note_map.items():
+        if isinstance(value, str) and len(value) > NOTE_MAX_LENGTH:
+            error(
+                f"{path}: locale {locale!r} is {len(value)} characters, "
+                f"over the {NOTE_MAX_LENGTH} the app can store"
+            )
+
+
 def check_image(image_path: str, item_slug: str, list_dir: str, stats: dict) -> None:
     full = os.path.join(REPO_ROOT, list_dir, image_path)
     if not os.path.isfile(full):
@@ -299,6 +320,7 @@ def main() -> int:
             if "note" in item:
                 stats["notes"] += 1
                 check_locales(item.get("note"), f"{item_where}.note")
+                check_note_length(item.get("note"), f"{item_where}.note")
 
             image = item.get("image")
             if isinstance(image, str):
