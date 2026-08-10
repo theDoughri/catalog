@@ -36,6 +36,13 @@
         "de": "Bananen",
         "ar": "موز"
       },
+      "note": {
+        "en": "Bananas ripen the fruit around them — store them on their own.",
+        "fr": "Les bananes font mûrir les fruits voisins : rangez-les à part.",
+        "es": "Los plátanos maduran la fruta cercana: guárdalos aparte.",
+        "de": "Bananen lassen anderes Obst schneller reifen — getrennt lagern.",
+        "ar": "الموز يسرّع نضج الفواكه المجاورة، لذا احفظه بمفرده."
+      },
       "image": "images/bananas.jpg"
     },
     {
@@ -106,6 +113,13 @@
         "de": "Avocados",
         "ar": "أفوكادو"
       },
+      "note": {
+        "en": "Buy some ripe and some firm; ripen at room temperature, then chill.",
+        "fr": "Achetez-en des mûrs et des fermes : laissez mûrir à température ambiante, puis au frais.",
+        "es": "Compra unos maduros y otros firmes: madúralos a temperatura ambiente y luego refrigéralos.",
+        "de": "Reife und feste mischen: bei Raumtemperatur nachreifen lassen, dann kühlen.",
+        "ar": "اشترِ بعضه ناضجًا وبعضه صلبًا: اتركه ينضج في حرارة الغرفة ثم ضعه في الثلاجة."
+      },
       "image": "images/avocados.jpg"
     },
     {
@@ -119,6 +133,13 @@
         "es": "Tomates",
         "de": "Tomaten",
         "ar": "طماطم"
+      },
+      "note": {
+        "en": "Keep them at room temperature — the fridge dulls their flavour.",
+        "fr": "À conserver à température ambiante : le froid casse leur goût.",
+        "es": "Guárdalos a temperatura ambiente: la nevera les quita sabor.",
+        "de": "Bei Raumtemperatur lagern — im Kühlschrank verlieren sie Aroma.",
+        "ar": "احفظها في حرارة الغرفة، فالثلاجة تُفقدها نكهتها."
       },
       "image": "images/tomatoes.jpg"
     },
@@ -162,6 +183,13 @@
         "de": "Kartoffeln",
         "ar": "بطاطس"
       },
+      "note": {
+        "en": "Store somewhere cool and dark, and never beside onions.",
+        "fr": "Conservez-les au frais et à l'abri de la lumière, jamais à côté des oignons.",
+        "es": "Guárdalas en un lugar fresco y oscuro, nunca junto a las cebollas.",
+        "de": "Kühl und dunkel lagern, nie neben Zwiebeln.",
+        "ar": "خزّنها في مكان بارد ومظلم، وبعيدًا عن البصل."
+      },
       "image": "images/potatoes.jpg"
     },
     {
@@ -189,6 +217,13 @@
         "es": "Ajo",
         "de": "Knoblauch",
         "ar": "ثوم"
+      },
+      "note": {
+        "en": "Pick firm bulbs with tight skin; they keep for months somewhere dry and airy.",
+        "fr": "Choisissez des têtes fermes à peau serrée : elles se gardent des mois au sec et à l'air.",
+        "es": "Elige cabezas firmes de piel apretada: duran meses en un sitio seco y aireado.",
+        "de": "Feste Knollen mit straffer Schale wählen — trocken und luftig halten sie monatelang.",
+        "ar": "اختر رؤوسًا صلبة بقشرة محكمة؛ تبقى أشهرًا في مكان جاف جيد التهوية."
       },
       "image": "images/garlic.jpg"
     },
@@ -232,6 +267,13 @@
         "de": "Spinat",
         "ar": "سبانخ"
       },
+      "note": {
+        "en": "Wash and dry it well before storing; leftover water makes it wilt.",
+        "fr": "Lavez-les et séchez-les bien avant de les ranger : l'humidité les fait faner.",
+        "es": "Lávalas y sécalas bien antes de guardarlas: la humedad las marchita.",
+        "de": "Vor dem Lagern gut waschen und trocknen — Restfeuchte lässt ihn welken.",
+        "ar": "اغسله وجفّفه جيدًا قبل التخزين، فالرطوبة تجعله يذبل."
+      },
       "image": "images/spinach.jpg"
     },
     {
@@ -259,6 +301,13 @@
         "es": "Champiñones",
         "de": "Champignons",
         "ar": "فطر"
+      },
+      "note": {
+        "en": "Keep them in paper rather than plastic, and wipe them clean instead of soaking.",
+        "fr": "Conservez-les dans du papier plutôt que du plastique, et essuyez-les au lieu de les tremper.",
+        "es": "Guárdalos en papel en vez de plástico y límpialos con un paño en lugar de remojarlos.",
+        "de": "In Papier statt Plastik aufbewahren und abwischen statt einweichen.",
+        "ar": "احفظه في ورق لا في بلاستيك، وامسحه بدل نقعه في الماء."
       },
       "image": "images/mushrooms.jpg"
     },
@@ -288,6 +337,13 @@
         "de": "Milch",
         "ar": "حليب"
       },
+      "note": {
+        "en": "Store it at the back of the fridge, not in the door where it warms up.",
+        "fr": "Rangez-le au fond du réfrigérateur, pas dans la porte où il se réchauffe.",
+        "es": "Guárdala al fondo de la nevera, no en la puerta, donde se calienta.",
+        "de": "Hinten im Kühlschrank lagern, nicht in der Tür, wo es wärmer ist.",
+        "ar": "ضعه في عمق الثلاجة لا في بابها حيث ترتفع الحرارة."
+      },
       "image": "images/milk.jpg"
     },
     {
@@ -301,6 +357,13 @@
         "es": "Huevos",
         "de": "Eier",
         "ar": "بيض"
+      },
+      "note": {
+        "en": "Keep them in their carton — it shields them from odours and knocks.",
+        "fr": "Gardez-les dans leur boîte : elle les protège des odeurs et des chocs.",
+        "es": "Guárdalos en su envase: los protege de olores y golpes.",
+        "de": "Im Karton lassen — er schützt vor Gerüchen und Stößen.",
+        "ar": "احفظه في عبوته؛ فهي تحميه من الروائح والصدمات."
       },
       "image": "images/eggs.jpg"
     },
@@ -400,6 +463,13 @@
         "de": "Hähnchenbrust",
         "ar": "صدور دجاج"
       },
+      "note": {
+        "en": "Store it on the bottom shelf so it cannot drip, and freeze what you will not cook within two days.",
+        "fr": "Placez-le sur l'étagère du bas pour éviter les gouttes, et congelez ce que vous ne cuisinerez pas sous deux jours.",
+        "es": "Ponlo en el estante inferior para que no gotee y congela lo que no vayas a cocinar en dos días.",
+        "de": "Ins unterste Fach legen, damit nichts tropft; was nicht binnen zwei Tagen gekocht wird, einfrieren.",
+        "ar": "ضعه في الرف السفلي كي لا يقطر على غيره، وجمّد ما لن تطبخه خلال يومين."
+      },
       "image": "images/chicken-breast.jpg"
     },
     {
@@ -413,6 +483,13 @@
         "es": "Carne picada de res",
         "de": "Rinderhackfleisch",
         "ar": "لحم بقري مفروم"
+      },
+      "note": {
+        "en": "Use or freeze it the day you buy it — it spoils faster than whole cuts.",
+        "fr": "À utiliser ou à congeler le jour de l'achat : il s'altère plus vite qu'une pièce entière.",
+        "es": "Úsala o congélala el mismo día: se estropea antes que las piezas enteras.",
+        "de": "Am Kauftag verbrauchen oder einfrieren — verdirbt schneller als ganze Stücke.",
+        "ar": "استخدمه أو جمّده يوم شرائه، فهو يفسد أسرع من القطع الكاملة."
       },
       "image": "images/ground-beef.jpg"
     },
@@ -498,6 +575,13 @@
         "de": "Garnelen",
         "ar": "روبيان"
       },
+      "note": {
+        "en": "Frozen shrimp are often fresher than the thawed ones on the counter.",
+        "fr": "Les crevettes surgelées sont souvent plus fraîches que celles décongelées à l'étal.",
+        "es": "Los langostinos congelados suelen ser más frescos que los descongelados del mostrador.",
+        "de": "Tiefgekühlte Garnelen sind oft frischer als aufgetaute an der Theke.",
+        "ar": "الروبيان المجمّد غالبًا أطزج من المذاب المعروض على الطاولة."
+      },
       "image": "images/shrimp.jpg"
     },
     {
@@ -511,6 +595,13 @@
         "es": "Lubina",
         "de": "Wolfsbarsch",
         "ar": "قاروص"
+      },
+      "note": {
+        "en": "Fresh fish smells of the sea, with clear eyes and firm flesh.",
+        "fr": "Un poisson frais sent la mer : l'œil est clair et la chair ferme.",
+        "es": "El pescado fresco huele a mar, con ojos claros y carne firme.",
+        "de": "Frischer Fisch riecht nach Meer, hat klare Augen und festes Fleisch.",
+        "ar": "السمك الطازج تفوح منه رائحة البحر، وعيناه صافيتان ولحمه متماسك."
       },
       "image": "images/sea-bass.jpg"
     },
@@ -540,6 +631,13 @@
         "de": "Brot",
         "ar": "خبز"
       },
+      "note": {
+        "en": "A bread box or paper bag keeps it better than the fridge, which stales it faster.",
+        "fr": "Une huche ou un sac en papier le conserve mieux que le réfrigérateur, qui le rassit plus vite.",
+        "es": "Una panera o una bolsa de papel lo conserva mejor que la nevera, que lo endurece antes.",
+        "de": "Brotkasten oder Papiertüte halten es besser frisch als der Kühlschrank, in dem es schneller altbacken wird.",
+        "ar": "صندوق الخبز أو كيس ورقي يحفظه أفضل من الثلاجة التي تجعله يابسًا أسرع."
+      },
       "image": "images/bread.jpg"
     },
     {
@@ -553,6 +651,13 @@
         "es": "Baguete",
         "de": "Baguette",
         "ar": "خبز باغيت"
+      },
+      "note": {
+        "en": "Best the day it is baked; freeze the rest and revive it in a hot oven.",
+        "fr": "Meilleure le jour même : congelez le reste et réchauffez-la au four bien chaud.",
+        "es": "Mejor el mismo día: congela el resto y reanímala en el horno caliente.",
+        "de": "Am Backtag am besten — Reste einfrieren und im heißen Ofen aufbacken.",
+        "ar": "ألذّ في يوم خبزها؛ جمّد الباقي وأعِد تسخينه في فرن ساخن."
       },
       "image": "images/baguette.jpg"
     },
@@ -638,6 +743,13 @@
         "de": "Mehl",
         "ar": "دقيق"
       },
+      "note": {
+        "en": "Store it airtight; wholemeal flour keeps longer in the fridge.",
+        "fr": "Conservez-la hermétiquement ; la farine complète se garde plus longtemps au réfrigérateur.",
+        "es": "Guárdala en un recipiente hermético; la integral dura más en la nevera.",
+        "de": "Luftdicht lagern; Vollkornmehl hält im Kühlschrank länger.",
+        "ar": "احفظه في وعاء محكم؛ ودقيق القمح الكامل يدوم أطول في الثلاجة."
+      },
       "image": "images/flour.jpg"
     },
     {
@@ -666,6 +778,13 @@
         "de": "Backpulver",
         "ar": "مسحوق الخبز"
       },
+      "note": {
+        "en": "It fades once opened — a spoonful in hot water should fizz.",
+        "fr": "Elle perd son effet une fois ouverte : une cuillère dans l'eau chaude doit mousser.",
+        "es": "Pierde fuerza tras abrirse: una cucharada en agua caliente debe burbujear.",
+        "de": "Verliert nach dem Öffnen an Kraft — ein Löffel in heißem Wasser muss sprudeln.",
+        "ar": "يفقد فعاليته بعد فتحه؛ وملعقة منه في ماء ساخن يجب أن تفور."
+      },
       "image": "images/baking-powder.jpg"
     },
     {
@@ -679,6 +798,13 @@
         "es": "Miel",
         "de": "Honig",
         "ar": "عسل"
+      },
+      "note": {
+        "en": "Crystallised honey is not spoiled — stand the jar in warm water.",
+        "fr": "Un miel cristallisé n'est pas gâté : plongez le pot dans de l'eau tiède.",
+        "es": "La miel cristalizada no está estropeada: pon el tarro en agua tibia.",
+        "de": "Kristallisierter Honig ist nicht verdorben — das Glas in warmes Wasser stellen.",
+        "ar": "تبلور العسل لا يعني فساده؛ ضع البرطمان في ماء دافئ."
       },
       "image": "images/honey.jpg"
     },
@@ -707,6 +833,13 @@
         "es": "Levadura",
         "de": "Hefe",
         "ar": "خميرة"
+      },
+      "note": {
+        "en": "Check the date before buying, and keep opened sachets in the fridge.",
+        "fr": "Vérifiez la date avant d'acheter et gardez les sachets entamés au réfrigérateur.",
+        "es": "Comprueba la fecha antes de comprar y guarda los sobres abiertos en la nevera.",
+        "de": "Vor dem Kauf das Datum prüfen und angebrochene Tütchen im Kühlschrank lagern.",
+        "ar": "تحقق من تاريخ الصلاحية قبل الشراء، واحفظ الأكياس المفتوحة في الثلاجة."
       },
       "image": "images/yeast.jpg"
     },
@@ -777,6 +910,13 @@
         "es": "Arroz",
         "de": "Reis",
         "ar": "أرز"
+      },
+      "note": {
+        "en": "Rinse it until the water runs clear for separate, fluffy grains.",
+        "fr": "Rincez-le jusqu'à ce que l'eau soit claire pour des grains bien détachés.",
+        "es": "Enjuágalo hasta que el agua salga clara para lograr granos sueltos.",
+        "de": "Spülen, bis das Wasser klar ist — so bleiben die Körner locker.",
+        "ar": "اغسله حتى يصفو الماء لتحصل على حبات منفصلة هشّة."
       },
       "image": "images/rice.jpg"
     },
@@ -890,6 +1030,13 @@
         "de": "Getrocknete Kichererbsen",
         "ar": "حمص جاف"
       },
+      "note": {
+        "en": "Soak them overnight; older packs need noticeably longer to cook.",
+        "fr": "Faites-les tremper une nuit ; les paquets anciens cuisent nettement plus longtemps.",
+        "es": "Ponlos a remojo toda la noche; los paquetes viejos tardan bastante más en cocerse.",
+        "de": "Über Nacht einweichen; ältere Packungen brauchen deutlich länger.",
+        "ar": "انقعه ليلة كاملة؛ والعبوات القديمة تحتاج وقت طهي أطول بكثير."
+      },
       "image": "images/dried-chickpeas.jpg"
     },
     {
@@ -974,6 +1121,13 @@
         "de": "Thunfisch aus der Dose",
         "ar": "تونة معلبة"
       },
+      "note": {
+        "en": "In olive oil for salads, in water when you want it lighter.",
+        "fr": "À l'huile d'olive pour les salades, au naturel pour plus de légèreté.",
+        "es": "En aceite de oliva para ensaladas, al natural si lo quieres más ligero.",
+        "de": "In Olivenöl für Salate, im eigenen Saft, wenn es leichter sein soll.",
+        "ar": "بزيت الزيتون للسلطات، وبالماء إن أردته أخفّ."
+      },
       "image": "images/canned-tuna.jpg"
     },
     {
@@ -1001,6 +1155,13 @@
         "es": "Alubias en lata",
         "de": "Bohnen aus der Dose",
         "ar": "فاصولياء معلبة"
+      },
+      "note": {
+        "en": "Rinse them before use to wash off the salty canning liquid.",
+        "fr": "Rincez-les avant usage pour éliminer le jus de conserve salé.",
+        "es": "Enjuágalas antes de usarlas para quitar el líquido salado de la lata.",
+        "de": "Vor dem Verwenden abspülen, um die salzige Lake zu entfernen.",
+        "ar": "اشطفه قبل الاستعمال للتخلص من ماء التعليب المالح."
       },
       "image": "images/canned-beans.jpg"
     },
@@ -1044,6 +1205,13 @@
         "de": "Tiefkühlerbsen",
         "ar": "بازلاء مجمدة"
       },
+      "note": {
+        "en": "Cook them straight from the bag — thawing first turns them mushy.",
+        "fr": "Cuisez-les directement congelés : décongelés, ils deviennent mous.",
+        "es": "Cocínalos directamente congelados: si los descongelas quedan blandos.",
+        "de": "Direkt gefroren garen — aufgetaut werden sie matschig.",
+        "ar": "اطبخه مجمّدًا مباشرة، فإذابته أولًا تجعله طريًا مهروسًا."
+      },
       "image": "images/frozen-peas.jpg"
     },
     {
@@ -1085,6 +1253,13 @@
         "es": "Helado",
         "de": "Eiscreme",
         "ar": "آيس كريم"
+      },
+      "note": {
+        "en": "Keep it at the back of the freezer; by the door it thaws and refreezes.",
+        "fr": "Rangez-la au fond du congélateur : près de la porte, elle fond et regèle.",
+        "es": "Guárdalo al fondo del congelador: en la puerta se descongela y se vuelve a congelar.",
+        "de": "Hinten im Gefrierfach lagern — an der Tür taut es an und friert wieder.",
+        "ar": "ضعه في عمق الفريزر؛ فعند الباب يذوب ويتجمد من جديد."
       },
       "image": "images/ice-cream.jpg"
     },
@@ -1198,6 +1373,13 @@
         "de": "Nussmischung",
         "ar": "مكسرات مشكلة"
       },
+      "note": {
+        "en": "Nuts turn rancid — buy small bags and keep them cool and dark.",
+        "fr": "Les fruits secs rancissent : achetez de petits sachets et gardez-les au frais, à l'abri de la lumière.",
+        "es": "Los frutos secos se enrancian: compra bolsas pequeñas y guárdalos frescos y a oscuras.",
+        "de": "Nüsse werden ranzig — kleine Tüten kaufen und kühl und dunkel lagern.",
+        "ar": "المكسرات تزنخ؛ اشترِ أكياسًا صغيرة واحفظها في مكان بارد ومظلم."
+      },
       "image": "images/mixed-nuts.jpg"
     },
     {
@@ -1296,6 +1478,13 @@
         "de": "Kaffee",
         "ar": "قهوة"
       },
+      "note": {
+        "en": "Whole beans hold their aroma; grind just before brewing and store airtight.",
+        "fr": "Les grains entiers gardent leur arôme : moulez juste avant de préparer et conservez à l'abri de l'air.",
+        "es": "El grano entero conserva el aroma: muélelo justo antes de preparar y guárdalo hermético.",
+        "de": "Ganze Bohnen halten das Aroma — erst vor dem Brühen mahlen und luftdicht lagern.",
+        "ar": "الحبوب الكاملة تحفظ النكهة؛ اطحنها قبل التحضير مباشرة واحفظها في وعاء محكم."
+      },
       "image": "images/coffee.jpg"
     },
     {
@@ -1309,6 +1498,13 @@
         "es": "Té",
         "de": "Tee",
         "ar": "شاي"
+      },
+      "note": {
+        "en": "Store it away from spices — tea takes on the smells around it.",
+        "fr": "Rangez-le loin des épices : le thé capte les odeurs environnantes.",
+        "es": "Guárdalo lejos de las especias: el té absorbe los olores.",
+        "de": "Fern von Gewürzen lagern — Tee nimmt Gerüche an.",
+        "ar": "احفظه بعيدًا عن البهارات، فالشاي يمتصّ الروائح المحيطة."
       },
       "image": "images/tea.jpg"
     },
@@ -1351,6 +1547,13 @@
         "es": "Mayonesa",
         "de": "Mayonnaise",
         "ar": "مايونيز"
+      },
+      "note": {
+        "en": "Refrigerate it once opened and use it within a couple of months.",
+        "fr": "À réfrigérer après ouverture et à consommer dans les deux mois.",
+        "es": "Refrigérala una vez abierta y consúmela en un par de meses.",
+        "de": "Nach dem Öffnen kühlen und innerhalb von zwei Monaten aufbrauchen.",
+        "ar": "ضعه في الثلاجة بعد الفتح واستهلكه خلال شهرين."
       },
       "image": "images/mayonnaise.jpg"
     },
@@ -1422,6 +1625,13 @@
         "de": "Tahini",
         "ar": "طحينة"
       },
+      "note": {
+        "en": "Separation is normal — stir the oil back in before using it.",
+        "fr": "La séparation est normale : remuez pour réincorporer l'huile avant usage.",
+        "es": "Que se separe es normal: remueve para reintegrar el aceite antes de usarlo.",
+        "de": "Das Absetzen ist normal — das Öl vor Gebrauch wieder unterrühren.",
+        "ar": "انفصال الزيت أمر طبيعي؛ قلّبه جيدًا قبل الاستعمال."
+      },
       "image": "images/tahini.jpg"
     },
     {
@@ -1435,6 +1645,13 @@
         "es": "Pimienta negra",
         "de": "Schwarzer Pfeffer",
         "ar": "فلفل أسود"
+      },
+      "note": {
+        "en": "Whole peppercorns hold their aroma far longer than ready-ground pepper.",
+        "fr": "Les grains entiers conservent leur arôme bien plus longtemps que le poivre déjà moulu.",
+        "es": "Los granos enteros conservan el aroma mucho más que la pimienta ya molida.",
+        "de": "Ganze Körner halten das Aroma weit länger als fertig gemahlener Pfeffer.",
+        "ar": "حبات الفلفل الكاملة تحتفظ بنكهتها أطول بكثير من المطحون الجاهز."
       },
       "image": "images/black-pepper.jpg"
     },
@@ -1463,6 +1680,13 @@
         "es": "Pimentón",
         "de": "Paprikapulver",
         "ar": "بابريكا"
+      },
+      "note": {
+        "en": "Ground spices fade within a year — buy small packs and keep them dark.",
+        "fr": "Les épices moulues s'affadissent en un an : achetez de petits sachets et gardez-les à l'abri de la lumière.",
+        "es": "Las especias molidas pierden fuerza en un año: compra paquetes pequeños y guárdalas a oscuras.",
+        "de": "Gemahlene Gewürze lassen binnen eines Jahres nach — kleine Packungen kaufen und dunkel lagern.",
+        "ar": "البهارات المطحونة تفقد نكهتها خلال سنة؛ اشترِ عبوات صغيرة واحفظها بعيدًا عن الضوء."
       },
       "image": "images/paprika.jpg"
     },
@@ -1561,6 +1785,13 @@
         "es": "Aceite de oliva",
         "de": "Olivenöl",
         "ar": "زيت زيتون"
+      },
+      "note": {
+        "en": "Choose dark glass and store it away from the stove; heat and light spoil it.",
+        "fr": "Choisissez une bouteille en verre foncé et éloignez-la des plaques : chaleur et lumière l'abîment.",
+        "es": "Elígelo en vidrio oscuro y guárdalo lejos del fuego: el calor y la luz lo estropean.",
+        "de": "Dunkles Glas wählen und fern vom Herd lagern — Hitze und Licht verderben es.",
+        "ar": "اختره في زجاج داكن واحفظه بعيدًا عن الموقد، فالحرارة والضوء يفسدانه."
       },
       "image": "images/olive-oil.jpg"
     },

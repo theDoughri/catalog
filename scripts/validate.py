@@ -10,8 +10,8 @@ Checks performed:
      own slug matches.
   4. Images: an item.image that EXISTS must be JPEG and exactly 1024x1024.
      A missing file is a warning, not a failure.
-  5. Locales: every name map carries a non-empty value for all five locales
-     the app ships (en, fr, es, de, ar).
+  5. Locales: every name map — and every optional item note — carries a
+     non-empty value for all five locales the app ships (en, fr, es, de, ar).
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
@@ -214,7 +214,7 @@ def main() -> int:
     categories = load_json("categories.json")
 
     if errors:
-        return report(0, 0, {"present": 0, "missing": 0})
+        return report(0, 0, {"present": 0, "missing": 0, "notes": 0})
 
     validate_schema(root_manifest, root_schema, root_schema, "manifest.json")
     validate_schema(categories, categories_schema, categories_schema, "categories.json")
@@ -238,7 +238,7 @@ def main() -> int:
     )
 
     # Lists: unique slugs, resolvable paths, then per-list validation.
-    stats = {"present": 0, "missing": 0}
+    stats = {"present": 0, "missing": 0, "notes": 0}
     item_total = 0
     list_slugs: set[str] = set()
     entries = root_manifest.get("lists", []) if isinstance(root_manifest, dict) else []
@@ -295,6 +295,11 @@ def main() -> int:
 
             check_locales(item.get("name"), f"{item_where}.name")
 
+            # note is optional, but once present it ships in every locale.
+            if "note" in item:
+                stats["notes"] += 1
+                check_locales(item.get("note"), f"{item_where}.note")
+
             image = item.get("image")
             if isinstance(image, str):
                 check_image(image, str(item_slug), list_dir, stats)
@@ -314,6 +319,7 @@ def report(item_count: int, category_count: int, stats: dict) -> int:
     print(f"  categories         {category_count}")
     print(f"  images present     {stats['present']}")
     print(f"  images missing     {stats['missing']}")
+    print(f"  items with notes   {stats['notes']}")
     print(f"  warnings           {len(warnings)}")
     print(f"  errors             {len(errors)}")
 

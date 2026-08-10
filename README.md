@@ -33,6 +33,14 @@ stay required.
 **Categories are global.** `categories.json` is shared by every list. An item's
 `category` must resolve to a slug defined there.
 
+**Notes are optional, but complete.** An item may carry a `note`: one short
+buying or storage tip, as a locale map with the same shape and the same
+required locales as `name`. Most items have none — a note earns its place only
+when it tells the shopper something the item name does not (how to pick a ripe
+one, where it keeps best, what to do before cooking). It is a single plain
+sentence, no markup and no line breaks, written to fit under the item in the
+app. Clients must render an item with no `note` exactly as before.
+
 **Icons are semantic.** An icon name describes the depicted thing (`carrot`,
 `jar`, `bottle`), not a specific glyph in a specific font, so the app can
 re-point a name to a better glyph without touching this repo. Names come from

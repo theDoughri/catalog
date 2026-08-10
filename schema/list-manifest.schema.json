@@ -43,6 +43,9 @@
           "name": {
             "$ref": "#/$defs/localizedName"
           },
+          "note": {
+            "$ref": "#/$defs/localizedName"
+          },
           "image": {
             "type": "string",
             "pattern": "^images/[a-z0-9]+(-[a-z0-9]+)*\\.jpg$"
