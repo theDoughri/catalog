@@ -3,6 +3,17 @@
 Data-only repository for the item catalog shipped with the Baggo shopping list
 app: JSON manifests plus item images. No application code lives here.
 
+## Branching
+
+git flow (https://nvie.com/posts/a-successful-git-branching-model/): work lands
+on `develop`, `main` holds released catalog only. Feature branches come off
+`develop`; a release branch merges into `main` and back into `develop`.
+
+**A merge to `main` is the release, in the literal sense.** The app fetches
+`raw.githubusercontent.com/theDoughri/catalog/main/`, so nothing on `develop`
+reaches a device. Bump the `version` integer in the root and list manifests on
+the release branch, because that number, not the tag, is what clients compare.
+
 ## Layout
 
 ```
