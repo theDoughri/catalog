@@ -13,7 +13,7 @@
     {
       "slug": "apples",
       "icon": "apple",
-      "category": "produce",
+      "category": "fruits",
       "unit": "kg",
       "name": {
         "en": "Apples",
@@ -27,7 +27,7 @@
     {
       "slug": "bananas",
       "icon": "apple",
-      "category": "produce",
+      "category": "fruits",
       "unit": "kg",
       "name": {
         "en": "Bananas",
@@ -48,7 +48,7 @@
     {
       "slug": "oranges",
       "icon": "orange",
-      "category": "produce",
+      "category": "fruits",
       "unit": "kg",
       "name": {
         "en": "Oranges",
@@ -62,7 +62,7 @@
     {
       "slug": "lemons",
       "icon": "orange",
-      "category": "produce",
+      "category": "fruits",
       "unit": "pcs",
       "name": {
         "en": "Lemons",
@@ -76,7 +76,7 @@
     {
       "slug": "strawberries",
       "icon": "apple",
-      "category": "produce",
+      "category": "fruits",
       "unit": "pack",
       "name": {
         "en": "Strawberries",
@@ -90,7 +90,7 @@
     {
       "slug": "grapes",
       "icon": "apple",
-      "category": "produce",
+      "category": "fruits",
       "unit": "kg",
       "name": {
         "en": "Grapes",
@@ -104,7 +104,7 @@
     {
       "slug": "avocados",
       "icon": "apple",
-      "category": "produce",
+      "category": "fruits",
       "unit": "pcs",
       "name": {
         "en": "Avocados",
@@ -125,7 +125,7 @@
     {
       "slug": "tomatoes",
       "icon": "pepper",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "kg",
       "name": {
         "en": "Tomatoes",
@@ -146,7 +146,7 @@
     {
       "slug": "cucumbers",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pcs",
       "name": {
         "en": "Cucumbers",
@@ -160,7 +160,7 @@
     {
       "slug": "carrots",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "kg",
       "name": {
         "en": "Carrots",
@@ -174,7 +174,7 @@
     {
       "slug": "potatoes",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "kg",
       "name": {
         "en": "Potatoes",
@@ -195,7 +195,7 @@
     {
       "slug": "onions",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "kg",
       "name": {
         "en": "Onions",
@@ -209,7 +209,7 @@
     {
       "slug": "garlic",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pcs",
       "name": {
         "en": "Garlic",
@@ -230,7 +230,7 @@
     {
       "slug": "bell-peppers",
       "icon": "pepper",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pcs",
       "name": {
         "en": "Bell Peppers",
@@ -244,7 +244,7 @@
     {
       "slug": "lettuce",
       "icon": "plant",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pcs",
       "name": {
         "en": "Lettuce",
@@ -258,7 +258,7 @@
     {
       "slug": "spinach",
       "icon": "plant",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pack",
       "name": {
         "en": "Spinach",
@@ -279,7 +279,7 @@
     {
       "slug": "broccoli",
       "icon": "plant",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pcs",
       "name": {
         "en": "Broccoli",
@@ -293,7 +293,7 @@
     {
       "slug": "mushrooms",
       "icon": "plant",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "pack",
       "name": {
         "en": "Mushrooms",
@@ -314,7 +314,7 @@
     {
       "slug": "zucchini",
       "icon": "carrot",
-      "category": "produce",
+      "category": "vegetables",
       "unit": "kg",
       "name": {
         "en": "Zucchini",
