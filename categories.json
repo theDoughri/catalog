@@ -1,13 +1,24 @@
 [
   {
-    "slug": "produce",
+    "slug": "fruits",
+    "icon": "apple",
+    "name": {
+      "en": "Fruits",
+      "fr": "Fruits",
+      "es": "Frutas",
+      "de": "Obst",
+      "ar": "فواكه"
+    }
+  },
+  {
+    "slug": "vegetables",
     "icon": "carrot",
     "name": {
-      "en": "Produce",
-      "fr": "Fruits et légumes",
-      "es": "Frutas y verduras",
-      "de": "Obst & Gemüse",
-      "ar": "خضار وفواكه"
+      "en": "Vegetables",
+      "fr": "Légumes",
+      "es": "Verduras",
+      "de": "Gemüse",
+      "ar": "خضار"
     }
   },
   {
