@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
-"""Validate the Baggo official catalog.
+"""Validate a Baggo catalog.
+
+A catalog is one manifest.json at the repository root and an images/ folder
+beside it. Nothing else is read.
 
 Checks performed:
-  1. manifest.json, categories.json and every list manifest parse and validate
-     against their JSON Schema in schema/.
-  2. Slug uniqueness: items within a list, categories globally, lists globally.
-  3. Referential integrity: item.category exists in categories.json, and every
-     list entry in the root manifest points to an existing manifest file whose
-     own slug matches.
+  1. manifest.json parses and validates against schema/manifest.schema.json.
+  2. Slug uniqueness: categories and items each have their own namespace.
+  3. Referential integrity: every item.category resolves to a category
+     declared in the same file.
   4. Images: an item.image that EXISTS must be JPEG and exactly 1024x1024.
-     A missing file is a warning, not a failure.
+     A missing file is a warning, not a failure — the app falls back to the
+     item's icon, and thumbnails are the app's business, not this repo's.
   5. Locales: every name map — and every optional item note — carries a
      non-empty value for all five locales the app ships (en, fr, es, de, ar).
   6. Text length: no translation of a category name, item name or item note
      exceeds the matching *_MAX_LENGTH. The app seeds all three into
      user-editable fields with those caps, so a longer one is truncated the
-     moment the shopper edits that row. List names are not checked: the app
-     never seeds one into a field.
+     moment the shopper edits that row. The catalog name is not checked: the
+     app never seeds it into a field.
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
 """
-
 from __future__ import annotations
 
 import json
@@ -202,11 +203,12 @@ def check_length(text_map, limit: int, path: str) -> None:
             )
 
 
-def check_image(image_path: str, item_slug: str, list_dir: str, stats: dict) -> None:
-    full = os.path.join(REPO_ROOT, list_dir, image_path)
+def check_image(image_path: str, item_slug: str, stats: dict) -> None:
+    """Verify one item photo. Paths are relative to the manifest, at the root."""
+    full = os.path.join(REPO_ROOT, image_path)
     if not os.path.isfile(full):
         stats["missing"] += 1
-        warn(f"{list_dir}/{image_path}: image for {item_slug!r} not present yet")
+        warn(f"{image_path}: image for {item_slug!r} not present yet")
         return
 
     stats["present"] += 1
@@ -224,129 +226,85 @@ def check_image(image_path: str, item_slug: str, list_dir: str, stats: dict) -> 
             fmt = image.format
             size = image.size
     except Exception as exc:  # noqa: BLE001 - any decode failure is a hard error
-        error(f"{list_dir}/{image_path}: cannot be read as an image ({exc})")
+        error(f"{image_path}: cannot be read as an image ({exc})")
         return
 
     if fmt != "JPEG":
-        error(f"{list_dir}/{image_path}: expected JPEG, got {fmt}")
+        error(f"{image_path}: expected JPEG, got {fmt}")
     if size != IMAGE_SIZE:
         error(
-            f"{list_dir}/{image_path}: expected "
+            f"{image_path}: expected "
             f"{IMAGE_SIZE[0]}x{IMAGE_SIZE[1]}, got {size[0]}x{size[1]}"
         )
 
 
 def main() -> int:
-    root_schema = load_schema("root-manifest.schema.json")
-    categories_schema = load_schema("categories.schema.json")
-    list_schema = load_schema("list-manifest.schema.json")
+    schema = load_schema("manifest.schema.json")
+    manifest = load_json("manifest.json")
 
-    root_manifest = load_json("manifest.json")
-    categories = load_json("categories.json")
-
+    stats = {"present": 0, "missing": 0, "notes": 0}
     if errors:
-        return report(0, 0, {"present": 0, "missing": 0, "notes": 0})
+        return report(0, 0, stats)
 
-    validate_schema(root_manifest, root_schema, root_schema, "manifest.json")
-    validate_schema(categories, categories_schema, categories_schema, "categories.json")
+    validate_schema(manifest, schema, schema, "manifest.json")
+    if not isinstance(manifest, dict):
+        return report(0, 0, stats)
 
-    # Categories: unique slugs, complete locales.
+    check_locales(manifest.get("name"), "manifest.json.name")
+
+    # Categories: unique slugs, complete locales, names the app can store.
     category_slugs: set[str] = set()
+    categories = manifest.get("categories", [])
     if isinstance(categories, list):
         for index, category in enumerate(categories):
             if not isinstance(category, dict):
                 continue
+            where = f"manifest.json.categories[{index}]"
             slug = category.get("slug")
             if slug in category_slugs:
-                error(f"categories.json[{index}]: duplicate category slug {slug!r}")
+                error(f"{where}: duplicate category slug {slug!r}")
             elif isinstance(slug, str):
                 category_slugs.add(slug)
-            check_locales(category.get("name"), f"categories.json[{index}].name")
+            check_locales(category.get("name"), f"{where}.name")
             check_length(
-                category.get("name"),
-                CATEGORY_NAME_MAX_LENGTH,
-                f"categories.json[{index}].name",
+                category.get("name"), CATEGORY_NAME_MAX_LENGTH, f"{where}.name"
             )
 
-    check_locales(
-        root_manifest.get("name") if isinstance(root_manifest, dict) else None,
-        "manifest.json.name",
-    )
-
-    # Lists: unique slugs, resolvable paths, then per-list validation.
-    stats = {"present": 0, "missing": 0, "notes": 0}
-    item_total = 0
-    list_slugs: set[str] = set()
-    entries = root_manifest.get("lists", []) if isinstance(root_manifest, dict) else []
-
-    for index, entry in enumerate(entries):
-        where = f"manifest.json.lists[{index}]"
-        if not isinstance(entry, dict):
-            continue
-        slug = entry.get("slug")
-        if slug in list_slugs:
-            error(f"{where}: duplicate list slug {slug!r}")
-        elif isinstance(slug, str):
-            list_slugs.add(slug)
-        check_locales(entry.get("name"), f"{where}.name")
-
-        rel_path = entry.get("path")
-        if not isinstance(rel_path, str):
-            continue
-        list_manifest = load_json(rel_path)
-        if list_manifest is None:
-            error(f"{where}: path {rel_path!r} does not resolve to a manifest")
-            continue
-
-        validate_schema(list_manifest, list_schema, list_schema, rel_path)
-        if not isinstance(list_manifest, dict):
-            continue
-
-        if list_manifest.get("slug") != slug:
-            error(
-                f"{rel_path}: slug {list_manifest.get('slug')!r} does not match "
-                f"{slug!r} declared in the root manifest"
-            )
-        check_locales(list_manifest.get("name"), f"{rel_path}.name")
-
-        list_dir = os.path.dirname(rel_path)
-        item_slugs: set[str] = set()
-        for item_index, item in enumerate(list_manifest.get("items", [])):
+    # Items: unique slugs, a category that exists, locales, caps, photo.
+    item_slugs: set[str] = set()
+    items = manifest.get("items", [])
+    if isinstance(items, list):
+        for index, item in enumerate(items):
             if not isinstance(item, dict):
                 continue
-            item_total += 1
-            item_where = f"{rel_path}.items[{item_index}]"
-            item_slug = item.get("slug")
-            if item_slug in item_slugs:
-                error(f"{item_where}: duplicate item slug {item_slug!r}")
-            elif isinstance(item_slug, str):
-                item_slugs.add(item_slug)
+            where = f"manifest.json.items[{index}]"
+            slug = item.get("slug")
+            if slug in item_slugs:
+                error(f"{where}: duplicate item slug {slug!r}")
+            elif isinstance(slug, str):
+                item_slugs.add(slug)
 
             category = item.get("category")
             if isinstance(category, str) and category not in category_slugs:
                 error(
-                    f"{item_where}: category {category!r} is not defined in "
-                    f"categories.json"
+                    f"{where}: category {category!r} is not one of this "
+                    f"manifest's categories"
                 )
 
-            check_locales(item.get("name"), f"{item_where}.name")
-            check_length(
-                item.get("name"), ITEM_NAME_MAX_LENGTH, f"{item_where}.name"
-            )
+            check_locales(item.get("name"), f"{where}.name")
+            check_length(item.get("name"), ITEM_NAME_MAX_LENGTH, f"{where}.name")
 
             # note is optional, but once present it ships in every locale.
             if "note" in item:
                 stats["notes"] += 1
-                check_locales(item.get("note"), f"{item_where}.note")
-                check_length(
-                    item.get("note"), NOTE_MAX_LENGTH, f"{item_where}.note"
-                )
+                check_locales(item.get("note"), f"{where}.note")
+                check_length(item.get("note"), NOTE_MAX_LENGTH, f"{where}.note")
 
             image = item.get("image")
             if isinstance(image, str):
-                check_image(image, str(item_slug), list_dir, stats)
+                check_image(image, str(slug), stats)
 
-    return report(item_total, len(category_slugs), stats)
+    return report(len(item_slugs), len(category_slugs), stats)
 
 
 def report(item_count: int, category_count: int, stats: dict) -> int:
