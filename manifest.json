@@ -1,13 +1,5 @@
 {
   "schema_version": 2,
-  "catalog_id": "baggo-official",
-  "name": {
-    "en": "Groceries",
-    "fr": "Courses",
-    "es": "Compra",
-    "de": "Lebensmittel",
-    "ar": "بقالة"
-  },
   "version": 6,
   "categories": [
     {
@@ -179,7 +171,6 @@
   "items": [
     {
       "slug": "apples",
-      "icon": "apple",
       "category": "fruits",
       "unit": "kg",
       "name": {
@@ -193,7 +184,6 @@
     },
     {
       "slug": "bananas",
-      "icon": "apple",
       "category": "fruits",
       "unit": "kg",
       "name": {
@@ -214,7 +204,6 @@
     },
     {
       "slug": "oranges",
-      "icon": "orange",
       "category": "fruits",
       "unit": "kg",
       "name": {
@@ -228,7 +217,6 @@
     },
     {
       "slug": "lemons",
-      "icon": "orange",
       "category": "fruits",
       "unit": "pcs",
       "name": {
@@ -242,7 +230,6 @@
     },
     {
       "slug": "strawberries",
-      "icon": "apple",
       "category": "fruits",
       "unit": "pack",
       "name": {
@@ -256,7 +243,6 @@
     },
     {
       "slug": "grapes",
-      "icon": "apple",
       "category": "fruits",
       "unit": "kg",
       "name": {
@@ -270,7 +256,6 @@
     },
     {
       "slug": "avocados",
-      "icon": "apple",
       "category": "fruits",
       "unit": "pcs",
       "name": {
@@ -291,7 +276,6 @@
     },
     {
       "slug": "tomatoes",
-      "icon": "pepper",
       "category": "vegetables",
       "unit": "kg",
       "name": {
@@ -312,7 +296,6 @@
     },
     {
       "slug": "cucumbers",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "pcs",
       "name": {
@@ -326,7 +309,6 @@
     },
     {
       "slug": "carrots",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "kg",
       "name": {
@@ -340,7 +322,6 @@
     },
     {
       "slug": "potatoes",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "kg",
       "name": {
@@ -361,7 +342,6 @@
     },
     {
       "slug": "onions",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "kg",
       "name": {
@@ -375,7 +355,6 @@
     },
     {
       "slug": "garlic",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "pcs",
       "name": {
@@ -396,7 +375,6 @@
     },
     {
       "slug": "bell-peppers",
-      "icon": "pepper",
       "category": "vegetables",
       "unit": "pcs",
       "name": {
@@ -410,7 +388,6 @@
     },
     {
       "slug": "lettuce",
-      "icon": "plant",
       "category": "vegetables",
       "unit": "pcs",
       "name": {
@@ -424,7 +401,6 @@
     },
     {
       "slug": "spinach",
-      "icon": "plant",
       "category": "vegetables",
       "unit": "pack",
       "name": {
@@ -445,7 +421,6 @@
     },
     {
       "slug": "broccoli",
-      "icon": "plant",
       "category": "vegetables",
       "unit": "pcs",
       "name": {
@@ -459,7 +434,6 @@
     },
     {
       "slug": "mushrooms",
-      "icon": "plant",
       "category": "vegetables",
       "unit": "pack",
       "name": {
@@ -480,7 +454,6 @@
     },
     {
       "slug": "zucchini",
-      "icon": "carrot",
       "category": "vegetables",
       "unit": "kg",
       "name": {
@@ -494,7 +467,6 @@
     },
     {
       "slug": "milk",
-      "icon": "milk",
       "category": "dairy-eggs",
       "unit": "l",
       "name": {
@@ -515,7 +487,6 @@
     },
     {
       "slug": "eggs",
-      "icon": "egg",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -536,7 +507,6 @@
     },
     {
       "slug": "butter",
-      "icon": "cheese",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -550,7 +520,6 @@
     },
     {
       "slug": "cheddar-cheese",
-      "icon": "cheese",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -564,7 +533,6 @@
     },
     {
       "slug": "yogurt",
-      "icon": "cup",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -578,7 +546,6 @@
     },
     {
       "slug": "cream",
-      "icon": "milk",
       "category": "dairy-eggs",
       "unit": "ml",
       "name": {
@@ -592,7 +559,6 @@
     },
     {
       "slug": "feta-cheese",
-      "icon": "cheese",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -606,7 +572,6 @@
     },
     {
       "slug": "cream-cheese",
-      "icon": "cheese",
       "category": "dairy-eggs",
       "unit": "pack",
       "name": {
@@ -620,7 +585,6 @@
     },
     {
       "slug": "chicken-breast",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "kg",
       "name": {
@@ -641,7 +605,6 @@
     },
     {
       "slug": "ground-beef",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "kg",
       "name": {
@@ -662,7 +625,6 @@
     },
     {
       "slug": "beef-steak",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "kg",
       "name": {
@@ -676,7 +638,6 @@
     },
     {
       "slug": "lamb-chops",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "kg",
       "name": {
@@ -690,7 +651,6 @@
     },
     {
       "slug": "sausages",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "pack",
       "name": {
@@ -704,7 +664,6 @@
     },
     {
       "slug": "bacon",
-      "icon": "meat",
       "category": "meat-poultry",
       "unit": "pack",
       "name": {
@@ -718,7 +677,6 @@
     },
     {
       "slug": "salmon",
-      "icon": "fish",
       "category": "seafood",
       "unit": "kg",
       "name": {
@@ -732,7 +690,6 @@
     },
     {
       "slug": "shrimp",
-      "icon": "fish",
       "category": "seafood",
       "unit": "kg",
       "name": {
@@ -753,7 +710,6 @@
     },
     {
       "slug": "sea-bass",
-      "icon": "fish",
       "category": "seafood",
       "unit": "kg",
       "name": {
@@ -774,7 +730,6 @@
     },
     {
       "slug": "squid",
-      "icon": "fish",
       "category": "seafood",
       "unit": "kg",
       "name": {
@@ -788,7 +743,6 @@
     },
     {
       "slug": "bread",
-      "icon": "bread",
       "category": "bakery",
       "unit": "pcs",
       "name": {
@@ -809,7 +763,6 @@
     },
     {
       "slug": "baguette",
-      "icon": "baguette",
       "category": "bakery",
       "unit": "pcs",
       "name": {
@@ -830,7 +783,6 @@
     },
     {
       "slug": "pita-bread",
-      "icon": "bread",
       "category": "bakery",
       "unit": "pack",
       "name": {
@@ -844,7 +796,6 @@
     },
     {
       "slug": "croissants",
-      "icon": "bread",
       "category": "bakery",
       "unit": "pack",
       "name": {
@@ -858,7 +809,6 @@
     },
     {
       "slug": "bagels",
-      "icon": "bread",
       "category": "bakery",
       "unit": "pack",
       "name": {
@@ -872,7 +822,6 @@
     },
     {
       "slug": "tortillas",
-      "icon": "bread",
       "category": "bakery",
       "unit": "pack",
       "name": {
@@ -886,7 +835,6 @@
     },
     {
       "slug": "sugar",
-      "icon": "jar",
       "category": "pantry",
       "unit": "bag",
       "name": {
@@ -900,7 +848,6 @@
     },
     {
       "slug": "flour",
-      "icon": "packages",
       "category": "pantry",
       "unit": "bag",
       "name": {
@@ -921,7 +868,6 @@
     },
     {
       "slug": "salt",
-      "icon": "salt",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -935,7 +881,6 @@
     },
     {
       "slug": "baking-powder",
-      "icon": "packages",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -956,7 +901,6 @@
     },
     {
       "slug": "honey",
-      "icon": "jar",
       "category": "pantry",
       "unit": "bottle",
       "name": {
@@ -977,7 +921,6 @@
     },
     {
       "slug": "peanut-butter",
-      "icon": "jar",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -991,7 +934,6 @@
     },
     {
       "slug": "yeast",
-      "icon": "packages",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -1012,7 +954,6 @@
     },
     {
       "slug": "cornstarch",
-      "icon": "packages",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -1026,7 +967,6 @@
     },
     {
       "slug": "jam",
-      "icon": "jar",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -1040,7 +980,6 @@
     },
     {
       "slug": "chocolate-spread",
-      "icon": "jar",
       "category": "pantry",
       "unit": "pack",
       "name": {
@@ -1054,7 +993,6 @@
     },
     {
       "slug": "pancake-mix",
-      "icon": "packages",
       "category": "pantry",
       "unit": "box",
       "name": {
@@ -1068,7 +1006,6 @@
     },
     {
       "slug": "rice",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "bag",
       "name": {
@@ -1089,7 +1026,6 @@
     },
     {
       "slug": "spaghetti",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1103,7 +1039,6 @@
     },
     {
       "slug": "penne",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1117,7 +1052,6 @@
     },
     {
       "slug": "couscous",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1131,7 +1065,6 @@
     },
     {
       "slug": "quinoa",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1145,7 +1078,6 @@
     },
     {
       "slug": "bulgur",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1159,7 +1091,6 @@
     },
     {
       "slug": "noodles",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1173,7 +1104,6 @@
     },
     {
       "slug": "lentils",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1187,7 +1117,6 @@
     },
     {
       "slug": "dried-chickpeas",
-      "icon": "grain",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1208,7 +1137,6 @@
     },
     {
       "slug": "cereal",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "box",
       "name": {
@@ -1222,7 +1150,6 @@
     },
     {
       "slug": "oats",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1236,7 +1163,6 @@
     },
     {
       "slug": "granola",
-      "icon": "bowl",
       "category": "grains-pasta",
       "unit": "pack",
       "name": {
@@ -1250,7 +1176,6 @@
     },
     {
       "slug": "canned-tomatoes",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1264,7 +1189,6 @@
     },
     {
       "slug": "tomato-paste",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1278,7 +1202,6 @@
     },
     {
       "slug": "canned-tuna",
-      "icon": "fish",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1299,7 +1222,6 @@
     },
     {
       "slug": "canned-corn",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1313,7 +1235,6 @@
     },
     {
       "slug": "canned-beans",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1334,7 +1255,6 @@
     },
     {
       "slug": "olives",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1348,7 +1268,6 @@
     },
     {
       "slug": "pickles",
-      "icon": "jar",
       "category": "canned-jarred",
       "unit": "can",
       "name": {
@@ -1362,7 +1281,6 @@
     },
     {
       "slug": "frozen-peas",
-      "icon": "snowflake",
       "category": "frozen",
       "unit": "bag",
       "name": {
@@ -1383,7 +1301,6 @@
     },
     {
       "slug": "frozen-mixed-vegetables",
-      "icon": "snowflake",
       "category": "frozen",
       "unit": "bag",
       "name": {
@@ -1397,7 +1314,6 @@
     },
     {
       "slug": "frozen-pizza",
-      "icon": "pizza",
       "category": "frozen",
       "unit": "pcs",
       "name": {
@@ -1411,7 +1327,6 @@
     },
     {
       "slug": "ice-cream",
-      "icon": "ice-cream",
       "category": "frozen",
       "unit": "box",
       "name": {
@@ -1432,7 +1347,6 @@
     },
     {
       "slug": "frozen-fries",
-      "icon": "snowflake",
       "category": "frozen",
       "unit": "bag",
       "name": {
@@ -1446,7 +1360,6 @@
     },
     {
       "slug": "frozen-berries",
-      "icon": "snowflake",
       "category": "frozen",
       "unit": "bag",
       "name": {
@@ -1460,7 +1373,6 @@
     },
     {
       "slug": "potato-chips",
-      "icon": "packages",
       "category": "snacks",
       "unit": "bag",
       "name": {
@@ -1474,7 +1386,6 @@
     },
     {
       "slug": "popcorn",
-      "icon": "popcorn",
       "category": "snacks",
       "unit": "bag",
       "name": {
@@ -1488,7 +1399,6 @@
     },
     {
       "slug": "chocolate-bar",
-      "icon": "candy",
       "category": "snacks",
       "unit": "pcs",
       "name": {
@@ -1502,7 +1412,6 @@
     },
     {
       "slug": "biscuits",
-      "icon": "cookie",
       "category": "snacks",
       "unit": "pack",
       "name": {
@@ -1516,7 +1425,6 @@
     },
     {
       "slug": "crackers",
-      "icon": "cookie",
       "category": "snacks",
       "unit": "pack",
       "name": {
@@ -1530,7 +1438,6 @@
     },
     {
       "slug": "mixed-nuts",
-      "icon": "nut",
       "category": "snacks",
       "unit": "bag",
       "name": {
@@ -1551,7 +1458,6 @@
     },
     {
       "slug": "granola-bars",
-      "icon": "candy",
       "category": "snacks",
       "unit": "box",
       "name": {
@@ -1565,7 +1471,6 @@
     },
     {
       "slug": "bottled-water",
-      "icon": "bottle",
       "category": "beverages",
       "unit": "bottle",
       "name": {
@@ -1579,7 +1484,6 @@
     },
     {
       "slug": "sparkling-water",
-      "icon": "bottle",
       "category": "beverages",
       "unit": "bottle",
       "name": {
@@ -1593,7 +1497,6 @@
     },
     {
       "slug": "orange-juice",
-      "icon": "cup",
       "category": "beverages",
       "unit": "l",
       "name": {
@@ -1607,7 +1510,6 @@
     },
     {
       "slug": "apple-juice",
-      "icon": "cup",
       "category": "beverages",
       "unit": "l",
       "name": {
@@ -1621,7 +1523,6 @@
     },
     {
       "slug": "cola",
-      "icon": "bottle",
       "category": "beverages",
       "unit": "bottle",
       "name": {
@@ -1635,7 +1536,6 @@
     },
     {
       "slug": "coffee",
-      "icon": "coffee",
       "category": "beverages",
       "unit": "pack",
       "name": {
@@ -1656,7 +1556,6 @@
     },
     {
       "slug": "tea",
-      "icon": "tea-bag",
       "category": "beverages",
       "unit": "box",
       "name": {
@@ -1677,7 +1576,6 @@
     },
     {
       "slug": "iced-tea",
-      "icon": "cup",
       "category": "beverages",
       "unit": "bottle",
       "name": {
@@ -1691,7 +1589,6 @@
     },
     {
       "slug": "ketchup",
-      "icon": "bottle",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1705,7 +1602,6 @@
     },
     {
       "slug": "mayonnaise",
-      "icon": "jar",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1726,7 +1622,6 @@
     },
     {
       "slug": "mustard",
-      "icon": "bottle",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1740,7 +1635,6 @@
     },
     {
       "slug": "soy-sauce",
-      "icon": "bottle",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1754,7 +1648,6 @@
     },
     {
       "slug": "hot-sauce",
-      "icon": "bottle",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1768,7 +1661,6 @@
     },
     {
       "slug": "pasta-sauce",
-      "icon": "jar",
       "category": "condiments-sauces",
       "unit": "can",
       "name": {
@@ -1782,7 +1674,6 @@
     },
     {
       "slug": "tahini",
-      "icon": "jar",
       "category": "condiments-sauces",
       "unit": "bottle",
       "name": {
@@ -1803,7 +1694,6 @@
     },
     {
       "slug": "black-pepper",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1824,7 +1714,6 @@
     },
     {
       "slug": "cumin",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1838,7 +1727,6 @@
     },
     {
       "slug": "paprika",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1859,7 +1747,6 @@
     },
     {
       "slug": "cinnamon",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1873,7 +1760,6 @@
     },
     {
       "slug": "turmeric",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1887,7 +1773,6 @@
     },
     {
       "slug": "oregano",
-      "icon": "plant",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1901,7 +1786,6 @@
     },
     {
       "slug": "chili-powder",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1915,7 +1799,6 @@
     },
     {
       "slug": "bay-leaves",
-      "icon": "plant",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1929,7 +1812,6 @@
     },
     {
       "slug": "ginger-powder",
-      "icon": "salt",
       "category": "spices",
       "unit": "pack",
       "name": {
@@ -1943,7 +1825,6 @@
     },
     {
       "slug": "olive-oil",
-      "icon": "bottle",
       "category": "oils-vinegars",
       "unit": "bottle",
       "name": {
@@ -1964,7 +1845,6 @@
     },
     {
       "slug": "sunflower-oil",
-      "icon": "bottle",
       "category": "oils-vinegars",
       "unit": "bottle",
       "name": {
@@ -1978,7 +1858,6 @@
     },
     {
       "slug": "white-vinegar",
-      "icon": "bottle",
       "category": "oils-vinegars",
       "unit": "bottle",
       "name": {
@@ -1992,7 +1871,6 @@
     },
     {
       "slug": "apple-cider-vinegar",
-      "icon": "bottle",
       "category": "oils-vinegars",
       "unit": "bottle",
       "name": {
@@ -2006,7 +1884,6 @@
     },
     {
       "slug": "balsamic-vinegar",
-      "icon": "bottle",
       "category": "oils-vinegars",
       "unit": "bottle",
       "name": {
