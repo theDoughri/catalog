@@ -5,27 +5,12 @@
   "description": "A whole catalog in one file: identity, version, categories and items, with an images/ folder beside it.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema_version",
-    "catalog_id",
-    "name",
-    "version",
-    "categories",
-    "items"
-  ],
+  "required": ["schema_version", "version", "categories", "items"],
   "properties": {
     "schema_version": {
       "description": "Shape of this file. 2 is the single manifest; 1 was the root/list/categories split.",
       "type": "integer",
       "const": 2
-    },
-    "catalog_id": {
-      "description": "Identity of the catalog itself. Pick your own when you fork.",
-      "$ref": "#/$defs/slug"
-    },
-    "name": {
-      "description": "What the catalog is called, and what a list seeded from it is named.",
-      "$ref": "#/$defs/localizedName"
     },
     "version": {
       "description": "Bumped on every release. Clients compare this integer to decide what to re-read.",
@@ -58,12 +43,9 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["slug", "icon", "category", "unit", "name", "image"],
+        "required": ["slug", "category", "unit", "name", "image"],
         "properties": {
           "slug": {
-            "$ref": "#/$defs/slug"
-          },
-          "icon": {
             "$ref": "#/$defs/slug"
           },
           "category": {

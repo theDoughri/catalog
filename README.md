@@ -4,7 +4,7 @@ Data-only repository for the item catalog shipped with the Baggo shopping list
 app: one JSON manifest plus item photos. No application code lives here.
 
 A catalog is a starting pantry — the things a shopper already buys, each with a
-category, a unit, an icon, a photo and sometimes a tip — so a new install opens
+category, a unit, a photo and sometimes a tip — so a new install opens
 on a list worth using instead of an empty page. This repository is the official
 one; it is also the template. Fork it, put your own items in the manifest, point
 the app at your fork, and that is your catalog.
@@ -25,8 +25,6 @@ that one file, and then the photos it names.
 ```json
 {
   "schema_version": 2,
-  "catalog_id": "baggo-official",
-  "name": { "en": "Groceries", "fr": "Courses", ... },
   "version": 6,
   "categories": [
     { "slug": "fruits", "icon": "apple", "name": { "en": "Fruits", ... } }
@@ -34,7 +32,6 @@ that one file, and then the photos it names.
   "items": [
     {
       "slug": "apples",
-      "icon": "apple",
       "category": "fruits",
       "unit": "kg",
       "name": { "en": "Apples", ... },
@@ -45,17 +42,21 @@ that one file, and then the photos it names.
 }
 ```
 
-`name` is both what the catalog is called and what a list seeded from it is
-named. `schema_version` is the shape of the file — 2 is this one, 1 was the
-older split across a root manifest, a list manifest and `categories.json`.
+`schema_version` is the shape of the file — 2 is this one, 1 was the older
+split across a root manifest, a list manifest and `categories.json`. `version`
+is the release number, and every field below it is something the app renders:
+nothing is published that nothing reads.
+
+Items carry no icon of their own. An item without a photo renders its
+CATEGORY's icon, which is the only icon the app has ever drawn for a row.
 
 ## Making your own
 
 1. Fork this repository (or start an empty one with the same three pieces).
-2. Give it your own `catalog_id`, `name`, and a `version` of 1.
+2. Set `version` to 1.
 3. Replace the `categories` and `items` with yours. Keep the rules below.
 4. Add photos under `images/`, or leave them out — an item with no file
-   renders its icon instead, and the validator only warns.
+   renders its category's icon instead, and the validator only warns.
 5. Run `python scripts/validate.py` until it passes.
 6. Push to `main`. Your catalog is the raw URL of that branch:
    `https://raw.githubusercontent.com/<you>/<repo>/main/`
@@ -85,17 +86,18 @@ when it tells the shopper something the item name does not (how to pick a ripe
 one, where it keeps best, what to do before cooking). It is a single plain
 sentence, no markup and no line breaks.
 
-**Icons are semantic.** An icon name describes the depicted thing (`carrot`,
-`jar`, `bottle`), not a specific glyph in a specific font, so the app can
-re-point a name to a better glyph without touching this repo. Names come from
-Baggo's fixed icon vocabulary; where no exact glyph exists, the closest name in
-the same family is used (`apple` for fruit without a dedicated glyph, `carrot`
-or `plant` for vegetables).
+**Icons are semantic, and belong to categories.** An icon name describes the
+depicted thing (`carrot`, `jar`, `bottle`), not a specific glyph in a specific
+font, so the app can re-point a name to a better glyph without touching this
+repo. Names come from Baggo's fixed icon vocabulary; where no exact glyph
+exists, the closest name in the same family is used (`apple` for a fruit
+category, `carrot` or `plant` for vegetables). Only categories carry one — it
+is what every row of that category falls back to when it has no photo.
 
 **Images are exactly 1024x1024 JPEG**, stored at `images/<slug>.jpg` and
 referenced by an item's `image` field as a path relative to the manifest. The
 path is declared even when the file has not been produced yet: missing images
-are expected and valid — the app falls back to the item's icon, and the
+are expected and valid — the app falls back to the category's icon, and the
 validator reports them as warnings rather than failures.
 
 **Only the full-size photo is published.** Thumbnails are the app's business.

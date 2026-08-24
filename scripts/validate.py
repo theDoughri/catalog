@@ -17,8 +17,7 @@ Checks performed:
   6. Text length: no translation of a category name, item name or item note
      exceeds the matching *_MAX_LENGTH. The app seeds all three into
      user-editable fields with those caps, so a longer one is truncated the
-     moment the shopper edits that row. The catalog name is not checked: the
-     app never seeds it into a field.
+     moment the shopper edits that row.
 
 Exit code 0 on pass, 1 on failure. Requires Python 3 (stdlib) and Pillow;
 Pillow is only needed when image files are actually present.
@@ -249,8 +248,6 @@ def main() -> int:
     validate_schema(manifest, schema, schema, "manifest.json")
     if not isinstance(manifest, dict):
         return report(0, 0, stats)
-
-    check_locales(manifest.get("name"), "manifest.json.name")
 
     # Categories: unique slugs, complete locales, names the app can store.
     category_slugs: set[str] = set()
