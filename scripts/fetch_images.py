@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Download and crop the item images listed in each list's items_images.csv.
+"""Download and crop the item images listed in items_images.csv.
 
-Every list directory carries an items_images.csv next to its manifest
-(e.g. lists/default/items_images.csv) with two columns:
+The CSV sits next to manifest.json at the repository root, with two columns:
 
-  name  - the item slug, matching the items in that list's manifest
+  name  - the item slug, matching an item in the manifest
   link  - a photo URL you picked by hand, e.g. from pixabay.com or
           unsplash.com; leave empty until chosen
 
@@ -18,15 +17,13 @@ Accepted link forms:
 
 Every source image must be at least 1024x1024 (the script never upscales).
 It is center-cropped to exactly 1024x1024 and saved as a JPEG at the item's
-declared `image` path (e.g. lists/default/images/apples.jpg). Items whose
-link is still empty are reported and skipped; existing image files are
-skipped too unless --force is given, so the script is safe to re-run as the
-CSV fills up.
+declared `image` path (e.g. images/apples.jpg). Items whose link is still
+empty are reported and skipped; existing image files are skipped too unless
+--force is given, so the script is safe to re-run as the CSV fills up.
 
-At the end of every run the script also refreshes a `thumbnails/` folder
-next to each list's `images/` folder: every available image gets a 128x128
-thumbnail under the same file name, stale thumbnails are regenerated, and
-thumbnails whose source image no longer exists are removed.
+Only the full-size photo is published. Thumbnails are the app's business:
+Baggo resizes what it downloads, so there is nothing derived to keep in
+step here.
 
 Usage:
   python3 scripts/fetch_images.py
@@ -35,7 +32,6 @@ Usage:
 
 Requires Python 3.9+ and Pillow (python3 -m pip install --user Pillow).
 """
-
 from __future__ import annotations
 
 import argparse
@@ -55,9 +51,8 @@ import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CSV_NAME = "items_images.csv"
+CSV_PATH = "items_images.csv"
 TARGET = 1024
-THUMB = 128
 MAX_DOWNLOAD_BYTES = 40 * 1024 * 1024
 REQUEST_DELAY = 0.3  # polite pause between downloads, seconds
 
@@ -304,65 +299,17 @@ def crop_to_target(data: bytes) -> bytes | None:
     return output.getvalue()
 
 
-def make_thumbnails(list_dir: str) -> tuple[int, int]:
-    """Sync <list_dir>/thumbnails with <list_dir>/images.
-
-    Every .jpg in images/ gets a THUMB x THUMB thumbnail of the same name;
-    stale thumbnails (older than their source) are regenerated and orphaned
-    thumbnails (source image gone) are deleted.
-    Returns (created_or_updated, removed).
-    """
-    from PIL import Image, ImageOps
-
-    images_dir = os.path.join(list_dir, "images")
-    thumbs_dir = os.path.join(list_dir, "thumbnails")
-    if not os.path.isdir(images_dir):
-        return 0, 0
-    os.makedirs(thumbs_dir, exist_ok=True)
-
-    updated = removed = 0
-    sources = sorted(
-        f for f in os.listdir(images_dir) if f.lower().endswith(".jpg")
-    )
-    for name in sources:
-        src = os.path.join(images_dir, name)
-        dst = os.path.join(thumbs_dir, name)
-        if os.path.isfile(dst) and os.path.getmtime(dst) >= os.path.getmtime(src):
-            continue
-        try:
-            with Image.open(src) as image:
-                image = ImageOps.exif_transpose(image)
-                if image.mode != "RGB":
-                    image = image.convert("RGB")
-                width, height = image.size
-                side = min(width, height)
-                left = (width - side) // 2
-                top = (height - side) // 2
-                image = image.crop((left, top, left + side, top + side))
-                image = image.resize((THUMB, THUMB), Image.LANCZOS)
-                image.save(dst, format="JPEG", quality=85, optimize=True)
-            updated += 1
-        except Exception as exc:  # noqa: BLE001 - a bad file must not stop the run
-            print(f"  ! thumbnail failed for {name}: {exc}")
-
-    source_names = set(sources)
-    for name in os.listdir(thumbs_dir):
-        if name.lower().endswith(".jpg") and name not in source_names:
-            os.remove(os.path.join(thumbs_dir, name))
-            removed += 1
-    return updated, removed
-
-
 # --------------------------------------------------------------------------
-# CSV + manifests.
+# CSV + manifest.
 # --------------------------------------------------------------------------
 
-def read_links(csv_path: str) -> dict[str, str] | None:
-    """Slug -> link map from a list's items_images.csv; None if absent."""
-    if not os.path.isfile(csv_path):
+def read_links() -> dict[str, str] | None:
+    """Slug -> link map from items_images.csv; None if the file is absent."""
+    full = os.path.join(REPO_ROOT, CSV_PATH)
+    if not os.path.isfile(full):
         return None
     links: dict[str, str] = {}
-    with open(csv_path, newline="", encoding="utf-8-sig") as handle:
+    with open(full, newline="", encoding="utf-8-sig") as handle:
         for row in csv.DictReader(handle):
             name = (row.get("name") or "").strip()
             if name:
@@ -370,16 +317,10 @@ def read_links(csv_path: str) -> dict[str, str] | None:
     return links
 
 
-def iter_lists():
-    """Yield (list_slug, list_dir, items) for every list in the catalog."""
+def read_items() -> list[dict]:
+    """Every item in the catalog manifest."""
     with open(os.path.join(REPO_ROOT, "manifest.json"), encoding="utf-8") as handle:
-        root = json.load(handle)
-    for entry in root.get("lists", []):
-        rel_path = entry["path"]
-        with open(os.path.join(REPO_ROOT, rel_path), encoding="utf-8") as handle:
-            manifest = json.load(handle)
-        list_dir = os.path.join(REPO_ROOT, os.path.dirname(rel_path))
-        yield entry["slug"], list_dir, manifest.get("items", [])
+        return json.load(handle).get("items", [])
 
 
 def main() -> int:
@@ -401,68 +342,55 @@ def main() -> int:
 
     saved, present, no_link = 0, 0, []
     failed: list[str] = []
-    unknown: list[str] = []
-    missing_rows: list[str] = []
-    missing_csv: list[str] = []
-    thumbs_updated = thumbs_removed = 0
 
-    for list_slug, list_dir, items in iter_lists():
-        print(f"list: {list_slug}")
-        csv_path = os.path.join(list_dir, CSV_NAME)
-        links = read_links(csv_path)
-        if links is None:
-            print(f"  ! {os.path.relpath(csv_path, REPO_ROOT)} not found")
-            missing_csv.append(list_slug)
+    links = read_links()
+    if links is None:
+        print(f"! {CSV_PATH} not found")
+        return 1
+
+    seen_slugs: set[str] = set()
+    for item in read_items():
+        slug = item["slug"]
+        seen_slugs.add(slug)
+        dest = os.path.join(REPO_ROOT, item["image"])
+        if args.only and slug not in args.only:
+            continue
+        if os.path.isfile(dest) and not args.force:
+            present += 1
+            continue
+        link = links.get(slug, "")
+        if not link:
+            no_link.append(slug)
             continue
 
-        seen_slugs: set[str] = set()
-        for item in items:
-            slug = item["slug"]
-            seen_slugs.add(slug)
-            dest = os.path.join(list_dir, item["image"])
-            if args.only and slug not in args.only:
-                continue
-            if os.path.isfile(dest) and not args.force:
-                present += 1
-                continue
-            link = links.get(slug, "")
-            if not link:
-                no_link.append(slug)
-                continue
-
-            print(f"  {slug} ({item['name']['en']})")
-            if args.dry_run:
-                for url in candidate_urls(link):
-                    print(f"    would try: {url}")
-                saved += 1
-                continue
-            written = False
+        print(f"  {slug} ({item['name']['en']})")
+        if args.dry_run:
             for url in candidate_urls(link):
-                time.sleep(REQUEST_DELAY)
-                data = request_with_retries(url)
-                if data is None:
-                    continue
-                cropped = crop_to_target(data)
-                if cropped is None:
-                    continue
-                os.makedirs(os.path.dirname(dest), exist_ok=True)
-                with open(dest, "wb") as handle:
-                    handle.write(cropped)
-                print(f"    saved {os.path.relpath(dest, REPO_ROOT)}")
-                saved += 1
-                written = True
-                break
-            if not written:
-                print(f"    ! FAILED - check the link in {CSV_NAME}")
-                failed.append(slug)
+                print(f"    would try: {url}")
+            saved += 1
+            continue
+        written = False
+        for url in candidate_urls(link):
+            time.sleep(REQUEST_DELAY)
+            data = request_with_retries(url)
+            if data is None:
+                continue
+            cropped = crop_to_target(data)
+            if cropped is None:
+                continue
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with open(dest, "wb") as handle:
+                handle.write(cropped)
+            print(f"    saved {os.path.relpath(dest, REPO_ROOT)}")
+            saved += 1
+            written = True
+            break
+        if not written:
+            print(f"    ! FAILED - check the link in {CSV_PATH}")
+            failed.append(slug)
 
-        unknown += sorted(set(links) - seen_slugs)
-        missing_rows += sorted(s for s in seen_slugs if s not in links)
-
-        if not args.dry_run:
-            created, removed = make_thumbnails(list_dir)
-            thumbs_updated += created
-            thumbs_removed += removed
+    unknown = sorted(set(links) - seen_slugs)
+    missing_rows = sorted(s for s in seen_slugs if s not in links)
 
     print()
     print("Fetch summary")
@@ -470,19 +398,16 @@ def main() -> int:
     print(f"  already present   {present}")
     print(f"  no link yet       {len(no_link)}")
     print(f"  failed            {len(failed)}")
-    print(f"  thumbnails        {thumbs_updated} updated, {thumbs_removed} removed")
     if failed:
         print("  failed items: " + ", ".join(failed))
     if unknown:
         print("  CSV names matching no item: " + ", ".join(unknown))
     if missing_rows:
         print("  items missing from the CSV: " + ", ".join(missing_rows))
-    if missing_csv:
-        print("  lists without a CSV: " + ", ".join(missing_csv))
     if failed:
         print("\nRe-run a fixed item with: "
               "python3 scripts/fetch_images.py --force --only <slug>")
-    return 1 if failed or missing_csv else 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

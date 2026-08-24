@@ -1,32 +1,29 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://baggo.app/catalog/schema/list-manifest.schema.json",
-  "title": "Baggo catalog list manifest",
+  "$id": "https://baggo.app/catalog/schema/manifest.schema.json",
+  "title": "Baggo catalog manifest",
+  "description": "A whole catalog in one file: identity, version, categories and items, with an images/ folder beside it.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "slug", "name", "version", "items"],
+  "required": ["schema_version", "version", "categories", "items"],
   "properties": {
     "schema_version": {
+      "description": "Shape of this file. 2 is the single manifest; 1 was the root/list/categories split.",
       "type": "integer",
-      "const": 1
-    },
-    "slug": {
-      "$ref": "#/$defs/slug"
-    },
-    "name": {
-      "$ref": "#/$defs/localizedName"
+      "const": 2
     },
     "version": {
+      "description": "Bumped on every release. Clients compare this integer to decide what to re-read.",
       "type": "integer",
       "minimum": 1
     },
-    "items": {
+    "categories": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["slug", "icon", "category", "unit", "name", "image"],
+        "required": ["slug", "icon", "name"],
         "properties": {
           "slug": {
             "$ref": "#/$defs/slug"
@@ -34,7 +31,25 @@
           "icon": {
             "$ref": "#/$defs/slug"
           },
+          "name": {
+            "$ref": "#/$defs/localizedName"
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "category", "unit", "name", "image"],
+        "properties": {
+          "slug": {
+            "$ref": "#/$defs/slug"
+          },
           "category": {
+            "description": "A slug defined in this manifest's categories.",
             "$ref": "#/$defs/slug"
           },
           "unit": {
@@ -44,9 +59,11 @@
             "$ref": "#/$defs/localizedName"
           },
           "note": {
+            "description": "Optional buying or storage tip, in every required locale.",
             "$ref": "#/$defs/localizedName"
           },
           "image": {
+            "description": "Item photo, relative to this manifest. Declared even before the file exists.",
             "type": "string",
             "pattern": "^images/[a-z0-9]+(-[a-z0-9]+)*\\.jpg$"
           }
