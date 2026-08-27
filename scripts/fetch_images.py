@@ -317,6 +317,20 @@ def read_links() -> dict[str, str] | None:
     return links
 
 
+def english_name(item: dict) -> str:
+    """The item's English name, for a progress line.
+
+    `name` is a locale map here, but the format allows a plain string and a
+    fork copying this script should not crash on one.
+    """
+    name = item.get("name")
+    if isinstance(name, str):
+        return name
+    if isinstance(name, dict):
+        return name.get("en") or next(iter(name.values()), item.get("slug", "?"))
+    return str(item.get("slug", "?"))
+
+
 def read_items() -> list[dict]:
     """Every item in the catalog manifest."""
     with open(os.path.join(REPO_ROOT, "manifest.json"), encoding="utf-8") as handle:
@@ -349,10 +363,22 @@ def main() -> int:
         return 1
 
     seen_slugs: set[str] = set()
+    linked_out = 0
     for item in read_items():
         slug = item["slug"]
+        # Both fields are optional in the format: an item with no image
+        # renders its category's icon, and one that links out to an https
+        # URL already has its photo somewhere else. Neither is this
+        # script's to produce — and neither belongs in the CSV, so both are
+        # skipped BEFORE the slug is counted as one the CSV should cover.
+        reference = item.get("image")
+        if not reference:
+            continue
+        if reference.startswith("https://"):
+            linked_out += 1
+            continue
         seen_slugs.add(slug)
-        dest = os.path.join(REPO_ROOT, item["image"])
+        dest = os.path.join(REPO_ROOT, reference)
         if args.only and slug not in args.only:
             continue
         if os.path.isfile(dest) and not args.force:
@@ -363,7 +389,7 @@ def main() -> int:
             no_link.append(slug)
             continue
 
-        print(f"  {slug} ({item['name']['en']})")
+        print(f"  {slug} ({english_name(item)})")
         if args.dry_run:
             for url in candidate_urls(link):
                 print(f"    would try: {url}")
@@ -398,6 +424,8 @@ def main() -> int:
     print(f"  already present   {present}")
     print(f"  no link yet       {len(no_link)}")
     print(f"  failed            {len(failed)}")
+    if linked_out:
+        print(f"  linked out        {linked_out}")
     if failed:
         print("  failed items: " + ", ".join(failed))
     if unknown:
