@@ -2,37 +2,78 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://baggo.app/catalog/schema/manifest.schema.json",
   "title": "Baggo catalog manifest",
-  "description": "A whole catalog in one file: identity, version, categories and items, with an images/ folder beside it.",
+  "description": "A whole catalog in one file: identity, version, categories and items. Images are the only external resource. This schema is the FORMAT — what any catalog may be. The stricter house rules this repository holds itself to (a locale map for every name, all five shipped locales, 1024x1024 JPEG photos) live in scripts/validate.py, because a fork is entitled to publish one language and no photos at all.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "version", "categories", "items"],
+  "required": ["schema_version", "id", "name", "version", "categories", "items"],
   "properties": {
     "schema_version": {
-      "description": "Shape of this file. 2 is the single manifest; 1 was the root/list/categories split.",
+      "description": "Shape of this file. 2 is the single manifest; 1 was the root/list/categories split. A client that does not understand a higher number imports what it can rather than refusing the catalog.",
       "type": "integer",
       "const": 2
     },
+    "id": {
+      "description": "This catalog's permanent identity, chosen by the author and never changed. Reverse-DNS is recommended: uk.baggo.official. Baggo identifies an installed catalog by this — not by URL, not by filename — so the same catalog fetched from a mirror, or imported from a file, is still the same catalog. An item's identity is (this id, its slug).",
+      "$ref": "#/$defs/catalogId"
+    },
+    "name": {
+      "description": "What the user sees in the catalog list, and on the screen that asks them to approve this catalog.",
+      "type": "string",
+      "minLength": 1
+    },
     "version": {
-      "description": "Bumped on every release. Clients compare this integer to decide what to re-read.",
+      "description": "Bumped on every publish. Clients compare this integer — not a tag, not a date — to decide what to re-read.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "description": {
+      "description": "One or two sentences about what is in here. Shown before the user installs it.",
+      "type": "string",
+      "minLength": 1
+    },
+    "homepage": {
+      "description": "Where a user reports a problem with this catalog.",
+      "type": "string",
+      "pattern": "^https://[^\\s]+$"
+    },
+    "author": {
+      "description": "Who publishes this catalog.",
+      "type": "string",
+      "minLength": 1
+    },
+    "license": {
+      "description": "How the catalog's data may be reused. An SPDX identifier or a URL.",
+      "type": "string",
+      "minLength": 1
+    },
+    "default_locale": {
+      "description": "The locale a client falls back to when a name has no entry for the app's language. Absent means the first entry in the map.",
+      "$ref": "#/$defs/locale"
+    },
+    "expires": {
+      "description": "How many days a client may go before re-checking a URL catalog. Absent means 7.",
       "type": "integer",
       "minimum": 1
     },
     "categories": {
+      "description": "Ordered: array order is display order, and the app seeds shelf rank from it.",
       "type": "array",
       "minItems": 1,
+      "maxItems": 200,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["slug", "icon", "name"],
+        "required": ["slug", "name"],
         "properties": {
           "slug": {
             "$ref": "#/$defs/slug"
           },
           "icon": {
+            "description": "One of Baggo's icon names. An unknown or absent icon falls back to the default category icon and is reported as a warning, never as a failure.",
             "$ref": "#/$defs/slug"
           },
           "name": {
-            "$ref": "#/$defs/localizedName"
+            "$ref": "#/$defs/localizedText"
           }
         }
       }
@@ -40,32 +81,33 @@
     "items": {
       "type": "array",
       "minItems": 1,
+      "maxItems": 5000,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["slug", "category", "unit", "name", "image"],
+        "required": ["slug", "category", "name"],
         "properties": {
           "slug": {
             "$ref": "#/$defs/slug"
           },
           "category": {
-            "description": "A slug defined in this manifest's categories.",
+            "description": "A slug defined in this manifest's categories. An item whose category does not resolve is skipped and reported; the rest of the catalog still imports.",
             "$ref": "#/$defs/slug"
           },
           "unit": {
+            "description": "One of Baggo's unit names. Unknown or absent means no unit.",
             "$ref": "#/$defs/unit"
           },
           "name": {
-            "$ref": "#/$defs/localizedName"
+            "$ref": "#/$defs/localizedText"
           },
           "note": {
-            "description": "Optional buying or storage tip, in every required locale.",
-            "$ref": "#/$defs/localizedName"
+            "description": "Optional buying or storage tip.",
+            "$ref": "#/$defs/localizedText"
           },
           "image": {
-            "description": "Item photo, relative to this manifest. Declared even before the file exists.",
-            "type": "string",
-            "pattern": "^images/[a-z0-9]+(-[a-z0-9]+)*\\.jpg$"
+            "description": "Item photo: an absolute https:// URL, or a path relative to THIS manifest's own location. Absent means the category's icon is shown. The path may be declared before the file exists.",
+            "$ref": "#/$defs/imageReference"
           }
         }
       }
@@ -75,6 +117,16 @@
     "slug": {
       "type": "string",
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "catalogId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[a-z0-9]+([._-][a-z0-9]+)*$"
+    },
+    "locale": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
     },
     "unit": {
       "type": "string",
@@ -91,16 +143,41 @@
         "box"
       ]
     },
-    "localizedName": {
-      "type": "object",
-      "required": ["en", "fr", "es", "de", "ar"],
-      "additionalProperties": false,
-      "patternProperties": {
-        "^[a-z]{2}(-[A-Z]{2})?$": {
+    "localizedText": {
+      "description": "Either a plain string — language-neutral, shown as written whatever the app's language — or a map of locale code to string. No locale is mandatory: a client uses the app's language, then default_locale, then the first entry.",
+      "anyOf": [
+        {
+          "description": "a plain string",
           "type": "string",
           "minLength": 1
+        },
+        {
+          "description": "a map of locale code to string",
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         }
-      }
+      ]
+    },
+    "imageReference": {
+      "anyOf": [
+        {
+          "description": "an absolute https:// URL",
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        },
+        {
+          "description": "a .jpg, .jpeg, .png or .webp path relative to the manifest, with no leading slash and no walking upwards",
+          "type": "string",
+          "pattern": "^[a-z0-9]+([-_]?[a-z0-9]+)*(/[a-z0-9]+([-_]?[a-z0-9]+)*)*\\.(jpg|jpeg|png|webp)$"
+        }
+      ]
     }
   }
 }

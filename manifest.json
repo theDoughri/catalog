@@ -1,6 +1,12 @@
 {
   "schema_version": 2,
+  "id": "uk.baggo.official",
+  "name": "Baggo Official",
   "version": 7,
+  "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
   "categories": [
     {
       "slug": "fruits",

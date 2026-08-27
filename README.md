@@ -25,7 +25,13 @@ that one file, and then the photos it names.
 ```json
 {
   "schema_version": 2,
-  "version": 6,
+  "id": "uk.baggo.official",
+  "name": "Baggo Official",
+  "version": 7,
+  "description": "The starter pantry Baggo ships with: ...",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
   "categories": [
     { "slug": "fruits", "icon": "apple", "name": { "en": "Fruits", ... } }
   ],
@@ -43,17 +49,59 @@ that one file, and then the photos it names.
 ```
 
 `schema_version` is the shape of the file — 2 is this one, 1 was the older
-split across a root manifest, a list manifest and `categories.json`. `version`
-is the release number, and every field below it is something the app renders:
-nothing is published that nothing reads.
+split across a root manifest, a list manifest and `categories.json`. A client
+that meets a HIGHER number imports what it can and warns that the catalog was
+made for a newer Baggo, rather than refusing it.
+
+`id` is this catalog's permanent identity, chosen once and never changed.
+Baggo keys an installed catalog off it — not off the URL it came from, not off
+a filename — so the same catalog fetched from a mirror or handed over as a file
+is still recognised as the same catalog, and an item's identity is (this id,
+its slug). Reverse-DNS is the recommendation. Changing it publishes a second
+catalog that happens to look like the first.
+
+`name` is what a user sees in the catalog list and on the screen that asks
+them to approve this catalog — they approve a catalog, not a URL, so the file
+has to say what it is. `version` is the release number: an integer the author
+increments on every publish, and what clients compare. Not a tag, not a date.
+
+`description`, `homepage`, `author` and `license` are optional, and are for
+the human deciding whether to install this. `homepage` is where they report a
+problem with it, so publish one.
+
+`default_locale` is the language a client falls back to when a name has no
+entry for the app's own; `expires` (days, default 7, minimum 1) is how often a
+client re-checks a catalog it fetched by URL. Both may be left out.
 
 Items carry no icon of their own. An item without a photo renders its
 CATEGORY's icon, which is the only icon the app has ever drawn for a row.
 
+## Format, and house rules
+
+Two sets of rules apply to this file, and a fork should know which is which.
+
+The FORMAT is what any Baggo catalog may be, and `schema/manifest.schema.json`
+describes exactly that: `slug`, `category` and `name` on an item, `slug` and
+`name` on a category, everything else optional. A `name` or a `note` may be a
+plain string instead of a locale map — language-neutral, shown as written —
+and no locale is mandatory. An `image` may be an absolute `https://` URL
+instead of a path, which is what lets a standalone JSON catalog link out to
+photos it does not host. A catalog is capped at 5 MB, 5,000 items, 200
+categories and 2 MB per image.
+
+The HOUSE RULES are this catalog's own, and live in `scripts/validate.py`
+because they are stricter than the format: every name and note is a locale map
+carrying all five app locales, and every photo is exactly 1024x1024 JPEG. They
+are the right rules for the official catalog and the wrong ones to inherit
+blindly — a fork serving one country in one language is a perfectly valid
+catalog, and only the validator would object.
+
 ## Making your own
 
 1. Fork this repository (or start an empty one with the same three pieces).
-2. Set `version` to 1.
+2. Set `id` to something nobody else will use (reverse-DNS of a domain or
+   GitHub account you control), `name` to yours and `version` to 1, and point
+   `homepage` at wherever someone should report a problem with it.
 3. Replace the `categories` and `items` with yours. Keep the rules below.
 4. Add photos under `images/`, or leave them out — an item with no file
    renders its category's icon instead, and the validator only warns.
@@ -66,14 +114,15 @@ catalog.
 
 ## Contracts
 
-**Slugs are permanent.** Item slugs, category slugs and icon names are all
+**The `id` is permanent, and so are slugs.** Item slugs, category slugs and icon names are all
 `^[a-z0-9]+(-[a-z0-9]+)*$` and are never renamed once released — clients key
 off them. A wrong slug is retired by adding a new one, not by renaming.
 
-**Names are locale maps.** Every `name` carries a non-empty value for all five
-locales the app ships: `en`, `fr`, `es`, `de`, `ar`. The app has no other
-translation source for catalog names, so a missing one would leave a shopper
-with a blank row.
+**Names are locale maps.** House rule, not format. Every `name` here carries a
+non-empty value for all five locales the app ships: `en`, `fr`, `es`, `de`,
+`ar`. The app has no other translation source for catalog names, so a missing
+one would leave a shopper with a blank row. The format itself asks for none of
+them, and accepts a plain string as a language-neutral name.
 
 **Categories are local to the manifest.** An item's `category` must resolve to
 a `slug` in the same file's `categories` array. Their order is shelf order: the
@@ -98,7 +147,10 @@ is what every row of that category falls back to when it has no photo.
 referenced by an item's `image` field as a path relative to the manifest. The
 path is declared even when the file has not been produced yet: missing images
 are expected and valid — the app falls back to the category's icon, and the
-validator reports them as warnings rather than failures.
+validator reports them as warnings rather than failures. The one size is a
+house rule; the format accepts JPEG, PNG or WebP from 64x64 up (512x512 or
+larger preferred, square recommended) and up to 2 MB, because Baggo downscales
+what it downloads and never upscales.
 
 **Only the full-size photo is published.** Thumbnails are the app's business.
 Baggo resizes each photo when it downloads it, so this repository carries no
@@ -161,6 +213,8 @@ python scripts/validate.py
 ```
 
 It exits 0 on success and 1 on failure, checking schema conformance, slug
-uniqueness, referential integrity, image format/dimensions, locale
-completeness and text length, then prints a summary. CI runs the same command
-on every push and pull request.
+uniqueness, referential integrity, the format's size limits, image
+format/dimensions, locale completeness and text length, then prints a summary.
+The summary opens with the catalog's name, version and languages — the three
+things a user is shown before they install it — so the author reads what the
+user will. CI runs the same command on every push and pull request.
