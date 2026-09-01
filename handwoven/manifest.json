@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.handwoven",
   "name": "Baggo Catalog (Handwoven)",
-  "version": 1,
+  "version": 2,
   "description": "The official pantry in Baggo’s handwoven variant: the same groceries, the same categories, dressed in artwork of its own.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -186,7 +186,7 @@
         "de": "Äpfel",
         "ar": "تفاح"
       },
-      "image": "images/apples.jpg"
+      "image": "images/apples.png"
     },
     {
       "slug": "bananas",
@@ -206,7 +206,7 @@
         "de": "Bananen lassen anderes Obst schneller reifen — getrennt lagern.",
         "ar": "الموز يسرّع نضج الفواكه المجاورة، لذا احفظه بمفرده."
       },
-      "image": "images/bananas.jpg"
+      "image": "images/bananas.png"
     },
     {
       "slug": "oranges",
@@ -219,7 +219,7 @@
         "de": "Orangen",
         "ar": "برتقال"
       },
-      "image": "images/oranges.jpg"
+      "image": "images/oranges.png"
     },
     {
       "slug": "lemons",
@@ -232,7 +232,7 @@
         "de": "Zitronen",
         "ar": "ليمون"
       },
-      "image": "images/lemons.jpg"
+      "image": "images/lemons.png"
     },
     {
       "slug": "strawberries",
@@ -245,7 +245,7 @@
         "de": "Erdbeeren",
         "ar": "فراولة"
       },
-      "image": "images/strawberries.jpg"
+      "image": "images/strawberries.png"
     },
     {
       "slug": "grapes",
@@ -258,7 +258,7 @@
         "de": "Trauben",
         "ar": "عنب"
       },
-      "image": "images/grapes.jpg"
+      "image": "images/grapes.png"
     },
     {
       "slug": "avocados",
@@ -278,7 +278,7 @@
         "de": "Reife und feste mischen: bei Raumtemperatur nachreifen lassen, dann kühlen.",
         "ar": "اشترِ بعضه ناضجًا وبعضه صلبًا: اتركه ينضج في حرارة الغرفة ثم ضعه في الثلاجة."
       },
-      "image": "images/avocados.jpg"
+      "image": "images/avocados.png"
     },
     {
       "slug": "tomatoes",
@@ -298,7 +298,7 @@
         "de": "Bei Raumtemperatur lagern — im Kühlschrank verlieren sie Aroma.",
         "ar": "احفظها في حرارة الغرفة، فالثلاجة تُفقدها نكهتها."
       },
-      "image": "images/tomatoes.jpg"
+      "image": "images/tomatoes.png"
     },
     {
       "slug": "cucumbers",
@@ -311,7 +311,7 @@
         "de": "Gurken",
         "ar": "خيار"
       },
-      "image": "images/cucumbers.jpg"
+      "image": "images/cucumbers.png"
     },
     {
       "slug": "carrots",
@@ -324,7 +324,7 @@
         "de": "Karotten",
         "ar": "جزر"
       },
-      "image": "images/carrots.jpg"
+      "image": "images/carrots.png"
     },
     {
       "slug": "potatoes",
@@ -344,7 +344,7 @@
         "de": "Kühl und dunkel lagern, nie neben Zwiebeln.",
         "ar": "خزّنها في مكان بارد ومظلم، وبعيدًا عن البصل."
       },
-      "image": "images/potatoes.jpg"
+      "image": "images/potatoes.png"
     },
     {
       "slug": "onions",
@@ -357,7 +357,7 @@
         "de": "Zwiebeln",
         "ar": "بصل"
       },
-      "image": "images/onions.jpg"
+      "image": "images/onions.png"
     },
     {
       "slug": "garlic",
@@ -377,7 +377,7 @@
         "de": "Feste Knollen mit straffer Schale wählen — trocken und luftig halten sie monatelang.",
         "ar": "اختر رؤوسًا صلبة بقشرة محكمة؛ تبقى أشهرًا في مكان جاف جيد التهوية."
       },
-      "image": "images/garlic.jpg"
+      "image": "images/garlic.png"
     },
     {
       "slug": "bell-peppers",
@@ -390,7 +390,7 @@
         "de": "Paprika",
         "ar": "فلفل حلو"
       },
-      "image": "images/bell-peppers.jpg"
+      "image": "images/bell-peppers.png"
     },
     {
       "slug": "lettuce",
@@ -403,7 +403,7 @@
         "de": "Kopfsalat",
         "ar": "خس"
       },
-      "image": "images/lettuce.jpg"
+      "image": "images/lettuce.png"
     },
     {
       "slug": "spinach",
@@ -423,7 +423,7 @@
         "de": "Vor dem Lagern gut waschen und trocknen — Restfeuchte lässt ihn welken.",
         "ar": "اغسله وجفّفه جيدًا قبل التخزين، فالرطوبة تجعله يذبل."
       },
-      "image": "images/spinach.jpg"
+      "image": "images/spinach.png"
     },
     {
       "slug": "broccoli",
@@ -436,7 +436,7 @@
         "de": "Brokkoli",
         "ar": "بروكلي"
       },
-      "image": "images/broccoli.jpg"
+      "image": "images/broccoli.png"
     },
     {
       "slug": "mushrooms",
@@ -456,7 +456,7 @@
         "de": "In Papier statt Plastik aufbewahren und abwischen statt einweichen.",
         "ar": "احفظه في ورق لا في بلاستيك، وامسحه بدل نقعه في الماء."
       },
-      "image": "images/mushrooms.jpg"
+      "image": "images/mushrooms.png"
     },
     {
       "slug": "zucchini",
@@ -469,7 +469,7 @@
         "de": "Zucchini",
         "ar": "كوسة"
       },
-      "image": "images/zucchini.jpg"
+      "image": "images/zucchini.png"
     },
     {
       "slug": "milk",
@@ -489,7 +489,7 @@
         "de": "Hinten im Kühlschrank lagern, nicht in der Tür, wo es wärmer ist.",
         "ar": "ضعه في عمق الثلاجة لا في بابها حيث ترتفع الحرارة."
       },
-      "image": "images/milk.jpg"
+      "image": "images/milk.png"
     },
     {
       "slug": "eggs",
@@ -509,7 +509,7 @@
         "de": "Im Karton lassen — er schützt vor Gerüchen und Stößen.",
         "ar": "احفظه في عبوته؛ فهي تحميه من الروائح والصدمات."
       },
-      "image": "images/eggs.jpg"
+      "image": "images/eggs.png"
     },
     {
       "slug": "butter",
@@ -522,7 +522,7 @@
         "de": "Butter",
         "ar": "زبدة"
       },
-      "image": "images/butter.jpg"
+      "image": "images/butter.png"
     },
     {
       "slug": "cheddar-cheese",
@@ -535,7 +535,7 @@
         "de": "Cheddar-Käse",
         "ar": "جبن شيدر"
       },
-      "image": "images/cheddar-cheese.jpg"
+      "image": "images/cheddar-cheese.png"
     },
     {
       "slug": "yogurt",
@@ -548,7 +548,7 @@
         "de": "Joghurt",
         "ar": "زبادي"
       },
-      "image": "images/yogurt.jpg"
+      "image": "images/yogurt.png"
     },
     {
       "slug": "cream",
@@ -561,7 +561,7 @@
         "de": "Sahne",
         "ar": "كريمة"
       },
-      "image": "images/cream.jpg"
+      "image": "images/cream.png"
     },
     {
       "slug": "feta-cheese",
@@ -574,7 +574,7 @@
         "de": "Feta-Käse",
         "ar": "جبن فيتا"
       },
-      "image": "images/feta-cheese.jpg"
+      "image": "images/feta-cheese.png"
     },
     {
       "slug": "cream-cheese",
@@ -587,7 +587,7 @@
         "de": "Frischkäse",
         "ar": "جبن كريمي"
       },
-      "image": "images/cream-cheese.jpg"
+      "image": "images/cream-cheese.png"
     },
     {
       "slug": "chicken-breast",
@@ -607,7 +607,7 @@
         "de": "Ins unterste Fach legen, damit nichts tropft; was nicht binnen zwei Tagen gekocht wird, einfrieren.",
         "ar": "ضعه في الرف السفلي كي لا يقطر على غيره، وجمّد ما لن تطبخه خلال يومين."
       },
-      "image": "images/chicken-breast.jpg"
+      "image": "images/chicken-breast.png"
     },
     {
       "slug": "ground-beef",
@@ -627,7 +627,7 @@
         "de": "Am Kauftag verbrauchen oder einfrieren — verdirbt schneller als ganze Stücke.",
         "ar": "استخدمه أو جمّده يوم شرائه، فهو يفسد أسرع من القطع الكاملة."
       },
-      "image": "images/ground-beef.jpg"
+      "image": "images/ground-beef.png"
     },
     {
       "slug": "beef-steak",
@@ -640,7 +640,7 @@
         "de": "Rindersteak",
         "ar": "شريحة لحم بقري"
       },
-      "image": "images/beef-steak.jpg"
+      "image": "images/beef-steak.png"
     },
     {
       "slug": "lamb-chops",
@@ -653,7 +653,7 @@
         "de": "Lammkoteletts",
         "ar": "ريش ضأن"
       },
-      "image": "images/lamb-chops.jpg"
+      "image": "images/lamb-chops.png"
     },
     {
       "slug": "sausages",
@@ -666,7 +666,7 @@
         "de": "Würstchen",
         "ar": "نقانق"
       },
-      "image": "images/sausages.jpg"
+      "image": "images/sausages.png"
     },
     {
       "slug": "bacon",
@@ -679,7 +679,7 @@
         "de": "Speck",
         "ar": "لحم مقدد"
       },
-      "image": "images/bacon.jpg"
+      "image": "images/bacon.png"
     },
     {
       "slug": "salmon",
@@ -692,7 +692,7 @@
         "de": "Lachs",
         "ar": "سلمون"
       },
-      "image": "images/salmon.jpg"
+      "image": "images/salmon.png"
     },
     {
       "slug": "shrimp",
@@ -712,7 +712,7 @@
         "de": "Tiefgekühlte Garnelen sind oft frischer als aufgetaute an der Theke.",
         "ar": "الروبيان المجمّد غالبًا أطزج من المذاب المعروض على الطاولة."
       },
-      "image": "images/shrimp.jpg"
+      "image": "images/shrimp.png"
     },
     {
       "slug": "sea-bass",
@@ -732,7 +732,7 @@
         "de": "Frischer Fisch riecht nach Meer, hat klare Augen und festes Fleisch.",
         "ar": "السمك الطازج تفوح منه رائحة البحر، وعيناه صافيتان ولحمه متماسك."
       },
-      "image": "images/sea-bass.jpg"
+      "image": "images/sea-bass.png"
     },
     {
       "slug": "squid",
@@ -745,7 +745,7 @@
         "de": "Tintenfisch",
         "ar": "حبار"
       },
-      "image": "images/squid.jpg"
+      "image": "images/squid.png"
     },
     {
       "slug": "bread",
@@ -765,7 +765,7 @@
         "de": "Brotkasten oder Papiertüte halten es besser frisch als der Kühlschrank, in dem es schneller altbacken wird.",
         "ar": "صندوق الخبز أو كيس ورقي يحفظه أفضل من الثلاجة التي تجعله يابسًا أسرع."
       },
-      "image": "images/bread.jpg"
+      "image": "images/bread.png"
     },
     {
       "slug": "baguette",
@@ -785,7 +785,7 @@
         "de": "Am Backtag am besten — Reste einfrieren und im heißen Ofen aufbacken.",
         "ar": "ألذّ في يوم خبزها؛ جمّد الباقي وأعِد تسخينه في فرن ساخن."
       },
-      "image": "images/baguette.jpg"
+      "image": "images/baguette.png"
     },
     {
       "slug": "pita-bread",
@@ -798,7 +798,7 @@
         "de": "Pitabrot",
         "ar": "خبز عربي"
       },
-      "image": "images/pita-bread.jpg"
+      "image": "images/pita-bread.png"
     },
     {
       "slug": "croissants",
@@ -811,7 +811,7 @@
         "de": "Croissants",
         "ar": "كرواسون"
       },
-      "image": "images/croissants.jpg"
+      "image": "images/croissants.png"
     },
     {
       "slug": "bagels",
@@ -824,7 +824,7 @@
         "de": "Bagels",
         "ar": "خبز بيغل"
       },
-      "image": "images/bagels.jpg"
+      "image": "images/bagels.png"
     },
     {
       "slug": "tortillas",
@@ -837,7 +837,7 @@
         "de": "Tortillas",
         "ar": "خبز تورتيلا"
       },
-      "image": "images/tortillas.jpg"
+      "image": "images/tortillas.png"
     },
     {
       "slug": "sugar",
@@ -850,7 +850,7 @@
         "de": "Zucker",
         "ar": "سكر"
       },
-      "image": "images/sugar.jpg"
+      "image": "images/sugar.png"
     },
     {
       "slug": "flour",
@@ -870,7 +870,7 @@
         "de": "Luftdicht lagern; Vollkornmehl hält im Kühlschrank länger.",
         "ar": "احفظه في وعاء محكم؛ ودقيق القمح الكامل يدوم أطول في الثلاجة."
       },
-      "image": "images/flour.jpg"
+      "image": "images/flour.png"
     },
     {
       "slug": "salt",
@@ -883,7 +883,7 @@
         "de": "Salz",
         "ar": "ملح"
       },
-      "image": "images/salt.jpg"
+      "image": "images/salt.png"
     },
     {
       "slug": "baking-powder",
@@ -903,7 +903,7 @@
         "de": "Verliert nach dem Öffnen an Kraft — ein Löffel in heißem Wasser muss sprudeln.",
         "ar": "يفقد فعاليته بعد فتحه؛ وملعقة منه في ماء ساخن يجب أن تفور."
       },
-      "image": "images/baking-powder.jpg"
+      "image": "images/baking-powder.png"
     },
     {
       "slug": "honey",
@@ -923,7 +923,7 @@
         "de": "Kristallisierter Honig ist nicht verdorben — das Glas in warmes Wasser stellen.",
         "ar": "تبلور العسل لا يعني فساده؛ ضع البرطمان في ماء دافئ."
       },
-      "image": "images/honey.jpg"
+      "image": "images/honey.png"
     },
     {
       "slug": "peanut-butter",
@@ -936,7 +936,7 @@
         "de": "Erdnussbutter",
         "ar": "زبدة الفول السوداني"
       },
-      "image": "images/peanut-butter.jpg"
+      "image": "images/peanut-butter.png"
     },
     {
       "slug": "yeast",
@@ -956,7 +956,7 @@
         "de": "Vor dem Kauf das Datum prüfen und angebrochene Tütchen im Kühlschrank lagern.",
         "ar": "تحقق من تاريخ الصلاحية قبل الشراء، واحفظ الأكياس المفتوحة في الثلاجة."
       },
-      "image": "images/yeast.jpg"
+      "image": "images/yeast.png"
     },
     {
       "slug": "cornstarch",
@@ -969,7 +969,7 @@
         "de": "Speisestärke",
         "ar": "نشا الذرة"
       },
-      "image": "images/cornstarch.jpg"
+      "image": "images/cornstarch.png"
     },
     {
       "slug": "jam",
@@ -995,7 +995,7 @@
         "de": "Schokoaufstrich",
         "ar": "شوكولاتة قابلة للدهن"
       },
-      "image": "images/chocolate-spread.jpg"
+      "image": "images/chocolate-spread.png"
     },
     {
       "slug": "pancake-mix",
@@ -1008,7 +1008,7 @@
         "de": "Pfannkuchenmischung",
         "ar": "خليط البانكيك"
       },
-      "image": "images/pancake-mix.jpg"
+      "image": "images/pancake-mix.png"
     },
     {
       "slug": "rice",
@@ -1028,7 +1028,7 @@
         "de": "Spülen, bis das Wasser klar ist — so bleiben die Körner locker.",
         "ar": "اغسله حتى يصفو الماء لتحصل على حبات منفصلة هشّة."
       },
-      "image": "images/rice.jpg"
+      "image": "images/rice.png"
     },
     {
       "slug": "spaghetti",
@@ -1041,7 +1041,7 @@
         "de": "Spaghetti",
         "ar": "سباغيتي"
       },
-      "image": "images/spaghetti.jpg"
+      "image": "images/spaghetti.png"
     },
     {
       "slug": "penne",
@@ -1054,7 +1054,7 @@
         "de": "Penne",
         "ar": "معكرونة بيني"
       },
-      "image": "images/penne.jpg"
+      "image": "images/penne.png"
     },
     {
       "slug": "couscous",
@@ -1067,7 +1067,7 @@
         "de": "Couscous",
         "ar": "كسكس"
       },
-      "image": "images/couscous.jpg"
+      "image": "images/couscous.png"
     },
     {
       "slug": "quinoa",
@@ -1080,7 +1080,7 @@
         "de": "Quinoa",
         "ar": "كينوا"
       },
-      "image": "images/quinoa.jpg"
+      "image": "images/quinoa.png"
     },
     {
       "slug": "bulgur",
@@ -1093,7 +1093,7 @@
         "de": "Bulgur",
         "ar": "برغل"
       },
-      "image": "images/bulgur.jpg"
+      "image": "images/bulgur.png"
     },
     {
       "slug": "noodles",
