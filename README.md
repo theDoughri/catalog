@@ -1,7 +1,8 @@
 # Baggo Catalog
 
-Data-only repository for the item catalog shipped with the Baggo shopping list
-app: one JSON manifest plus item photos. No application code lives here.
+Data-only repository for the catalogs Baggo publishes: one JSON manifest plus
+item photos per catalog. No application code lives here, and nothing is built
+or deployed — the files on the branch ARE the published catalogs.
 
 A catalog is a starting pantry — the things a shopper already buys, each with a
 category, a unit, a photo and sometimes a tip — so a new install opens
@@ -9,18 +10,42 @@ on a list worth using instead of an empty page. This repository is the official
 one; it is also the template. Fork it, put your own items in the manifest, point
 the app at your fork, and that is your catalog.
 
+Baggo offers SEVERAL catalogs of its own, and each is a catalog in the ordinary
+sense — its own folder, its own permanent `id`, its own `version`, installed,
+updated and removed like anybody else's. They differ in what they DRESS the
+pantry in, not in what a catalog is:
+
+| Folder       | `id`                   | Name                       |
+| ------------ | ---------------------- | -------------------------- |
+| `official/`  | `dev.baggo.official`   | Baggo Catalog (Official)   |
+| `handwoven/` | `dev.baggo.handwoven`  | Baggo Catalog (Handwoven)  |
+
+`official/` is the one a fresh install seeds from. `handwoven/` currently
+carries the same groceries and the same categories, and is where artwork of its
+own goes. A device may hold both, but their item names collide by design, so
+the second install asks whether to keep the items already there or let the
+incoming catalog take them over.
+
+Folder names are URL path segments — the app fetches
+`.../<folder>/manifest.json` — so they stay lowercase and hyphenated whatever
+the catalog calls itself. `name` inside the manifest is what a user reads.
+
 ## The whole format
 
 ```
-manifest.json     the catalog: identity, version, categories, items
-images/           1024x1024 JPEG item photos, one per item slug
-items_images.csv  hand-picked photo link per item (name,link) — authoring only
+official/
+  manifest.json   the catalog: identity, version, categories, items
+  images/         1024x1024 JPEG item photos, one per item slug
+handwoven/
+  manifest.json
+  images/
 schema/           JSON Schema (draft 2020-12) for the manifest
-scripts/          validate.py, fetch_images.py
 ```
 
-`manifest.json` is the catalog. There is nothing else to read: the app fetches
-that one file, and then the photos it names.
+A catalog folder holds a manifest and its photos and nothing else. `manifest.json`
+is the catalog: the app fetches that one file, and then the photos it names.
+Image paths are relative to the MANIFEST, so a folder is self-contained and can
+be moved, copied or forked whole.
 
 ```json
 {
@@ -89,27 +114,29 @@ instead of a path, which is what lets a standalone JSON catalog link out to
 photos it does not host. A catalog is capped at 5 MB, 5,000 items, 200
 categories and 2 MB per image.
 
-The HOUSE RULES are this catalog's own, and live in `scripts/validate.py`
-because they are stricter than the format: every name and note is a locale map
-carrying all five app locales, and every photo is exactly 1024x1024 JPEG. They
+The HOUSE RULES are these catalogs' own, and are stricter than the format:
+every name and note is a locale map carrying all five app locales, and every
+photo is exactly 1024x1024 JPEG. They are written down under Contracts below —
+there is no validator in the repository any more, so they are read and applied
+by whoever edits a manifest. They
 are the right rules for the official catalog and the wrong ones to inherit
 blindly — a fork serving one country in one language is a perfectly valid
-catalog, and only the validator would object.
+catalog, and only these house rules would object.
 
 ## Making your own
 
-1. Fork this repository (or start an empty one with the same three pieces).
+1. Fork this repository, or start an empty one with a `manifest.json` and an
+   `images/` folder beside it.
 2. Set `id` to something nobody else will use (reverse-DNS of a domain or
    GitHub account you control), `name` to yours and `version` to 1, and point
    `homepage` at wherever someone should report a problem with it.
 3. Replace the `categories` and `items` with yours. Keep the rules below.
 4. Add photos under `images/`, or leave them out — an item with no file
-   renders its category's icon instead, and the validator only warns.
-5. Run `python scripts/validate.py` until it passes.
-6. Push to `main`. Your catalog is the raw URL of that branch:
-   `https://raw.githubusercontent.com/<you>/<repo>/main/`
+   renders its category's icon instead.
+5. Push. Your catalog is the raw URL of the manifest:
+   `https://raw.githubusercontent.com/<you>/<repo>/<branch>/manifest.json`
 
-Nothing needs building or deploying. The file on `main` IS the published
+Nothing needs building or deploying. The file on the branch IS the published
 catalog.
 
 ## Contracts
@@ -146,8 +173,8 @@ is what every row of that category falls back to when it has no photo.
 **Images are exactly 1024x1024 JPEG**, stored at `images/<slug>.jpg` and
 referenced by an item's `image` field as a path relative to the manifest. The
 path is declared even when the file has not been produced yet: missing images
-are expected and valid — the app falls back to the category's icon, and the
-validator reports them as warnings rather than failures. The one size is a
+are expected and valid — the app falls back to the category's icon. The one
+size is a
 house rule; the format accepts JPEG, PNG or WebP from 64x64 up (512x512 or
 larger preferred, square recommended) and up to 2 MB, because Baggo downscales
 what it downloads and never upscales.
@@ -156,8 +183,8 @@ what it downloads and never upscales.
 Baggo resizes each photo when it downloads it, so this repository carries no
 derived files that could fall out of step with their sources.
 
-**Text has caps.** A category name, item name or note translation that exceeds
-what the app can store (34, 34 and 144 characters) fails validation, because
+**Text has caps.** A category name, item name or note translation must stay
+within what the app can store (34, 34 and 144 characters), because
 the app seeds all three into fields the shopper can edit — anything longer
 would be silently truncated the first time they opened that row.
 
@@ -167,54 +194,14 @@ git flow (https://nvie.com/posts/a-successful-git-branching-model/): work lands
 on `develop`, `main` holds released catalog only. Feature branches come off
 `develop`; a release branch merges into `main` and back into `develop`.
 
-**A merge to `main` is the release, in the literal sense.** The app fetches
-`raw.githubusercontent.com/theDoughri/catalog/main/`, so nothing on `develop`
-reaches a device. Bump the `version` integer on the release branch, because
-that number, not the tag, is what clients compare.
+**The app currently fetches `develop`.** Baggo names
+`raw.githubusercontent.com/theDoughri/catalog/develop/<folder>/manifest.json`,
+so a push to `develop` reaches devices on their next re-check — there is no
+release step in between, and no draft state. Edit accordingly: bump the
+`version` integer in the same commit that changes a manifest, because that
+number, not the tag and not the commit, is what clients compare, and a change
+published without one is a change no device will ever pick up.
 
-## Fetching item images
-
-Item photos are hand-picked. `items_images.csv` carries one row per item
-(`name` is the item slug, `link` is the photo URL); fill the `link` column from
-sources such as pixabay.com or unsplash.com, then run:
-
-```bash
-pip install Pillow
-python scripts/fetch_images.py
-# redo one item after changing its link:
-python scripts/fetch_images.py --force --only apples
-```
-
-For each row with a link, the script downloads the photo, center-crops it to
-exactly 1024x1024, and saves the JPEG at the item's declared `image` path.
-Links may be pasted straight from the browser: an Unsplash photo page is
-resolved through its full-resolution download endpoint, a Pixabay photo page
-or cdn.pixabay.com link is resolved to its largest rendition, and any direct
-image URL works as-is. Sources must be at least 1024x1024 — the script never
-upscales; too-small or broken links are reported as failed and the file is
-left missing (which the validator treats as a warning, not an error).
-
-Re-running is safe: rows with an empty link and items whose image file
-already exists are skipped, so the CSV can be filled gradually. The summary
-also flags CSV rows that match no item and items missing from the CSV. When
-adding new items, add a matching CSV row. Check each source's license terms
-when picking (Pixabay and Unsplash images are free to use in apps without
-attribution).
-
-The CSV is an authoring tool. It is not part of the published format — a
-catalog with photos already in `images/` needs no CSV at all.
-
-## Running the validator
-
-```bash
-# Pillow is only needed once image files exist
-pip install Pillow
-python scripts/validate.py
-```
-
-It exits 0 on success and 1 on failure, checking schema conformance, slug
-uniqueness, referential integrity, the format's size limits, image
-format/dimensions, locale completeness and text length, then prints a summary.
-The summary opens with the catalog's name, version and languages — the three
-things a user is shown before they install it — so the author reads what the
-user will. CI runs the same command on every push and pull request.
+`main` still holds released catalogs, and the pointer is one constant in the
+app (`CatalogService.defaultCatalogUrl`); moving it back to `main` is that one
+edit plus a release branch.
