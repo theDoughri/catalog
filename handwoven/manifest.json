@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.handwoven",
   "name": "Baggo Catalog (Handwoven)",
-  "version": 2,
+  "version": 3,
   "description": "The official pantry in Baggo’s handwoven variant: the same groceries, the same categories, dressed in artwork of its own.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -1106,7 +1106,7 @@
         "de": "Nudeln",
         "ar": "نودلز"
       },
-      "image": "images/noodles.jpg"
+      "image": "images/noodles.png"
     },
     {
       "slug": "lentils",
@@ -1119,7 +1119,7 @@
         "de": "Linsen",
         "ar": "عدس"
       },
-      "image": "images/lentils.jpg"
+      "image": "images/lentils.png"
     },
     {
       "slug": "dried-chickpeas",
@@ -1139,7 +1139,7 @@
         "de": "Über Nacht einweichen; ältere Packungen brauchen deutlich länger.",
         "ar": "انقعه ليلة كاملة؛ والعبوات القديمة تحتاج وقت طهي أطول بكثير."
       },
-      "image": "images/dried-chickpeas.jpg"
+      "image": "images/dried-chickpeas.png"
     },
     {
       "slug": "cereal",
@@ -1152,7 +1152,7 @@
         "de": "Frühstücksflocken",
         "ar": "حبوب الإفطار"
       },
-      "image": "images/cereal.jpg"
+      "image": "images/cereal.png"
     },
     {
       "slug": "oats",
@@ -1165,7 +1165,7 @@
         "de": "Haferflocken",
         "ar": "شوفان"
       },
-      "image": "images/oats.jpg"
+      "image": "images/oats.png"
     },
     {
       "slug": "granola",
@@ -1178,7 +1178,7 @@
         "de": "Granola",
         "ar": "جرانولا"
       },
-      "image": "images/granola.jpg"
+      "image": "images/granola.png"
     },
     {
       "slug": "canned-tomatoes",
@@ -1191,7 +1191,7 @@
         "de": "Dosentomaten",
         "ar": "طماطم معلبة"
       },
-      "image": "images/canned-tomatoes.jpg"
+      "image": "images/canned-tomatoes.png"
     },
     {
       "slug": "tomato-paste",
@@ -1204,7 +1204,7 @@
         "de": "Tomatenmark",
         "ar": "معجون طماطم"
       },
-      "image": "images/tomato-paste.jpg"
+      "image": "images/tomato-paste.png"
     },
     {
       "slug": "canned-tuna",
@@ -1224,7 +1224,7 @@
         "de": "In Olivenöl für Salate, im eigenen Saft, wenn es leichter sein soll.",
         "ar": "بزيت الزيتون للسلطات، وبالماء إن أردته أخفّ."
       },
-      "image": "images/canned-tuna.jpg"
+      "image": "images/canned-tuna.png"
     },
     {
       "slug": "canned-corn",
@@ -1237,7 +1237,7 @@
         "de": "Dosenmais",
         "ar": "ذرة معلبة"
       },
-      "image": "images/canned-corn.jpg"
+      "image": "images/canned-corn.png"
     },
     {
       "slug": "canned-beans",
@@ -1257,7 +1257,7 @@
         "de": "Vor dem Verwenden abspülen, um die salzige Lake zu entfernen.",
         "ar": "اشطفه قبل الاستعمال للتخلص من ماء التعليب المالح."
       },
-      "image": "images/canned-beans.jpg"
+      "image": "images/canned-beans.png"
     },
     {
       "slug": "olives",
@@ -1270,7 +1270,7 @@
         "de": "Oliven",
         "ar": "زيتون"
       },
-      "image": "images/olives.jpg"
+      "image": "images/olives.png"
     },
     {
       "slug": "pickles",
@@ -1283,7 +1283,7 @@
         "de": "Essiggurken",
         "ar": "مخللات"
       },
-      "image": "images/pickles.jpg"
+      "image": "images/pickles.png"
     },
     {
       "slug": "frozen-peas",
@@ -1303,7 +1303,7 @@
         "de": "Direkt gefroren garen — aufgetaut werden sie matschig.",
         "ar": "اطبخه مجمّدًا مباشرة، فإذابته أولًا تجعله طريًا مهروسًا."
       },
-      "image": "images/frozen-peas.jpg"
+      "image": "images/frozen-peas.png"
     },
     {
       "slug": "frozen-mixed-vegetables",
@@ -1316,7 +1316,7 @@
         "de": "Tiefkühlgemüse",
         "ar": "خضار مشكلة مجمدة"
       },
-      "image": "images/frozen-mixed-vegetables.jpg"
+      "image": "images/frozen-mixed-vegetables.png"
     },
     {
       "slug": "frozen-pizza",
@@ -1329,7 +1329,7 @@
         "de": "Tiefkühlpizza",
         "ar": "بيتزا مجمدة"
       },
-      "image": "images/frozen-pizza.jpg"
+      "image": "images/frozen-pizza.png"
     },
     {
       "slug": "ice-cream",
@@ -1349,7 +1349,7 @@
         "de": "Hinten im Gefrierfach lagern — an der Tür taut es an und friert wieder.",
         "ar": "ضعه في عمق الفريزر؛ فعند الباب يذوب ويتجمد من جديد."
       },
-      "image": "images/ice-cream.jpg"
+      "image": "images/ice-cream.png"
     },
     {
       "slug": "frozen-fries",
@@ -1362,7 +1362,7 @@
         "de": "Tiefkühlpommes",
         "ar": "بطاطس مقلية مجمدة"
       },
-      "image": "images/frozen-fries.jpg"
+      "image": "images/frozen-fries.png"
     },
     {
       "slug": "frozen-berries",
@@ -1375,7 +1375,7 @@
         "de": "Tiefkühlbeeren",
         "ar": "توت مجمد"
       },
-      "image": "images/frozen-berries.jpg"
+      "image": "images/frozen-berries.png"
     },
     {
       "slug": "potato-chips",
@@ -1388,7 +1388,7 @@
         "de": "Kartoffelchips",
         "ar": "رقائق بطاطس"
       },
-      "image": "images/potato-chips.jpg"
+      "image": "images/potato-chips.png"
     },
     {
       "slug": "popcorn",
@@ -1401,7 +1401,7 @@
         "de": "Popcorn",
         "ar": "فشار"
       },
-      "image": "images/popcorn.jpg"
+      "image": "images/popcorn.png"
     },
     {
       "slug": "chocolate-bar",
@@ -1414,7 +1414,7 @@
         "de": "Schokoladentafel",
         "ar": "لوح شوكولاتة"
       },
-      "image": "images/chocolate-bar.jpg"
+      "image": "images/chocolate-bar.png"
     },
     {
       "slug": "biscuits",
@@ -1427,7 +1427,7 @@
         "de": "Kekse",
         "ar": "بسكويت"
       },
-      "image": "images/biscuits.jpg"
+      "image": "images/biscuits.png"
     },
     {
       "slug": "crackers",
@@ -1440,7 +1440,7 @@
         "de": "Cracker",
         "ar": "مقرمشات"
       },
-      "image": "images/crackers.jpg"
+      "image": "images/crackers.png"
     },
     {
       "slug": "mixed-nuts",
@@ -1460,7 +1460,7 @@
         "de": "Nüsse werden ranzig — kleine Tüten kaufen und kühl und dunkel lagern.",
         "ar": "المكسرات تزنخ؛ اشترِ أكياسًا صغيرة واحفظها في مكان بارد ومظلم."
       },
-      "image": "images/mixed-nuts.jpg"
+      "image": "images/mixed-nuts.png"
     },
     {
       "slug": "granola-bars",
@@ -1473,7 +1473,7 @@
         "de": "Müsliriegel",
         "ar": "ألواح جرانولا"
       },
-      "image": "images/granola-bars.jpg"
+      "image": "images/granola-bars.png"
     },
     {
       "slug": "bottled-water",
@@ -1486,7 +1486,7 @@
         "de": "Wasser in Flaschen",
         "ar": "مياه معبأة"
       },
-      "image": "images/bottled-water.jpg"
+      "image": "images/bottled-water.png"
     },
     {
       "slug": "sparkling-water",
@@ -1499,7 +1499,7 @@
         "de": "Sprudelwasser",
         "ar": "مياه فوارة"
       },
-      "image": "images/sparkling-water.jpg"
+      "image": "images/sparkling-water.png"
     },
     {
       "slug": "orange-juice",
@@ -1512,7 +1512,7 @@
         "de": "Orangensaft",
         "ar": "عصير برتقال"
       },
-      "image": "images/orange-juice.jpg"
+      "image": "images/orange-juice.png"
     },
     {
       "slug": "apple-juice",
@@ -1525,7 +1525,7 @@
         "de": "Apfelsaft",
         "ar": "عصير تفاح"
       },
-      "image": "images/apple-juice.jpg"
+      "image": "images/apple-juice.png"
     },
     {
       "slug": "cola",
@@ -1538,7 +1538,7 @@
         "de": "Cola",
         "ar": "كولا"
       },
-      "image": "images/cola.jpg"
+      "image": "images/cola.png"
     },
     {
       "slug": "coffee",
@@ -1558,7 +1558,7 @@
         "de": "Ganze Bohnen halten das Aroma — erst vor dem Brühen mahlen und luftdicht lagern.",
         "ar": "الحبوب الكاملة تحفظ النكهة؛ اطحنها قبل التحضير مباشرة واحفظها في وعاء محكم."
       },
-      "image": "images/coffee.jpg"
+      "image": "images/coffee.png"
     },
     {
       "slug": "tea",
@@ -1578,7 +1578,7 @@
         "de": "Fern von Gewürzen lagern — Tee nimmt Gerüche an.",
         "ar": "احفظه بعيدًا عن البهارات، فالشاي يمتصّ الروائح المحيطة."
       },
-      "image": "images/tea.jpg"
+      "image": "images/tea.png"
     },
     {
       "slug": "iced-tea",
@@ -1591,7 +1591,7 @@
         "de": "Eistee",
         "ar": "شاي مثلج"
       },
-      "image": "images/iced-tea.jpg"
+      "image": "images/iced-tea.png"
     },
     {
       "slug": "ketchup",
@@ -1604,7 +1604,7 @@
         "de": "Ketchup",
         "ar": "كاتشب"
       },
-      "image": "images/ketchup.jpg"
+      "image": "images/ketchup.png"
     },
     {
       "slug": "mayonnaise",
@@ -1624,7 +1624,7 @@
         "de": "Nach dem Öffnen kühlen und innerhalb von zwei Monaten aufbrauchen.",
         "ar": "ضعه في الثلاجة بعد الفتح واستهلكه خلال شهرين."
       },
-      "image": "images/mayonnaise.jpg"
+      "image": "images/mayonnaise.png"
     },
     {
       "slug": "mustard",
@@ -1637,7 +1637,7 @@
         "de": "Senf",
         "ar": "خردل"
       },
-      "image": "images/mustard.jpg"
+      "image": "images/mustard.png"
     },
     {
       "slug": "soy-sauce",
@@ -1650,7 +1650,7 @@
         "de": "Sojasauce",
         "ar": "صلصة الصويا"
       },
-      "image": "images/soy-sauce.jpg"
+      "image": "images/soy-sauce.png"
     },
     {
       "slug": "hot-sauce",
@@ -1663,7 +1663,7 @@
         "de": "Scharfe Sauce",
         "ar": "صلصة حارة"
       },
-      "image": "images/hot-sauce.jpg"
+      "image": "images/hot-sauce.png"
     },
     {
       "slug": "pasta-sauce",
@@ -1676,7 +1676,7 @@
         "de": "Nudelsauce",
         "ar": "صلصة معكرونة"
       },
-      "image": "images/pasta-sauce.jpg"
+      "image": "images/pasta-sauce.png"
     },
     {
       "slug": "tahini",
@@ -1696,7 +1696,7 @@
         "de": "Das Absetzen ist normal — das Öl vor Gebrauch wieder unterrühren.",
         "ar": "انفصال الزيت أمر طبيعي؛ قلّبه جيدًا قبل الاستعمال."
       },
-      "image": "images/tahini.jpg"
+      "image": "images/tahini.png"
     },
     {
       "slug": "black-pepper",
@@ -1716,7 +1716,7 @@
         "de": "Ganze Körner halten das Aroma weit länger als fertig gemahlener Pfeffer.",
         "ar": "حبات الفلفل الكاملة تحتفظ بنكهتها أطول بكثير من المطحون الجاهز."
       },
-      "image": "images/black-pepper.jpg"
+      "image": "images/black-pepper.png"
     },
     {
       "slug": "cumin",
@@ -1729,7 +1729,7 @@
         "de": "Kreuzkümmel",
         "ar": "كمون"
       },
-      "image": "images/cumin.jpg"
+      "image": "images/cumin.png"
     },
     {
       "slug": "paprika",
@@ -1749,7 +1749,7 @@
         "de": "Gemahlene Gewürze lassen binnen eines Jahres nach — kleine Packungen kaufen und dunkel lagern.",
         "ar": "البهارات المطحونة تفقد نكهتها خلال سنة؛ اشترِ عبوات صغيرة واحفظها بعيدًا عن الضوء."
       },
-      "image": "images/paprika.jpg"
+      "image": "images/paprika.png"
     },
     {
       "slug": "cinnamon",
@@ -1762,7 +1762,7 @@
         "de": "Zimt",
         "ar": "قرفة"
       },
-      "image": "images/cinnamon.jpg"
+      "image": "images/cinnamon.png"
     },
     {
       "slug": "turmeric",
@@ -1775,7 +1775,7 @@
         "de": "Kurkuma",
         "ar": "كركم"
       },
-      "image": "images/turmeric.jpg"
+      "image": "images/turmeric.png"
     },
     {
       "slug": "oregano",
@@ -1788,7 +1788,7 @@
         "de": "Oregano",
         "ar": "أوريغانو"
       },
-      "image": "images/oregano.jpg"
+      "image": "images/oregano.png"
     },
     {
       "slug": "chili-powder",
@@ -1801,7 +1801,7 @@
         "de": "Chilipulver",
         "ar": "مسحوق الفلفل الحار"
       },
-      "image": "images/chili-powder.jpg"
+      "image": "images/chili-powder.png"
     },
     {
       "slug": "bay-leaves",
@@ -1814,7 +1814,7 @@
         "de": "Lorbeerblätter",
         "ar": "ورق الغار"
       },
-      "image": "images/bay-leaves.jpg"
+      "image": "images/bay-leaves.png"
     },
     {
       "slug": "ginger-powder",
@@ -1827,7 +1827,7 @@
         "de": "Gemahlener Ingwer",
         "ar": "زنجبيل مطحون"
       },
-      "image": "images/ginger-powder.jpg"
+      "image": "images/ginger-powder.png"
     },
     {
       "slug": "olive-oil",
@@ -1847,7 +1847,7 @@
         "de": "Dunkles Glas wählen und fern vom Herd lagern — Hitze und Licht verderben es.",
         "ar": "اختره في زجاج داكن واحفظه بعيدًا عن الموقد، فالحرارة والضوء يفسدانه."
       },
-      "image": "images/olive-oil.jpg"
+      "image": "images/olive-oil.png"
     },
     {
       "slug": "sunflower-oil",
@@ -1860,7 +1860,7 @@
         "de": "Sonnenblumenöl",
         "ar": "زيت دوار الشمس"
       },
-      "image": "images/sunflower-oil.jpg"
+      "image": "images/sunflower-oil.png"
     },
     {
       "slug": "white-vinegar",
@@ -1873,7 +1873,7 @@
         "de": "Weißer Essig",
         "ar": "خل أبيض"
       },
-      "image": "images/white-vinegar.jpg"
+      "image": "images/white-vinegar.png"
     },
     {
       "slug": "apple-cider-vinegar",
@@ -1886,7 +1886,7 @@
         "de": "Apfelessig",
         "ar": "خل التفاح"
       },
-      "image": "images/apple-cider-vinegar.jpg"
+      "image": "images/apple-cider-vinegar.png"
     },
     {
       "slug": "balsamic-vinegar",
@@ -1899,7 +1899,7 @@
         "de": "Balsamico-Essig",
         "ar": "خل بلسمي"
       },
-      "image": "images/balsamic-vinegar.jpg"
+      "image": "images/balsamic-vinegar.png"
     }
   ]
 }
