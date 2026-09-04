@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
   "name": "Baby & Kids",
-  "version": 1,
+  "version": 2,
   "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -86,7 +86,8 @@
         "es": "Pañales",
         "de": "Windeln",
         "ar": "حفاضات"
-      }
+      },
+      "image": "images/diapers.png"
     },
     {
       "slug": "pull-up-diapers",
@@ -98,7 +99,8 @@
         "es": "Pañales de aprendizaje",
         "de": "Windelhöschen",
         "ar": "حفاضات سروال"
-      }
+      },
+      "image": "images/pull-up-diapers.png"
     },
     {
       "slug": "swim-diapers",
@@ -110,7 +112,8 @@
         "es": "Pañales de baño",
         "de": "Schwimmwindeln",
         "ar": "حفاضات السباحة"
-      }
+      },
+      "image": "images/swim-diapers.png"
     },
     {
       "slug": "baby-wipes",
@@ -122,7 +125,8 @@
         "es": "Toallitas para bebé",
         "de": "Feuchttücher",
         "ar": "مناديل مبللة للرضّع"
-      }
+      },
+      "image": "images/baby-wipes.png"
     },
     {
       "slug": "diaper-rash-cream",
@@ -134,7 +138,8 @@
         "es": "Crema para rozaduras",
         "de": "Wundschutzcreme",
         "ar": "كريم التسلخات"
-      }
+      },
+      "image": "images/diaper-rash-cream.png"
     },
     {
       "slug": "baby-powder",
@@ -146,7 +151,8 @@
         "es": "Talco para bebé",
         "de": "Babypuder",
         "ar": "بودرة للرضّع"
-      }
+      },
+      "image": "images/baby-powder.png"
     },
     {
       "slug": "disposable-changing-pads",
@@ -158,7 +164,8 @@
         "es": "Empapadores desechables",
         "de": "Einweg-Wickelunterlagen",
         "ar": "مفارش تغيير للاستعمال مرة واحدة"
-      }
+      },
+      "image": "images/disposable-changing-pads.png"
     },
     {
       "slug": "diaper-disposal-bags",
@@ -170,7 +177,8 @@
         "es": "Bolsas para pañales",
         "de": "Windelbeutel",
         "ar": "أكياس التخلص من الحفاضات"
-      }
+      },
+      "image": "images/diaper-disposal-bags.png"
     },
     {
       "slug": "baby-shampoo",
@@ -182,7 +190,8 @@
         "es": "Champú para bebé",
         "de": "Babyshampoo",
         "ar": "شامبو للرضّع"
-      }
+      },
+      "image": "images/baby-shampoo.png"
     },
     {
       "slug": "baby-body-wash",
@@ -194,7 +203,8 @@
         "es": "Gel de baño para bebé",
         "de": "Babywaschgel",
         "ar": "غسول جسم للرضّع"
-      }
+      },
+      "image": "images/baby-body-wash.png"
     },
     {
       "slug": "baby-soap",
@@ -206,7 +216,8 @@
         "es": "Jabón para bebé",
         "de": "Babyseife",
         "ar": "صابون للرضّع"
-      }
+      },
+      "image": "images/baby-soap.png"
     },
     {
       "slug": "baby-lotion",
@@ -218,7 +229,8 @@
         "es": "Loción para bebé",
         "de": "Babylotion",
         "ar": "لوشن للرضّع"
-      }
+      },
+      "image": "images/baby-lotion.png"
     },
     {
       "slug": "baby-oil",
@@ -230,7 +242,8 @@
         "es": "Aceite para bebé",
         "de": "Babyöl",
         "ar": "زيت للرضّع"
-      }
+      },
+      "image": "images/baby-oil.png"
     },
     {
       "slug": "baby-cream",
@@ -242,7 +255,8 @@
         "es": "Crema para bebé",
         "de": "Babycreme",
         "ar": "كريم للرضّع"
-      }
+      },
+      "image": "images/baby-cream.png"
     },
     {
       "slug": "baby-sunscreen",
@@ -254,7 +268,8 @@
         "es": "Protector solar para bebé",
         "de": "Baby-Sonnencreme",
         "ar": "واقٍ شمسي للرضّع"
-      }
+      },
+      "image": "images/baby-sunscreen.png"
     },
     {
       "slug": "petroleum-jelly",
@@ -266,7 +281,8 @@
         "es": "Vaselina",
         "de": "Vaseline",
         "ar": "فازلين"
-      }
+      },
+      "image": "images/petroleum-jelly.png"
     },
     {
       "slug": "bubble-bath",
@@ -278,7 +294,8 @@
         "es": "Baño de burbujas",
         "de": "Schaumbad",
         "ar": "حمام رغوي"
-      }
+      },
+      "image": "images/bubble-bath.png"
     },
     {
       "slug": "baby-formula",
@@ -290,7 +307,8 @@
         "es": "Leche de fórmula",
         "de": "Babymilchpulver",
         "ar": "حليب صناعي للرضّع"
-      }
+      },
+      "image": "images/baby-formula.png"
     },
     {
       "slug": "ready-to-feed-formula",
@@ -302,7 +320,8 @@
         "es": "Leche de fórmula líquida",
         "de": "Trinkfertige Babymilch",
         "ar": "حليب صناعي جاهز للرضّع"
-      }
+      },
+      "image": "images/ready-to-feed-formula.png"
     },
     {
       "slug": "baby-food",
@@ -314,7 +333,8 @@
         "es": "Comida para bebé",
         "de": "Babynahrung",
         "ar": "طعام الرضّع"
-      }
+      },
+      "image": "images/baby-food.png"
     },
     {
       "slug": "baby-puree",
@@ -326,7 +346,8 @@
         "es": "Puré para bebé",
         "de": "Babypüree",
         "ar": "مهروس للرضّع"
-      }
+      },
+      "image": "images/baby-puree.png"
     },
     {
       "slug": "baby-cereal",
@@ -338,7 +359,8 @@
         "es": "Cereales para bebé",
         "de": "Babygetreide",
         "ar": "حبوب للرضّع"
-      }
+      },
+      "image": "images/baby-cereal.png"
     },
     {
       "slug": "baby-porridge",
@@ -350,7 +372,8 @@
         "es": "Papilla para bebé",
         "de": "Babybrei",
         "ar": "عصيدة للرضّع"
-      }
+      },
+      "image": "images/baby-porridge.png"
     },
     {
       "slug": "baby-snacks",
@@ -362,7 +385,8 @@
         "es": "Snacks para bebé",
         "de": "Babysnacks",
         "ar": "وجبات خفيفة للرضّع"
-      }
+      },
+      "image": "images/baby-snacks.png"
     },
     {
       "slug": "teething-biscuits",
@@ -446,7 +470,8 @@
         "es": "Pastillas esterilizadoras",
         "de": "Sterilisationstabletten",
         "ar": "أقراص تعقيم الزجاجات"
-      }
+      },
+      "image": "images/bottle-sterilizing-tablets.png"
     },
     {
       "slug": "baby-cotton-swabs",
@@ -458,7 +483,8 @@
         "es": "Bastoncillos para bebé",
         "de": "Baby-Wattestäbchen",
         "ar": "أعواد قطنية للرضّع"
-      }
+      },
+      "image": "images/baby-cotton-swabs.png"
     },
     {
       "slug": "cotton-pads",
@@ -470,7 +496,8 @@
         "es": "Discos de algodón",
         "de": "Wattepads",
         "ar": "أقراص قطنية"
-      }
+      },
+      "image": "images/cotton-pads.png"
     },
     {
       "slug": "baby-tissues",
@@ -482,7 +509,8 @@
         "es": "Pañuelos para bebé",
         "de": "Babytücher",
         "ar": "مناديل ورقية للرضّع"
-      }
+      },
+      "image": "images/baby-tissues.png"
     },
     {
       "slug": "kids-shampoo",
@@ -494,7 +522,8 @@
         "es": "Champú infantil",
         "de": "Kindershampoo",
         "ar": "شامبو للأطفال"
-      }
+      },
+      "image": "images/kids-shampoo.png"
     },
     {
       "slug": "kids-body-wash",
@@ -506,7 +535,8 @@
         "es": "Gel de baño infantil",
         "de": "Kinder-Duschgel",
         "ar": "غسول جسم للأطفال"
-      }
+      },
+      "image": "images/kids-body-wash.png"
     },
     {
       "slug": "kids-toothpaste",
@@ -518,7 +548,8 @@
         "es": "Pasta de dientes infantil",
         "de": "Kinderzahnpasta",
         "ar": "معجون أسنان للأطفال"
-      }
+      },
+      "image": "images/kids-toothpaste.png"
     },
     {
       "slug": "kids-toothbrush",
@@ -530,7 +561,8 @@
         "es": "Cepillo de dientes infantil",
         "de": "Kinderzahnbürste",
         "ar": "فرشاة أسنان للأطفال"
-      }
+      },
+      "image": "images/kids-toothbrush.png"
     },
     {
       "slug": "kids-sunscreen",
@@ -542,7 +574,8 @@
         "es": "Protector solar infantil",
         "de": "Kinder-Sonnencreme",
         "ar": "واقٍ شمسي للأطفال"
-      }
+      },
+      "image": "images/kids-sunscreen.png"
     },
     {
       "slug": "kids-lotion",
@@ -554,7 +587,8 @@
         "es": "Loción infantil",
         "de": "Kinderlotion",
         "ar": "لوشن للأطفال"
-      }
+      },
+      "image": "images/kids-lotion.png"
     },
     {
       "slug": "kids-bandages",
@@ -566,7 +600,8 @@
         "es": "Tiritas infantiles",
         "de": "Kinderpflaster",
         "ar": "لصقات جروح للأطفال"
-      }
+      },
+      "image": "images/kids-bandages.png"
     },
     {
       "slug": "saline-nasal-spray",
@@ -578,7 +613,8 @@
         "es": "Spray nasal salino",
         "de": "Kochsalz-Nasenspray",
         "ar": "بخاخ أنف ملحي"
-      }
+      },
+      "image": "images/saline-nasal-spray.png"
     }
   ]
 }
