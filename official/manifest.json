@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.official",
   "name": "Baggo Catalog (Official)",
-  "version": 10,
+  "version": 11,
   "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -387,7 +387,7 @@
         "en": "Bell Peppers",
         "fr": "Poivrons",
         "es": "Pimientos",
-        "de": "Paprika",
+        "de": "Gemüsepaprika",
         "ar": "فلفل حلو"
       },
       "image": "images/bell-peppers.png"
