@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
   "name": "Baby & Kids",
-  "version": 3,
+  "version": 4,
   "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -123,7 +123,7 @@
         "en": "Baby Wipes",
         "fr": "Lingettes pour bébé",
         "es": "Toallitas para bebé",
-        "de": "Feuchttücher",
+        "de": "Baby-Feuchttücher",
         "ar": "مناديل مبللة للرضّع"
       },
       "image": "images/baby-wipes.png"

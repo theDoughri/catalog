@@ -1,0 +1,767 @@
+{
+  "schema_version": 2,
+  "id": "dev.baggo.personal-care",
+  "name": "Personal Care",
+  "version": 1,
+  "description": "The bathroom shelf: what gets used up and replaced, from shampoo and toothpaste to razors and cotton pads.",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
+  "categories": [
+    {
+      "slug": "shower-body",
+      "icon": "bathtub",
+      "name": {
+        "en": "Shower & Body",
+        "fr": "Douche et corps",
+        "es": "Ducha y cuerpo",
+        "de": "Dusche & Körper",
+        "ar": "الاستحمام والجسم"
+      }
+    },
+    {
+      "slug": "hair-care",
+      "icon": "droplet",
+      "name": {
+        "en": "Hair Care",
+        "fr": "Soins des cheveux",
+        "es": "Cuidado del cabello",
+        "de": "Haarpflege",
+        "ar": "العناية بالشعر"
+      }
+    },
+    {
+      "slug": "oral-care",
+      "icon": "tooth",
+      "name": {
+        "en": "Oral Care",
+        "fr": "Soins bucco-dentaires",
+        "es": "Higiene bucal",
+        "de": "Mundpflege",
+        "ar": "العناية بالفم"
+      }
+    },
+    {
+      "slug": "face-care",
+      "icon": "lotus",
+      "name": {
+        "en": "Face Care",
+        "fr": "Soins du visage",
+        "es": "Cuidado facial",
+        "de": "Gesichtspflege",
+        "ar": "العناية بالوجه"
+      }
+    },
+    {
+      "slug": "shaving-grooming",
+      "icon": "scissors",
+      "name": {
+        "en": "Shaving & Grooming",
+        "fr": "Rasage et soin",
+        "es": "Afeitado y aseo",
+        "de": "Rasur & Pflege",
+        "ar": "الحلاقة والعناية"
+      }
+    },
+    {
+      "slug": "feminine-care",
+      "icon": "flower",
+      "name": {
+        "en": "Feminine Care",
+        "fr": "Hygiène féminine",
+        "es": "Higiene femenina",
+        "de": "Damenhygiene",
+        "ar": "العناية النسائية"
+      }
+    },
+    {
+      "slug": "everyday-hygiene",
+      "icon": "hand-sanitizer",
+      "name": {
+        "en": "Everyday Hygiene",
+        "fr": "Hygiène quotidienne",
+        "es": "Higiene diaria",
+        "de": "Alltagshygiene",
+        "ar": "النظافة اليومية"
+      }
+    }
+  ],
+  "items": [
+    {
+      "slug": "body-wash",
+      "category": "shower-body",
+      "unit": "bottle",
+      "name": {
+        "en": "Body Wash",
+        "fr": "Gel lavant corps",
+        "es": "Gel corporal",
+        "de": "Körperwaschgel",
+        "ar": "غسول الجسم"
+      },
+      "image": "images/body-wash.png"
+    },
+    {
+      "slug": "shower-gel",
+      "category": "shower-body",
+      "unit": "bottle",
+      "name": {
+        "en": "Shower Gel",
+        "fr": "Gel douche",
+        "es": "Gel de ducha",
+        "de": "Duschgel",
+        "ar": "جل الاستحمام"
+      },
+      "image": "images/shower-gel.png"
+    },
+    {
+      "slug": "bar-soap",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Bar Soap",
+        "fr": "Savon solide",
+        "es": "Jabón en pastilla",
+        "de": "Stückseife",
+        "ar": "صابون قالب"
+      },
+      "image": "images/bar-soap.png"
+    },
+    {
+      "slug": "body-scrub",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Body Scrub",
+        "fr": "Gommage corporel",
+        "es": "Exfoliante corporal",
+        "de": "Körperpeeling",
+        "ar": "مقشر الجسم"
+      },
+      "image": "images/body-scrub.png"
+    },
+    {
+      "slug": "body-lotion",
+      "category": "shower-body",
+      "unit": "bottle",
+      "name": {
+        "en": "Body Lotion",
+        "fr": "Lait corporel",
+        "es": "Loción corporal",
+        "de": "Körperlotion",
+        "ar": "لوشن الجسم"
+      },
+      "image": "images/body-lotion.png"
+    },
+    {
+      "slug": "body-cream",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Body Cream",
+        "fr": "Crème corporelle",
+        "es": "Crema corporal",
+        "de": "Körpercreme",
+        "ar": "كريم الجسم"
+      },
+      "image": "images/body-cream.png"
+    },
+    {
+      "slug": "hand-soap",
+      "category": "shower-body",
+      "unit": "bottle",
+      "name": {
+        "en": "Hand Soap",
+        "fr": "Savon pour les mains",
+        "es": "Jabón de manos",
+        "de": "Handseife",
+        "ar": "صابون اليدين"
+      },
+      "image": "images/hand-soap.png"
+    },
+    {
+      "slug": "hand-cream",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Hand Cream",
+        "fr": "Crème pour les mains",
+        "es": "Crema de manos",
+        "de": "Handcreme",
+        "ar": "كريم اليدين"
+      },
+      "image": "images/hand-cream.png"
+    },
+    {
+      "slug": "deodorant",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Deodorant",
+        "fr": "Déodorant",
+        "es": "Desodorante",
+        "de": "Deodorant",
+        "ar": "مزيل العرق"
+      },
+      "image": "images/deodorant.png"
+    },
+    {
+      "slug": "antiperspirant",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Antiperspirant",
+        "fr": "Anti-transpirant",
+        "es": "Antitranspirante",
+        "de": "Antitranspirant",
+        "ar": "مضاد للتعرق"
+      },
+      "image": "images/antiperspirant.png"
+    },
+    {
+      "slug": "body-spray",
+      "category": "shower-body",
+      "unit": "pcs",
+      "name": {
+        "en": "Body Spray",
+        "fr": "Brume corporelle",
+        "es": "Spray corporal",
+        "de": "Körperspray",
+        "ar": "بخاخ الجسم"
+      },
+      "image": "images/body-spray.png"
+    },
+    {
+      "slug": "shampoo",
+      "category": "hair-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Shampoo",
+        "fr": "Shampooing",
+        "es": "Champú",
+        "de": "Shampoo",
+        "ar": "شامبو"
+      },
+      "image": "images/shampoo.png"
+    },
+    {
+      "slug": "conditioner",
+      "category": "hair-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Conditioner",
+        "fr": "Après-shampooing",
+        "es": "Acondicionador",
+        "de": "Haarspülung",
+        "ar": "بلسم الشعر"
+      },
+      "image": "images/conditioner.png"
+    },
+    {
+      "slug": "2-in-1-shampoo-conditioner",
+      "category": "hair-care",
+      "unit": "bottle",
+      "name": {
+        "en": "2-in-1 Shampoo & Conditioner",
+        "fr": "Shampooing 2 en 1",
+        "es": "Champú 2 en 1",
+        "de": "2-in-1-Shampoo",
+        "ar": "شامبو وبلسم 2 في 1"
+      },
+      "image": "images/2-in-1-shampoo-conditioner.png"
+    },
+    {
+      "slug": "hair-mask",
+      "category": "hair-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Hair Mask",
+        "fr": "Masque capillaire",
+        "es": "Mascarilla capilar",
+        "de": "Haarmaske",
+        "ar": "ماسك الشعر"
+      },
+      "image": "images/hair-mask.png"
+    },
+    {
+      "slug": "hair-oil",
+      "category": "hair-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Hair Oil",
+        "fr": "Huile capillaire",
+        "es": "Aceite capilar",
+        "de": "Haaröl",
+        "ar": "زيت الشعر"
+      },
+      "image": "images/hair-oil.png"
+    },
+    {
+      "slug": "hair-serum",
+      "category": "hair-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Hair Serum",
+        "fr": "Sérum capillaire",
+        "es": "Sérum capilar",
+        "de": "Haarserum",
+        "ar": "سيروم الشعر"
+      },
+      "image": "images/hair-serum.png"
+    },
+    {
+      "slug": "dry-shampoo",
+      "category": "hair-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Dry Shampoo",
+        "fr": "Shampooing sec",
+        "es": "Champú en seco",
+        "de": "Trockenshampoo",
+        "ar": "شامبو جاف"
+      },
+      "image": "images/dry-shampoo.png"
+    },
+    {
+      "slug": "hair-gel",
+      "category": "hair-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Hair Gel",
+        "fr": "Gel coiffant",
+        "es": "Gel para el cabello",
+        "de": "Haargel",
+        "ar": "جل الشعر"
+      },
+      "image": "images/hair-gel.png"
+    },
+    {
+      "slug": "hair-spray",
+      "category": "hair-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Hair Spray",
+        "fr": "Laque",
+        "es": "Laca para el cabello",
+        "de": "Haarspray",
+        "ar": "سبراي الشعر"
+      },
+      "image": "images/hair-spray.png"
+    },
+    {
+      "slug": "toothpaste",
+      "category": "oral-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Toothpaste",
+        "fr": "Dentifrice",
+        "es": "Pasta de dientes",
+        "de": "Zahnpasta",
+        "ar": "معجون أسنان"
+      },
+      "image": "images/toothpaste.png"
+    },
+    {
+      "slug": "toothbrush",
+      "category": "oral-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Toothbrush",
+        "fr": "Brosse à dents",
+        "es": "Cepillo de dientes",
+        "de": "Zahnbürste",
+        "ar": "فرشاة أسنان"
+      },
+      "image": "images/toothbrush.png"
+    },
+    {
+      "slug": "mouthwash",
+      "category": "oral-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Mouthwash",
+        "fr": "Bain de bouche",
+        "es": "Enjuague bucal",
+        "de": "Mundspülung",
+        "ar": "غسول الفم"
+      },
+      "image": "images/mouthwash.png"
+    },
+    {
+      "slug": "dental-floss",
+      "category": "oral-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Dental Floss",
+        "fr": "Fil dentaire",
+        "es": "Hilo dental",
+        "de": "Zahnseide",
+        "ar": "خيط الأسنان"
+      },
+      "image": "images/dental-floss.png"
+    },
+    {
+      "slug": "interdental-brushes",
+      "category": "oral-care",
+      "unit": "pack",
+      "name": {
+        "en": "Interdental Brushes",
+        "fr": "Brossettes interdentaires",
+        "es": "Cepillos interdentales",
+        "de": "Interdentalbürsten",
+        "ar": "فرش ما بين الأسنان"
+      },
+      "image": "images/interdental-brushes.png"
+    },
+    {
+      "slug": "face-wash",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Face Wash",
+        "fr": "Gel nettoyant visage",
+        "es": "Gel limpiador facial",
+        "de": "Gesichtswaschgel",
+        "ar": "غسول الوجه"
+      },
+      "image": "images/face-wash.png"
+    },
+    {
+      "slug": "face-cleanser",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Face Cleanser",
+        "fr": "Nettoyant visage",
+        "es": "Limpiador facial",
+        "de": "Gesichtsreiniger",
+        "ar": "منظف الوجه"
+      },
+      "image": "images/face-cleanser.png"
+    },
+    {
+      "slug": "facial-scrub",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Facial Scrub",
+        "fr": "Gommage visage",
+        "es": "Exfoliante facial",
+        "de": "Gesichtspeeling",
+        "ar": "مقشر الوجه"
+      },
+      "image": "images/facial-scrub.png"
+    },
+    {
+      "slug": "micellar-water",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Micellar Water",
+        "fr": "Eau micellaire",
+        "es": "Agua micelar",
+        "de": "Mizellenwasser",
+        "ar": "ماء ميسيلار"
+      },
+      "image": "images/micellar-water.png"
+    },
+    {
+      "slug": "makeup-remover",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Makeup Remover",
+        "fr": "Démaquillant",
+        "es": "Desmaquillante",
+        "de": "Make-up-Entferner",
+        "ar": "مزيل المكياج"
+      },
+      "image": "images/makeup-remover.png"
+    },
+    {
+      "slug": "face-moisturizer",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Face Moisturizer",
+        "fr": "Hydratant visage",
+        "es": "Hidratante facial",
+        "de": "Gesichtsfluid",
+        "ar": "مرطب الوجه"
+      },
+      "image": "images/face-moisturizer.png"
+    },
+    {
+      "slug": "face-cream",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Face Cream",
+        "fr": "Crème visage",
+        "es": "Crema facial",
+        "de": "Gesichtscreme",
+        "ar": "كريم الوجه"
+      },
+      "image": "images/face-cream.png"
+    },
+    {
+      "slug": "face-serum",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Face Serum",
+        "fr": "Sérum visage",
+        "es": "Sérum facial",
+        "de": "Gesichtsserum",
+        "ar": "سيروم الوجه"
+      },
+      "image": "images/face-serum.png"
+    },
+    {
+      "slug": "toner",
+      "category": "face-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Toner",
+        "fr": "Lotion tonique",
+        "es": "Tónico facial",
+        "de": "Gesichtswasser",
+        "ar": "تونر"
+      },
+      "image": "images/toner.png"
+    },
+    {
+      "slug": "face-mask",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Face Mask",
+        "fr": "Masque visage",
+        "es": "Mascarilla facial",
+        "de": "Gesichtsmaske",
+        "ar": "ماسك الوجه"
+      },
+      "image": "images/face-mask.png"
+    },
+    {
+      "slug": "lip-balm",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Lip Balm",
+        "fr": "Baume à lèvres",
+        "es": "Bálsamo labial",
+        "de": "Lippenbalsam",
+        "ar": "مرطب الشفاه"
+      },
+      "image": "images/lip-balm.png"
+    },
+    {
+      "slug": "sunscreen",
+      "category": "face-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Sunscreen",
+        "fr": "Crème solaire",
+        "es": "Protector solar",
+        "de": "Sonnencreme",
+        "ar": "واقٍ شمسي"
+      },
+      "image": "images/sunscreen.png"
+    },
+    {
+      "slug": "shaving-cream",
+      "category": "shaving-grooming",
+      "unit": "pcs",
+      "name": {
+        "en": "Shaving Cream",
+        "fr": "Crème à raser",
+        "es": "Crema de afeitar",
+        "de": "Rasiercreme",
+        "ar": "كريم الحلاقة"
+      },
+      "image": "images/shaving-cream.png"
+    },
+    {
+      "slug": "shaving-gel",
+      "category": "shaving-grooming",
+      "unit": "pcs",
+      "name": {
+        "en": "Shaving Gel",
+        "fr": "Gel à raser",
+        "es": "Gel de afeitar",
+        "de": "Rasiergel",
+        "ar": "جل الحلاقة"
+      },
+      "image": "images/shaving-gel.png"
+    },
+    {
+      "slug": "razors",
+      "category": "shaving-grooming",
+      "unit": "pack",
+      "name": {
+        "en": "Razors",
+        "fr": "Rasoirs",
+        "es": "Maquinillas de afeitar",
+        "de": "Rasierer",
+        "ar": "ماكينة حلاقة"
+      },
+      "image": "images/razors.png"
+    },
+    {
+      "slug": "razor-blades",
+      "category": "shaving-grooming",
+      "unit": "pack",
+      "name": {
+        "en": "Razor Blades",
+        "fr": "Lames de rasoir",
+        "es": "Cuchillas de afeitar",
+        "de": "Rasierklingen",
+        "ar": "شفرات حلاقة"
+      },
+      "image": "images/razor-blades.png"
+    },
+    {
+      "slug": "aftershave",
+      "category": "shaving-grooming",
+      "unit": "bottle",
+      "name": {
+        "en": "Aftershave",
+        "fr": "Après-rasage",
+        "es": "Loción para después del afeitado",
+        "de": "Aftershave",
+        "ar": "بعد الحلاقة"
+      },
+      "image": "images/aftershave.png"
+    },
+    {
+      "slug": "beard-oil",
+      "category": "shaving-grooming",
+      "unit": "bottle",
+      "name": {
+        "en": "Beard Oil",
+        "fr": "Huile à barbe",
+        "es": "Aceite para barba",
+        "de": "Bartöl",
+        "ar": "زيت اللحية"
+      },
+      "image": "images/beard-oil.png"
+    },
+    {
+      "slug": "sanitary-pads",
+      "category": "feminine-care",
+      "unit": "pack",
+      "name": {
+        "en": "Sanitary Pads",
+        "fr": "Serviettes hygiéniques",
+        "es": "Compresas",
+        "de": "Damenbinden",
+        "ar": "فوط صحية"
+      },
+      "image": "images/sanitary-pads.png"
+    },
+    {
+      "slug": "tampons",
+      "category": "feminine-care",
+      "unit": "pack",
+      "name": {
+        "en": "Tampons",
+        "fr": "Tampons",
+        "es": "Tampones",
+        "de": "Tampons",
+        "ar": "سدادات قطنية"
+      },
+      "image": "images/tampons.png"
+    },
+    {
+      "slug": "panty-liners",
+      "category": "feminine-care",
+      "unit": "pack",
+      "name": {
+        "en": "Panty Liners",
+        "fr": "Protège-slips",
+        "es": "Salvaslips",
+        "de": "Slipeinlagen",
+        "ar": "فوط يومية"
+      },
+      "image": "images/panty-liners.png"
+    },
+    {
+      "slug": "intimate-wash",
+      "category": "feminine-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Intimate Wash",
+        "fr": "Gel d’hygiène intime",
+        "es": "Gel íntimo",
+        "de": "Intimwaschlotion",
+        "ar": "غسول حميم"
+      },
+      "image": "images/intimate-wash.png"
+    },
+    {
+      "slug": "hand-sanitizer",
+      "category": "everyday-hygiene",
+      "unit": "bottle",
+      "name": {
+        "en": "Hand Sanitizer",
+        "fr": "Gel hydroalcoolique",
+        "es": "Gel desinfectante de manos",
+        "de": "Handdesinfektionsmittel",
+        "ar": "معقم اليدين"
+      },
+      "image": "images/hand-sanitizer.png"
+    },
+    {
+      "slug": "wet-wipes",
+      "category": "everyday-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Wet Wipes",
+        "fr": "Lingettes humides",
+        "es": "Toallitas húmedas",
+        "de": "Feuchttücher",
+        "ar": "مناديل مبللة"
+      },
+      "image": "images/wet-wipes.png"
+    },
+    {
+      "slug": "cotton-swabs",
+      "category": "everyday-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Cotton Swabs",
+        "fr": "Cotons-tiges",
+        "es": "Bastoncillos de algodón",
+        "de": "Wattestäbchen",
+        "ar": "أعواد قطنية"
+      },
+      "image": "images/cotton-swabs.png"
+    },
+    {
+      "slug": "cotton-pads",
+      "category": "everyday-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Cotton Pads",
+        "fr": "Disques de coton",
+        "es": "Discos de algodón",
+        "de": "Wattepads",
+        "ar": "أقراص قطنية"
+      },
+      "image": "images/cotton-pads.png"
+    },
+    {
+      "slug": "tissues",
+      "category": "everyday-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Tissues",
+        "fr": "Mouchoirs en papier",
+        "es": "Pañuelos de papel",
+        "de": "Papiertücher",
+        "ar": "مناديل ورقية"
+      },
+      "image": "images/tissues.png"
+    }
+  ]
+}
