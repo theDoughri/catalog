@@ -194,14 +194,20 @@ git flow (https://nvie.com/posts/a-successful-git-branching-model/): work lands
 on `develop`, `main` holds released catalog only. Feature branches come off
 `develop`; a release branch merges into `main` and back into `develop`.
 
-**The app currently fetches `develop`.** Baggo names
-`raw.githubusercontent.com/theDoughri/catalog/develop/<folder>/manifest.json`,
-so a push to `develop` reaches devices on their next re-check — there is no
-release step in between, and no draft state. Edit accordingly: bump the
-`version` integer in the same commit that changes a manifest, because that
-number, not the tag and not the commit, is what clients compare, and a change
-published without one is a change no device will ever pick up.
+**The app fetches `main`, as of catalog v9 / Baggo 0.9.9.** Baggo names
+`raw.githubusercontent.com/theDoughri/catalog/main/<folder>/manifest.json`, so
+a push to `develop` no longer reaches anybody: a change is published by a
+RELEASE, which is the point of having one. `develop` is where manifests and
+artwork are prepared and is safe to break.
 
-`main` still holds released catalogs, and the pointer is one constant in the
-app (`CatalogService.defaultCatalogUrl`); moving it back to `main` is that one
-edit plus a release branch.
+Still bump the `version` integer in the same commit that changes a manifest.
+That number — not the tag, not the commit, not the branch — is the whole of
+what a client compares, so a change that reaches `main` without one is a
+change no device will ever pick up. The tag records WHICH release; the integer
+is what makes a device fetch it.
+
+Until v9 the app fetched `develop`, so every push was a publish. That was
+convenient while the format was still moving and dangerous once real devices
+held these catalogs — deleting a file a published version still referenced
+blanked every image on a phone that had not re-checked yet. A release branch
+is what stands in that gap now.
