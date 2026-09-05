@@ -1,0 +1,626 @@
+{
+  "schema_version": 2,
+  "id": "dev.baggo.baby-kids",
+  "name": "Baby & Kids",
+  "version": 3,
+  "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
+  "categories": [
+    {
+      "slug": "diapering",
+      "icon": "stack",
+      "name": {
+        "en": "Diapering",
+        "fr": "Change de bébé",
+        "es": "Cambio de pañales",
+        "de": "Wickeln",
+        "ar": "الحفاضات"
+      }
+    },
+    {
+      "slug": "bath-skin-care",
+      "icon": "bathtub",
+      "name": {
+        "en": "Bath & Skin Care",
+        "fr": "Bain et soins de la peau",
+        "es": "Baño y cuidado de la piel",
+        "de": "Bad & Hautpflege",
+        "ar": "الاستحمام والعناية بالبشرة"
+      }
+    },
+    {
+      "slug": "feeding-baby-food",
+      "icon": "baby-bottle",
+      "name": {
+        "en": "Feeding & Baby Food",
+        "fr": "Alimentation de bébé",
+        "es": "Alimentación y comida para bebés",
+        "de": "Ernährung & Babynahrung",
+        "ar": "التغذية وطعام الرضّع"
+      }
+    },
+    {
+      "slug": "cleaning-hygiene",
+      "icon": "sparkles",
+      "name": {
+        "en": "Cleaning & Hygiene",
+        "fr": "Nettoyage et hygiène",
+        "es": "Limpieza e higiene",
+        "de": "Reinigung & Hygiene",
+        "ar": "التنظيف والنظافة"
+      }
+    },
+    {
+      "slug": "kids-personal-care",
+      "icon": "soap",
+      "name": {
+        "en": "Kids Personal Care",
+        "fr": "Soins personnels enfants",
+        "es": "Cuidado personal infantil",
+        "de": "Kinderpflege",
+        "ar": "العناية الشخصية للأطفال"
+      }
+    },
+    {
+      "slug": "basic-care",
+      "icon": "first-aid-kit",
+      "name": {
+        "en": "Basic Care",
+        "fr": "Soins de base",
+        "es": "Cuidados básicos",
+        "de": "Grundversorgung",
+        "ar": "الرعاية الأساسية"
+      }
+    }
+  ],
+  "items": [
+    {
+      "slug": "diapers",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Diapers",
+        "fr": "Couches",
+        "es": "Pañales",
+        "de": "Windeln",
+        "ar": "حفاضات"
+      },
+      "image": "images/diapers.png"
+    },
+    {
+      "slug": "pull-up-diapers",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Pull-Up Diapers",
+        "fr": "Couches-culottes",
+        "es": "Pañales de aprendizaje",
+        "de": "Windelhöschen",
+        "ar": "حفاضات سروال"
+      },
+      "image": "images/pull-up-diapers.png"
+    },
+    {
+      "slug": "swim-diapers",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Swim Diapers",
+        "fr": "Couches de bain",
+        "es": "Pañales de baño",
+        "de": "Schwimmwindeln",
+        "ar": "حفاضات السباحة"
+      },
+      "image": "images/swim-diapers.png"
+    },
+    {
+      "slug": "baby-wipes",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Baby Wipes",
+        "fr": "Lingettes pour bébé",
+        "es": "Toallitas para bebé",
+        "de": "Feuchttücher",
+        "ar": "مناديل مبللة للرضّع"
+      },
+      "image": "images/baby-wipes.png"
+    },
+    {
+      "slug": "diaper-rash-cream",
+      "category": "diapering",
+      "unit": "pcs",
+      "name": {
+        "en": "Diaper Rash Cream",
+        "fr": "Crème pour érythème fessier",
+        "es": "Crema para rozaduras",
+        "de": "Wundschutzcreme",
+        "ar": "كريم التسلخات"
+      },
+      "image": "images/diaper-rash-cream.png"
+    },
+    {
+      "slug": "baby-powder",
+      "category": "diapering",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Powder",
+        "fr": "Talc pour bébé",
+        "es": "Talco para bebé",
+        "de": "Babypuder",
+        "ar": "بودرة للرضّع"
+      },
+      "image": "images/baby-powder.png"
+    },
+    {
+      "slug": "disposable-changing-pads",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Disposable Changing Pads",
+        "fr": "Alèses jetables à langer",
+        "es": "Empapadores desechables",
+        "de": "Einweg-Wickelunterlagen",
+        "ar": "مفارش تغيير للاستعمال مرة واحدة"
+      },
+      "image": "images/disposable-changing-pads.png"
+    },
+    {
+      "slug": "diaper-disposal-bags",
+      "category": "diapering",
+      "unit": "pack",
+      "name": {
+        "en": "Diaper Disposal Bags",
+        "fr": "Sacs à couches",
+        "es": "Bolsas para pañales",
+        "de": "Windelbeutel",
+        "ar": "أكياس التخلص من الحفاضات"
+      },
+      "image": "images/diaper-disposal-bags.png"
+    },
+    {
+      "slug": "baby-shampoo",
+      "category": "bath-skin-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Shampoo",
+        "fr": "Shampooing pour bébé",
+        "es": "Champú para bebé",
+        "de": "Babyshampoo",
+        "ar": "شامبو للرضّع"
+      },
+      "image": "images/baby-shampoo.png"
+    },
+    {
+      "slug": "baby-body-wash",
+      "category": "bath-skin-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Body Wash",
+        "fr": "Gel lavant pour bébé",
+        "es": "Gel de baño para bebé",
+        "de": "Babywaschgel",
+        "ar": "غسول جسم للرضّع"
+      },
+      "image": "images/baby-body-wash.png"
+    },
+    {
+      "slug": "baby-soap",
+      "category": "bath-skin-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Soap",
+        "fr": "Savon pour bébé",
+        "es": "Jabón para bebé",
+        "de": "Babyseife",
+        "ar": "صابون للرضّع"
+      },
+      "image": "images/baby-soap.png"
+    },
+    {
+      "slug": "baby-lotion",
+      "category": "bath-skin-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Lotion",
+        "fr": "Lait hydratant pour bébé",
+        "es": "Loción para bebé",
+        "de": "Babylotion",
+        "ar": "لوشن للرضّع"
+      },
+      "image": "images/baby-lotion.png"
+    },
+    {
+      "slug": "baby-oil",
+      "category": "bath-skin-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Oil",
+        "fr": "Huile pour bébé",
+        "es": "Aceite para bebé",
+        "de": "Babyöl",
+        "ar": "زيت للرضّع"
+      },
+      "image": "images/baby-oil.png"
+    },
+    {
+      "slug": "baby-cream",
+      "category": "bath-skin-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Cream",
+        "fr": "Crème pour bébé",
+        "es": "Crema para bebé",
+        "de": "Babycreme",
+        "ar": "كريم للرضّع"
+      },
+      "image": "images/baby-cream.png"
+    },
+    {
+      "slug": "baby-sunscreen",
+      "category": "bath-skin-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Sunscreen",
+        "fr": "Crème solaire pour bébé",
+        "es": "Protector solar para bebé",
+        "de": "Baby-Sonnencreme",
+        "ar": "واقٍ شمسي للرضّع"
+      },
+      "image": "images/baby-sunscreen.png"
+    },
+    {
+      "slug": "petroleum-jelly",
+      "category": "bath-skin-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Petroleum Jelly",
+        "fr": "Vaseline",
+        "es": "Vaselina",
+        "de": "Vaseline",
+        "ar": "فازلين"
+      },
+      "image": "images/petroleum-jelly.png"
+    },
+    {
+      "slug": "bubble-bath",
+      "category": "bath-skin-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Bubble Bath",
+        "fr": "Bain moussant",
+        "es": "Baño de burbujas",
+        "de": "Schaumbad",
+        "ar": "حمام رغوي"
+      },
+      "image": "images/bubble-bath.png"
+    },
+    {
+      "slug": "baby-formula",
+      "category": "feeding-baby-food",
+      "unit": "box",
+      "name": {
+        "en": "Baby Formula",
+        "fr": "Lait infantile en poudre",
+        "es": "Leche de fórmula",
+        "de": "Babymilchpulver",
+        "ar": "حليب صناعي للرضّع"
+      },
+      "image": "images/baby-formula.png"
+    },
+    {
+      "slug": "ready-to-feed-formula",
+      "category": "feeding-baby-food",
+      "unit": "bottle",
+      "name": {
+        "en": "Ready-to-Feed Formula",
+        "fr": "Lait infantile liquide",
+        "es": "Leche de fórmula líquida",
+        "de": "Trinkfertige Babymilch",
+        "ar": "حليب صناعي جاهز للرضّع"
+      },
+      "image": "images/ready-to-feed-formula.png"
+    },
+    {
+      "slug": "baby-food",
+      "category": "feeding-baby-food",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Food",
+        "fr": "Petits pots pour bébé",
+        "es": "Comida para bebé",
+        "de": "Babynahrung",
+        "ar": "طعام الرضّع"
+      },
+      "image": "images/baby-food.png"
+    },
+    {
+      "slug": "baby-puree",
+      "category": "feeding-baby-food",
+      "unit": "pcs",
+      "name": {
+        "en": "Baby Puree",
+        "fr": "Purée pour bébé",
+        "es": "Puré para bebé",
+        "de": "Babypüree",
+        "ar": "مهروس للرضّع"
+      },
+      "image": "images/baby-puree.png"
+    },
+    {
+      "slug": "baby-cereal",
+      "category": "feeding-baby-food",
+      "unit": "box",
+      "name": {
+        "en": "Baby Cereal",
+        "fr": "Céréales pour bébé",
+        "es": "Cereales para bebé",
+        "de": "Babygetreide",
+        "ar": "حبوب للرضّع"
+      },
+      "image": "images/baby-cereal.png"
+    },
+    {
+      "slug": "baby-porridge",
+      "category": "feeding-baby-food",
+      "unit": "box",
+      "name": {
+        "en": "Baby Porridge",
+        "fr": "Bouillie pour bébé",
+        "es": "Papilla para bebé",
+        "de": "Babybrei",
+        "ar": "عصيدة للرضّع"
+      },
+      "image": "images/baby-porridge.png"
+    },
+    {
+      "slug": "baby-snacks",
+      "category": "feeding-baby-food",
+      "unit": "pack",
+      "name": {
+        "en": "Baby Snacks",
+        "fr": "Goûters pour bébé",
+        "es": "Snacks para bebé",
+        "de": "Babysnacks",
+        "ar": "وجبات خفيفة للرضّع"
+      },
+      "image": "images/baby-snacks.png"
+    },
+    {
+      "slug": "teething-biscuits",
+      "category": "feeding-baby-food",
+      "unit": "pack",
+      "name": {
+        "en": "Teething Biscuits",
+        "fr": "Biscuits de dentition",
+        "es": "Galletas de dentición",
+        "de": "Zahnungskekse",
+        "ar": "بسكويت التسنين"
+      },
+      "image": "images/teething-biscuits.png"
+    },
+    {
+      "slug": "breast-milk-storage-bags",
+      "category": "feeding-baby-food",
+      "unit": "pack",
+      "name": {
+        "en": "Breast Milk Storage Bags",
+        "fr": "Sachets de conservation du lait maternel",
+        "es": "Bolsas para leche materna",
+        "de": "Muttermilchbeutel",
+        "ar": "أكياس حفظ حليب الأم"
+      },
+      "image": "images/breast-milk-storage-bags.png"
+    },
+    {
+      "slug": "nursing-pads",
+      "category": "feeding-baby-food",
+      "unit": "pack",
+      "name": {
+        "en": "Nursing Pads",
+        "fr": "Coussinets d’allaitement",
+        "es": "Discos de lactancia",
+        "de": "Stilleinlagen",
+        "ar": "ضمادات الرضاعة"
+      },
+      "image": "images/nursing-pads.png"
+    },
+    {
+      "slug": "baby-laundry-detergent",
+      "category": "cleaning-hygiene",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Laundry Detergent",
+        "fr": "Lessive pour bébé",
+        "es": "Detergente para ropa de bebé",
+        "de": "Babywaschmittel",
+        "ar": "منظف غسيل للرضّع"
+      },
+      "image": "images/baby-laundry-detergent.png"
+    },
+    {
+      "slug": "baby-fabric-softener",
+      "category": "cleaning-hygiene",
+      "unit": "bottle",
+      "name": {
+        "en": "Baby Fabric Softener",
+        "fr": "Adoucissant pour bébé",
+        "es": "Suavizante para bebé",
+        "de": "Baby-Weichspüler",
+        "ar": "منعم أقمشة للرضّع"
+      },
+      "image": "images/baby-fabric-softener.png"
+    },
+    {
+      "slug": "bottle-cleaner",
+      "category": "cleaning-hygiene",
+      "unit": "bottle",
+      "name": {
+        "en": "Bottle Cleaner",
+        "fr": "Liquide vaisselle biberons",
+        "es": "Limpiador de biberones",
+        "de": "Fläschchenreiniger",
+        "ar": "منظف زجاجات الرضاعة"
+      },
+      "image": "images/bottle-cleaner.png"
+    },
+    {
+      "slug": "bottle-sterilizing-tablets",
+      "category": "cleaning-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Bottle Sterilizing Tablets",
+        "fr": "Pastilles de stérilisation",
+        "es": "Pastillas esterilizadoras",
+        "de": "Sterilisationstabletten",
+        "ar": "أقراص تعقيم الزجاجات"
+      },
+      "image": "images/bottle-sterilizing-tablets.png"
+    },
+    {
+      "slug": "baby-cotton-swabs",
+      "category": "cleaning-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Baby Cotton Swabs",
+        "fr": "Cotons-tiges pour bébé",
+        "es": "Bastoncillos para bebé",
+        "de": "Baby-Wattestäbchen",
+        "ar": "أعواد قطنية للرضّع"
+      },
+      "image": "images/baby-cotton-swabs.png"
+    },
+    {
+      "slug": "cotton-pads",
+      "category": "cleaning-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Cotton Pads",
+        "fr": "Disques de coton",
+        "es": "Discos de algodón",
+        "de": "Wattepads",
+        "ar": "أقراص قطنية"
+      },
+      "image": "images/cotton-pads.png"
+    },
+    {
+      "slug": "baby-tissues",
+      "category": "cleaning-hygiene",
+      "unit": "pack",
+      "name": {
+        "en": "Baby Tissues",
+        "fr": "Mouchoirs pour bébé",
+        "es": "Pañuelos para bebé",
+        "de": "Babytücher",
+        "ar": "مناديل ورقية للرضّع"
+      },
+      "image": "images/baby-tissues.png"
+    },
+    {
+      "slug": "kids-shampoo",
+      "category": "kids-personal-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Kids Shampoo",
+        "fr": "Shampooing pour enfants",
+        "es": "Champú infantil",
+        "de": "Kindershampoo",
+        "ar": "شامبو للأطفال"
+      },
+      "image": "images/kids-shampoo.png"
+    },
+    {
+      "slug": "kids-body-wash",
+      "category": "kids-personal-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Kids Body Wash",
+        "fr": "Gel douche pour enfants",
+        "es": "Gel de baño infantil",
+        "de": "Kinder-Duschgel",
+        "ar": "غسول جسم للأطفال"
+      },
+      "image": "images/kids-body-wash.png"
+    },
+    {
+      "slug": "kids-toothpaste",
+      "category": "kids-personal-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Kids Toothpaste",
+        "fr": "Dentifrice pour enfants",
+        "es": "Pasta de dientes infantil",
+        "de": "Kinderzahnpasta",
+        "ar": "معجون أسنان للأطفال"
+      },
+      "image": "images/kids-toothpaste.png"
+    },
+    {
+      "slug": "kids-toothbrush",
+      "category": "kids-personal-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Kids Toothbrush",
+        "fr": "Brosse à dents pour enfants",
+        "es": "Cepillo de dientes infantil",
+        "de": "Kinderzahnbürste",
+        "ar": "فرشاة أسنان للأطفال"
+      },
+      "image": "images/kids-toothbrush.png"
+    },
+    {
+      "slug": "kids-sunscreen",
+      "category": "kids-personal-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Kids Sunscreen",
+        "fr": "Crème solaire pour enfants",
+        "es": "Protector solar infantil",
+        "de": "Kinder-Sonnencreme",
+        "ar": "واقٍ شمسي للأطفال"
+      },
+      "image": "images/kids-sunscreen.png"
+    },
+    {
+      "slug": "kids-lotion",
+      "category": "kids-personal-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Kids Lotion",
+        "fr": "Lait hydratant pour enfants",
+        "es": "Loción infantil",
+        "de": "Kinderlotion",
+        "ar": "لوشن للأطفال"
+      },
+      "image": "images/kids-lotion.png"
+    },
+    {
+      "slug": "kids-bandages",
+      "category": "basic-care",
+      "unit": "pack",
+      "name": {
+        "en": "Kids Bandages",
+        "fr": "Pansements pour enfants",
+        "es": "Tiritas infantiles",
+        "de": "Kinderpflaster",
+        "ar": "لصقات جروح للأطفال"
+      },
+      "image": "images/kids-bandages.png"
+    },
+    {
+      "slug": "saline-nasal-spray",
+      "category": "basic-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Saline Nasal Spray",
+        "fr": "Spray nasal au sérum physiologique",
+        "es": "Spray nasal salino",
+        "de": "Kochsalz-Nasenspray",
+        "ar": "بخاخ أنف ملحي"
+      },
+      "image": "images/saline-nasal-spray.png"
+    }
+  ]
+}
