@@ -1,0 +1,728 @@
+{
+  "schema_version": 2,
+  "id": "dev.baggo.household",
+  "name": "Household",
+  "version": 1,
+  "description": "What keeps the house running: cleaners, laundry, bin bags, foil and the cloths and gloves that go with them.",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
+  "categories": [
+    {
+      "slug": "home-cleaning",
+      "icon": "spray",
+      "name": {
+        "en": "Home Cleaning",
+        "fr": "Entretien de la maison",
+        "es": "Limpieza del hogar",
+        "de": "Hausreinigung",
+        "ar": "تنظيف المنزل"
+      }
+    },
+    {
+      "slug": "dishwashing",
+      "icon": "utensils",
+      "name": {
+        "en": "Dishwashing",
+        "fr": "Vaisselle",
+        "es": "Lavavajillas",
+        "de": "Geschirrspülen",
+        "ar": "غسيل الصحون"
+      }
+    },
+    {
+      "slug": "laundry",
+      "icon": "washing-machine",
+      "name": {
+        "en": "Laundry",
+        "fr": "Lessive",
+        "es": "Colada",
+        "de": "Wäsche",
+        "ar": "الغسيل"
+      }
+    },
+    {
+      "slug": "paper-bathroom",
+      "icon": "toilet-paper",
+      "name": {
+        "en": "Paper & Bathroom",
+        "fr": "Papier et salle de bain",
+        "es": "Papel y baño",
+        "de": "Papier & Bad",
+        "ar": "الورق والحمام"
+      }
+    },
+    {
+      "slug": "waste-storage",
+      "icon": "trash",
+      "name": {
+        "en": "Waste & Storage",
+        "fr": "Déchets et conservation",
+        "es": "Basura y conservación",
+        "de": "Müll & Aufbewahrung",
+        "ar": "النفايات والحفظ"
+      }
+    },
+    {
+      "slug": "cleaning-supplies",
+      "icon": "bucket",
+      "name": {
+        "en": "Cleaning Supplies",
+        "fr": "Accessoires de nettoyage",
+        "es": "Utensilios de limpieza",
+        "de": "Reinigungszubehör",
+        "ar": "مستلزمات التنظيف"
+      }
+    },
+    {
+      "slug": "home-consumables",
+      "icon": "house-gear",
+      "name": {
+        "en": "Home Consumables",
+        "fr": "Consommables maison",
+        "es": "Consumibles del hogar",
+        "de": "Haushaltsverbrauch",
+        "ar": "مستهلكات المنزل"
+      }
+    }
+  ],
+  "items": [
+    {
+      "slug": "all-purpose-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "All-Purpose Cleaner",
+        "fr": "Nettoyant multi-usage",
+        "es": "Limpiador multiusos",
+        "de": "Allzweckreiniger",
+        "ar": "منظف متعدد الاستخدامات"
+      },
+      "image": "images/all-purpose-cleaner.png"
+    },
+    {
+      "slug": "disinfectant-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Disinfectant Cleaner",
+        "fr": "Nettoyant désinfectant",
+        "es": "Limpiador desinfectante",
+        "de": "Desinfektionsreiniger",
+        "ar": "منظف مطهر"
+      },
+      "image": "images/disinfectant-cleaner.png"
+    },
+    {
+      "slug": "floor-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Floor Cleaner",
+        "fr": "Nettoyant sols",
+        "es": "Limpiador de suelos",
+        "de": "Bodenreiniger",
+        "ar": "منظف الأرضيات"
+      },
+      "image": "images/floor-cleaner.png"
+    },
+    {
+      "slug": "glass-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Glass Cleaner",
+        "fr": "Nettoyant vitres",
+        "es": "Limpiacristales",
+        "de": "Glasreiniger",
+        "ar": "منظف الزجاج"
+      },
+      "image": "images/glass-cleaner.png"
+    },
+    {
+      "slug": "bathroom-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Bathroom Cleaner",
+        "fr": "Nettoyant salle de bain",
+        "es": "Limpiador de baño",
+        "de": "Badreiniger",
+        "ar": "منظف الحمام"
+      },
+      "image": "images/bathroom-cleaner.png"
+    },
+    {
+      "slug": "toilet-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Toilet Cleaner",
+        "fr": "Nettoyant WC",
+        "es": "Limpiador de inodoro",
+        "de": "WC-Reiniger",
+        "ar": "منظف المرحاض"
+      },
+      "image": "images/toilet-cleaner.png"
+    },
+    {
+      "slug": "kitchen-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Kitchen Cleaner",
+        "fr": "Nettoyant cuisine",
+        "es": "Limpiador de cocina",
+        "de": "Küchenreiniger",
+        "ar": "منظف المطبخ"
+      },
+      "image": "images/kitchen-cleaner.png"
+    },
+    {
+      "slug": "oven-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Oven Cleaner",
+        "fr": "Nettoyant four",
+        "es": "Limpiador de hornos",
+        "de": "Backofenreiniger",
+        "ar": "منظف الفرن"
+      },
+      "image": "images/oven-cleaner.png"
+    },
+    {
+      "slug": "limescale-remover",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Limescale Remover",
+        "fr": "Anticalcaire",
+        "es": "Antical",
+        "de": "Kalkentferner",
+        "ar": "مزيل الترسبات الكلسية"
+      },
+      "image": "images/limescale-remover.png"
+    },
+    {
+      "slug": "mold-remover",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Mold Remover",
+        "fr": "Anti-moisissure",
+        "es": "Antimoho",
+        "de": "Schimmelentferner",
+        "ar": "مزيل العفن"
+      },
+      "image": "images/mold-remover.png"
+    },
+    {
+      "slug": "furniture-polish",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Furniture Polish",
+        "fr": "Cire pour meubles",
+        "es": "Abrillantador de muebles",
+        "de": "Möbelpolitur",
+        "ar": "ملمع الأثاث"
+      },
+      "image": "images/furniture-polish.png"
+    },
+    {
+      "slug": "carpet-cleaner",
+      "category": "home-cleaning",
+      "unit": "bottle",
+      "name": {
+        "en": "Carpet Cleaner",
+        "fr": "Nettoyant moquette",
+        "es": "Limpiador de alfombras",
+        "de": "Teppichreiniger",
+        "ar": "منظف السجاد"
+      },
+      "image": "images/carpet-cleaner.png"
+    },
+    {
+      "slug": "cleaning-wipes",
+      "category": "home-cleaning",
+      "unit": "pack",
+      "name": {
+        "en": "Cleaning Wipes",
+        "fr": "Lingettes nettoyantes",
+        "es": "Toallitas limpiadoras",
+        "de": "Reinigungstücher",
+        "ar": "مناديل تنظيف"
+      },
+      "image": "images/cleaning-wipes.png"
+    },
+    {
+      "slug": "dish-soap",
+      "category": "dishwashing",
+      "unit": "bottle",
+      "name": {
+        "en": "Dish Soap",
+        "fr": "Liquide vaisselle",
+        "es": "Lavavajillas a mano",
+        "de": "Spülmittel",
+        "ar": "سائل غسيل الصحون"
+      },
+      "image": "images/dish-soap.png"
+    },
+    {
+      "slug": "dishwasher-tablets",
+      "category": "dishwashing",
+      "unit": "pack",
+      "name": {
+        "en": "Dishwasher Tablets",
+        "fr": "Tablettes lave-vaisselle",
+        "es": "Pastillas para lavavajillas",
+        "de": "Spülmaschinentabs",
+        "ar": "أقراص غسالة الصحون"
+      },
+      "image": "images/dishwasher-tablets.png"
+    },
+    {
+      "slug": "dishwasher-salt",
+      "category": "dishwashing",
+      "unit": "box",
+      "name": {
+        "en": "Dishwasher Salt",
+        "fr": "Sel régénérant",
+        "es": "Sal para lavavajillas",
+        "de": "Spülmaschinensalz",
+        "ar": "ملح غسالة الصحون"
+      },
+      "image": "images/dishwasher-salt.png"
+    },
+    {
+      "slug": "dishwasher-rinse-aid",
+      "category": "dishwashing",
+      "unit": "bottle",
+      "name": {
+        "en": "Dishwasher Rinse Aid",
+        "fr": "Liquide de rinçage",
+        "es": "Abrillantador para lavavajillas",
+        "de": "Klarspüler",
+        "ar": "ملمع غسالة الصحون"
+      },
+      "image": "images/dishwasher-rinse-aid.png"
+    },
+    {
+      "slug": "dishwasher-cleaner",
+      "category": "dishwashing",
+      "unit": "bottle",
+      "name": {
+        "en": "Dishwasher Cleaner",
+        "fr": "Nettoyant lave-vaisselle",
+        "es": "Limpiador de lavavajillas",
+        "de": "Spülmaschinenreiniger",
+        "ar": "منظف غسالة الصحون"
+      },
+      "image": "images/dishwasher-cleaner.png"
+    },
+    {
+      "slug": "sponges",
+      "category": "dishwashing",
+      "unit": "pack",
+      "name": {
+        "en": "Sponges",
+        "fr": "Éponges",
+        "es": "Esponjas",
+        "de": "Schwämme",
+        "ar": "إسفنج"
+      },
+      "image": "images/sponges.png"
+    },
+    {
+      "slug": "scrub-pads",
+      "category": "dishwashing",
+      "unit": "pack",
+      "name": {
+        "en": "Scrub Pads",
+        "fr": "Tampons à récurer",
+        "es": "Estropajos",
+        "de": "Scheuerschwämme",
+        "ar": "ليف تنظيف"
+      },
+      "image": "images/scrub-pads.png"
+    },
+    {
+      "slug": "dishwashing-gloves",
+      "category": "dishwashing",
+      "unit": "pcs",
+      "name": {
+        "en": "Dishwashing Gloves",
+        "fr": "Gants de vaisselle",
+        "es": "Guantes de fregar",
+        "de": "Spülhandschuhe",
+        "ar": "قفازات غسيل الصحون"
+      },
+      "image": "images/dishwashing-gloves.png"
+    },
+    {
+      "slug": "laundry-detergent",
+      "category": "laundry",
+      "unit": "box",
+      "name": {
+        "en": "Laundry Detergent",
+        "fr": "Lessive",
+        "es": "Detergente para ropa",
+        "de": "Waschmittel",
+        "ar": "مسحوق غسيل"
+      },
+      "image": "images/laundry-detergent.png"
+    },
+    {
+      "slug": "liquid-laundry-detergent",
+      "category": "laundry",
+      "unit": "bottle",
+      "name": {
+        "en": "Liquid Laundry Detergent",
+        "fr": "Lessive liquide",
+        "es": "Detergente líquido",
+        "de": "Flüssigwaschmittel",
+        "ar": "سائل غسيل"
+      },
+      "image": "images/liquid-laundry-detergent.png"
+    },
+    {
+      "slug": "laundry-pods",
+      "category": "laundry",
+      "unit": "pack",
+      "name": {
+        "en": "Laundry Pods",
+        "fr": "Capsules de lessive",
+        "es": "Cápsulas de detergente",
+        "de": "Waschmittel-Pods",
+        "ar": "كبسولات غسيل"
+      },
+      "image": "images/laundry-pods.png"
+    },
+    {
+      "slug": "fabric-softener",
+      "category": "laundry",
+      "unit": "bottle",
+      "name": {
+        "en": "Fabric Softener",
+        "fr": "Adoucissant",
+        "es": "Suavizante",
+        "de": "Weichspüler",
+        "ar": "منعم أقمشة"
+      },
+      "image": "images/fabric-softener.png"
+    },
+    {
+      "slug": "stain-remover",
+      "category": "laundry",
+      "unit": "bottle",
+      "name": {
+        "en": "Stain Remover",
+        "fr": "Détachant",
+        "es": "Quitamanchas",
+        "de": "Fleckenentferner",
+        "ar": "مزيل البقع"
+      },
+      "image": "images/stain-remover.png"
+    },
+    {
+      "slug": "laundry-sanitizer",
+      "category": "laundry",
+      "unit": "bottle",
+      "name": {
+        "en": "Laundry Sanitizer",
+        "fr": "Désinfectant pour le linge",
+        "es": "Desinfectante para ropa",
+        "de": "Wäschedesinfektion",
+        "ar": "معقم الغسيل"
+      },
+      "image": "images/laundry-sanitizer.png"
+    },
+    {
+      "slug": "color-catcher-sheets",
+      "category": "laundry",
+      "unit": "pack",
+      "name": {
+        "en": "Color Catcher Sheets",
+        "fr": "Lingettes anti-décoloration",
+        "es": "Toallitas atrapacolores",
+        "de": "Farbfangtücher",
+        "ar": "مناديل حبس الألوان"
+      },
+      "image": "images/color-catcher-sheets.png"
+    },
+    {
+      "slug": "delicates-detergent",
+      "category": "laundry",
+      "unit": "bottle",
+      "name": {
+        "en": "Delicates Detergent",
+        "fr": "Lessive pour linge délicat",
+        "es": "Detergente para delicados",
+        "de": "Feinwaschmittel",
+        "ar": "منظف الملابس الرقيقة"
+      },
+      "image": "images/delicates-detergent.png"
+    },
+    {
+      "slug": "toilet-paper",
+      "category": "paper-bathroom",
+      "unit": "pack",
+      "name": {
+        "en": "Toilet Paper",
+        "fr": "Papier toilette",
+        "es": "Papel higiénico",
+        "de": "Toilettenpapier",
+        "ar": "ورق المرحاض"
+      },
+      "image": "images/toilet-paper.png"
+    },
+    {
+      "slug": "paper-towels",
+      "category": "paper-bathroom",
+      "unit": "pack",
+      "name": {
+        "en": "Paper Towels",
+        "fr": "Essuie-tout",
+        "es": "Papel de cocina",
+        "de": "Küchenrolle",
+        "ar": "مناشف ورقية"
+      },
+      "image": "images/paper-towels.png"
+    },
+    {
+      "slug": "facial-tissues",
+      "category": "paper-bathroom",
+      "unit": "pack",
+      "name": {
+        "en": "Facial Tissues",
+        "fr": "Mouchoirs en boîte",
+        "es": "Pañuelos faciales",
+        "de": "Taschentücher",
+        "ar": "مناديل وجه"
+      },
+      "image": "images/facial-tissues.png"
+    },
+    {
+      "slug": "wet-toilet-wipes",
+      "category": "paper-bathroom",
+      "unit": "pack",
+      "name": {
+        "en": "Wet Toilet Wipes",
+        "fr": "Papier toilette humide",
+        "es": "Toallitas húmedas para inodoro",
+        "de": "Feuchtes Toilettenpapier",
+        "ar": "مناديل مرحاض مبللة"
+      },
+      "image": "images/wet-toilet-wipes.png"
+    },
+    {
+      "slug": "trash-bags",
+      "category": "waste-storage",
+      "unit": "pack",
+      "name": {
+        "en": "Trash Bags",
+        "fr": "Sacs poubelle",
+        "es": "Bolsas de basura",
+        "de": "Müllbeutel",
+        "ar": "أكياس قمامة"
+      },
+      "image": "images/trash-bags.png"
+    },
+    {
+      "slug": "small-trash-bags",
+      "category": "waste-storage",
+      "unit": "pack",
+      "name": {
+        "en": "Small Trash Bags",
+        "fr": "Petits sacs poubelle",
+        "es": "Bolsas de basura pequeñas",
+        "de": "Kleine Müllbeutel",
+        "ar": "أكياس قمامة صغيرة"
+      },
+      "image": "images/small-trash-bags.png"
+    },
+    {
+      "slug": "recycling-bags",
+      "category": "waste-storage",
+      "unit": "pack",
+      "name": {
+        "en": "Recycling Bags",
+        "fr": "Sacs de recyclage",
+        "es": "Bolsas de reciclaje",
+        "de": "Recyclingbeutel",
+        "ar": "أكياس إعادة التدوير"
+      },
+      "image": "images/recycling-bags.png"
+    },
+    {
+      "slug": "freezer-bags",
+      "category": "waste-storage",
+      "unit": "pack",
+      "name": {
+        "en": "Freezer Bags",
+        "fr": "Sacs congélation",
+        "es": "Bolsas para congelar",
+        "de": "Gefrierbeutel",
+        "ar": "أكياس تجميد"
+      },
+      "image": "images/freezer-bags.png"
+    },
+    {
+      "slug": "food-storage-bags",
+      "category": "waste-storage",
+      "unit": "pack",
+      "name": {
+        "en": "Food Storage Bags",
+        "fr": "Sacs de conservation",
+        "es": "Bolsas para alimentos",
+        "de": "Frischhaltebeutel",
+        "ar": "أكياس حفظ الطعام"
+      },
+      "image": "images/food-storage-bags.png"
+    },
+    {
+      "slug": "aluminum-foil",
+      "category": "waste-storage",
+      "unit": "pcs",
+      "name": {
+        "en": "Aluminum Foil",
+        "fr": "Papier aluminium",
+        "es": "Papel de aluminio",
+        "de": "Alufolie",
+        "ar": "ورق ألمنيوم"
+      },
+      "image": "images/aluminum-foil.png"
+    },
+    {
+      "slug": "plastic-wrap",
+      "category": "waste-storage",
+      "unit": "pcs",
+      "name": {
+        "en": "Plastic Wrap",
+        "fr": "Film alimentaire",
+        "es": "Film transparente",
+        "de": "Frischhaltefolie",
+        "ar": "نايلون لف الطعام"
+      },
+      "image": "images/plastic-wrap.png"
+    },
+    {
+      "slug": "baking-paper",
+      "category": "waste-storage",
+      "unit": "pcs",
+      "name": {
+        "en": "Baking Paper",
+        "fr": "Papier cuisson",
+        "es": "Papel de horno",
+        "de": "Backpapier",
+        "ar": "ورق خبز"
+      },
+      "image": "images/baking-paper.png"
+    },
+    {
+      "slug": "cleaning-cloths",
+      "category": "cleaning-supplies",
+      "unit": "pack",
+      "name": {
+        "en": "Cleaning Cloths",
+        "fr": "Chiffons de nettoyage",
+        "es": "Bayetas de limpieza",
+        "de": "Putztücher",
+        "ar": "خرق تنظيف"
+      },
+      "image": "images/cleaning-cloths.png"
+    },
+    {
+      "slug": "microfiber-cloths",
+      "category": "cleaning-supplies",
+      "unit": "pack",
+      "name": {
+        "en": "Microfiber Cloths",
+        "fr": "Chiffons microfibre",
+        "es": "Paños de microfibra",
+        "de": "Mikrofasertücher",
+        "ar": "مناشف ميكروفايبر"
+      },
+      "image": "images/microfiber-cloths.png"
+    },
+    {
+      "slug": "disposable-gloves",
+      "category": "cleaning-supplies",
+      "unit": "pack",
+      "name": {
+        "en": "Disposable Gloves",
+        "fr": "Gants jetables",
+        "es": "Guantes desechables",
+        "de": "Einweghandschuhe",
+        "ar": "قفازات للاستعمال مرة واحدة"
+      },
+      "image": "images/disposable-gloves.png"
+    },
+    {
+      "slug": "magic-erasers",
+      "category": "cleaning-supplies",
+      "unit": "pack",
+      "name": {
+        "en": "Magic Erasers",
+        "fr": "Éponges magiques",
+        "es": "Borradores mágicos",
+        "de": "Schmutzradierer",
+        "ar": "ممحاة سحرية"
+      },
+      "image": "images/magic-erasers.png"
+    },
+    {
+      "slug": "air-freshener",
+      "category": "home-consumables",
+      "unit": "pcs",
+      "name": {
+        "en": "Air Freshener",
+        "fr": "Désodorisant",
+        "es": "Ambientador",
+        "de": "Lufterfrischer",
+        "ar": "معطر جو"
+      },
+      "image": "images/air-freshener.png"
+    },
+    {
+      "slug": "toilet-freshener",
+      "category": "home-consumables",
+      "unit": "pcs",
+      "name": {
+        "en": "Toilet Freshener",
+        "fr": "Bloc WC",
+        "es": "Ambientador para inodoro",
+        "de": "WC-Duftstein",
+        "ar": "معطر المرحاض"
+      },
+      "image": "images/toilet-freshener.png"
+    },
+    {
+      "slug": "drain-cleaner",
+      "category": "home-consumables",
+      "unit": "bottle",
+      "name": {
+        "en": "Drain Cleaner",
+        "fr": "Déboucheur",
+        "es": "Limpiador de desagües",
+        "de": "Rohrreiniger",
+        "ar": "منظف المصارف"
+      },
+      "image": "images/drain-cleaner.png"
+    },
+    {
+      "slug": "descaler",
+      "category": "home-consumables",
+      "unit": "bottle",
+      "name": {
+        "en": "Descaler",
+        "fr": "Détartrant",
+        "es": "Descalcificador",
+        "de": "Entkalker",
+        "ar": "مزيل الكلس"
+      },
+      "image": "images/descaler.png"
+    }
+  ]
+}
