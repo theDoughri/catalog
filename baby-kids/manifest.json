@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
   "name": "Baby & Kids",
-  "version": 2,
+  "version": 3,
   "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -398,7 +398,8 @@
         "es": "Galletas de dentición",
         "de": "Zahnungskekse",
         "ar": "بسكويت التسنين"
-      }
+      },
+      "image": "images/teething-biscuits.png"
     },
     {
       "slug": "breast-milk-storage-bags",
@@ -410,7 +411,8 @@
         "es": "Bolsas para leche materna",
         "de": "Muttermilchbeutel",
         "ar": "أكياس حفظ حليب الأم"
-      }
+      },
+      "image": "images/breast-milk-storage-bags.png"
     },
     {
       "slug": "nursing-pads",
@@ -422,7 +424,8 @@
         "es": "Discos de lactancia",
         "de": "Stilleinlagen",
         "ar": "ضمادات الرضاعة"
-      }
+      },
+      "image": "images/nursing-pads.png"
     },
     {
       "slug": "baby-laundry-detergent",
@@ -434,7 +437,8 @@
         "es": "Detergente para ropa de bebé",
         "de": "Babywaschmittel",
         "ar": "منظف غسيل للرضّع"
-      }
+      },
+      "image": "images/baby-laundry-detergent.png"
     },
     {
       "slug": "baby-fabric-softener",
@@ -446,7 +450,8 @@
         "es": "Suavizante para bebé",
         "de": "Baby-Weichspüler",
         "ar": "منعم أقمشة للرضّع"
-      }
+      },
+      "image": "images/baby-fabric-softener.png"
     },
     {
       "slug": "bottle-cleaner",
@@ -458,7 +463,8 @@
         "es": "Limpiador de biberones",
         "de": "Fläschchenreiniger",
         "ar": "منظف زجاجات الرضاعة"
-      }
+      },
+      "image": "images/bottle-cleaner.png"
     },
     {
       "slug": "bottle-sterilizing-tablets",
