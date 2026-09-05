@@ -1,0 +1,704 @@
+{
+  "schema_version": 2,
+  "id": "dev.baggo.pet-care",
+  "name": "Pet Care",
+  "version": 1,
+  "description": "What the animals get through: food, treats, litter, bedding and the shampoos and cleaners that come with keeping them.",
+  "homepage": "https://github.com/theDoughri/catalog",
+  "author": "theDoughri",
+  "default_locale": "en",
+  "categories": [
+    {
+      "slug": "dog",
+      "icon": "dog",
+      "name": {
+        "en": "Dog",
+        "fr": "Chien",
+        "es": "Perro",
+        "de": "Hund",
+        "ar": "الكلاب"
+      }
+    },
+    {
+      "slug": "cat",
+      "icon": "cat",
+      "name": {
+        "en": "Cat",
+        "fr": "Chat",
+        "es": "Gato",
+        "de": "Katze",
+        "ar": "القطط"
+      }
+    },
+    {
+      "slug": "birds",
+      "icon": "grain",
+      "name": {
+        "en": "Birds",
+        "fr": "Oiseaux",
+        "es": "Pájaros",
+        "de": "Vögel",
+        "ar": "الطيور"
+      }
+    },
+    {
+      "slug": "small-pets",
+      "icon": "carrot",
+      "name": {
+        "en": "Rabbits & Small Pets",
+        "fr": "Lapins et rongeurs",
+        "es": "Conejos y roedores",
+        "de": "Kaninchen & Kleintiere",
+        "ar": "الأرانب والقوارض"
+      }
+    },
+    {
+      "slug": "fish",
+      "icon": "fish",
+      "name": {
+        "en": "Fish",
+        "fr": "Poissons",
+        "es": "Peces",
+        "de": "Fische",
+        "ar": "الأسماك"
+      }
+    },
+    {
+      "slug": "general-pet-care",
+      "icon": "paw",
+      "name": {
+        "en": "General Pet Care",
+        "fr": "Soins généraux",
+        "es": "Cuidado general",
+        "de": "Allgemeine Tierpflege",
+        "ar": "العناية العامة"
+      }
+    }
+  ],
+  "items": [
+    {
+      "slug": "dog-food",
+      "category": "dog",
+      "unit": "bag",
+      "name": {
+        "en": "Dog Food",
+        "fr": "Nourriture pour chien",
+        "es": "Comida para perros",
+        "de": "Hundefutter",
+        "ar": "طعام كلاب"
+      },
+      "image": "images/dog-food.png"
+    },
+    {
+      "slug": "wet-dog-food",
+      "category": "dog",
+      "unit": "can",
+      "name": {
+        "en": "Wet Dog Food",
+        "fr": "Pâtée pour chien",
+        "es": "Comida húmeda para perros",
+        "de": "Nassfutter für Hunde",
+        "ar": "طعام كلاب رطب"
+      },
+      "image": "images/wet-dog-food.png"
+    },
+    {
+      "slug": "dry-dog-food",
+      "category": "dog",
+      "unit": "bag",
+      "name": {
+        "en": "Dry Dog Food",
+        "fr": "Croquettes pour chien",
+        "es": "Pienso para perros",
+        "de": "Trockenfutter für Hunde",
+        "ar": "طعام كلاب جاف"
+      },
+      "image": "images/dry-dog-food.png"
+    },
+    {
+      "slug": "dog-treats",
+      "category": "dog",
+      "unit": "pack",
+      "name": {
+        "en": "Dog Treats",
+        "fr": "Friandises pour chien",
+        "es": "Premios para perros",
+        "de": "Hundeleckerlis",
+        "ar": "مكافآت الكلاب"
+      },
+      "image": "images/dog-treats.png"
+    },
+    {
+      "slug": "dental-chews",
+      "category": "dog",
+      "unit": "pack",
+      "name": {
+        "en": "Dental Chews",
+        "fr": "Bâtonnets dentaires",
+        "es": "Snacks dentales",
+        "de": "Zahnpflege-Kaustreifen",
+        "ar": "عظام مضغ للأسنان"
+      },
+      "image": "images/dental-chews.png"
+    },
+    {
+      "slug": "dog-bones",
+      "category": "dog",
+      "unit": "pack",
+      "name": {
+        "en": "Dog Bones",
+        "fr": "Os à mâcher",
+        "es": "Huesos para perros",
+        "de": "Kauknochen",
+        "ar": "عظام كلاب"
+      },
+      "image": "images/dog-bones.png"
+    },
+    {
+      "slug": "puppy-food",
+      "category": "dog",
+      "unit": "bag",
+      "name": {
+        "en": "Puppy Food",
+        "fr": "Nourriture pour chiot",
+        "es": "Comida para cachorros",
+        "de": "Welpenfutter",
+        "ar": "طعام جراء"
+      },
+      "image": "images/puppy-food.png"
+    },
+    {
+      "slug": "dog-shampoo",
+      "category": "dog",
+      "unit": "bottle",
+      "name": {
+        "en": "Dog Shampoo",
+        "fr": "Shampooing pour chien",
+        "es": "Champú para perros",
+        "de": "Hundeshampoo",
+        "ar": "شامبو كلاب"
+      },
+      "image": "images/dog-shampoo.png"
+    },
+    {
+      "slug": "dog-conditioner",
+      "category": "dog",
+      "unit": "bottle",
+      "name": {
+        "en": "Dog Conditioner",
+        "fr": "Après-shampooing pour chien",
+        "es": "Acondicionador para perros",
+        "de": "Hundespülung",
+        "ar": "بلسم كلاب"
+      },
+      "image": "images/dog-conditioner.png"
+    },
+    {
+      "slug": "dog-dental-care",
+      "category": "dog",
+      "unit": "pcs",
+      "name": {
+        "en": "Dog Dental Care",
+        "fr": "Soin dentaire pour chien",
+        "es": "Higiene dental para perros",
+        "de": "Zahnpflege für Hunde",
+        "ar": "عناية أسنان الكلاب"
+      },
+      "image": "images/dog-dental-care.png"
+    },
+    {
+      "slug": "dog-waste-bags",
+      "category": "dog",
+      "unit": "pack",
+      "name": {
+        "en": "Dog Waste Bags",
+        "fr": "Sacs à déjections",
+        "es": "Bolsas para excrementos",
+        "de": "Hundekotbeutel",
+        "ar": "أكياس فضلات الكلاب"
+      },
+      "image": "images/dog-waste-bags.png"
+    },
+    {
+      "slug": "puppy-pads",
+      "category": "dog",
+      "unit": "pack",
+      "name": {
+        "en": "Puppy Pads",
+        "fr": "Tapis d’éducation",
+        "es": "Empapadores para cachorros",
+        "de": "Welpenunterlagen",
+        "ar": "مفارش تدريب الجراء"
+      },
+      "image": "images/puppy-pads.png"
+    },
+    {
+      "slug": "cat-food",
+      "category": "cat",
+      "unit": "bag",
+      "name": {
+        "en": "Cat Food",
+        "fr": "Nourriture pour chat",
+        "es": "Comida para gatos",
+        "de": "Katzenfutter",
+        "ar": "طعام قطط"
+      },
+      "image": "images/cat-food.png"
+    },
+    {
+      "slug": "wet-cat-food",
+      "category": "cat",
+      "unit": "can",
+      "name": {
+        "en": "Wet Cat Food",
+        "fr": "Pâtée pour chat",
+        "es": "Comida húmeda para gatos",
+        "de": "Nassfutter für Katzen",
+        "ar": "طعام قطط رطب"
+      },
+      "image": "images/wet-cat-food.png"
+    },
+    {
+      "slug": "dry-cat-food",
+      "category": "cat",
+      "unit": "bag",
+      "name": {
+        "en": "Dry Cat Food",
+        "fr": "Croquettes pour chat",
+        "es": "Pienso para gatos",
+        "de": "Trockenfutter für Katzen",
+        "ar": "طعام قطط جاف"
+      },
+      "image": "images/dry-cat-food.png"
+    },
+    {
+      "slug": "cat-treats",
+      "category": "cat",
+      "unit": "pack",
+      "name": {
+        "en": "Cat Treats",
+        "fr": "Friandises pour chat",
+        "es": "Premios para gatos",
+        "de": "Katzenleckerlis",
+        "ar": "مكافآت القطط"
+      },
+      "image": "images/cat-treats.png"
+    },
+    {
+      "slug": "kitten-food",
+      "category": "cat",
+      "unit": "bag",
+      "name": {
+        "en": "Kitten Food",
+        "fr": "Nourriture pour chaton",
+        "es": "Comida para gatitos",
+        "de": "Kittenfutter",
+        "ar": "طعام هريرات"
+      },
+      "image": "images/kitten-food.png"
+    },
+    {
+      "slug": "cat-milk",
+      "category": "cat",
+      "unit": "bottle",
+      "name": {
+        "en": "Cat Milk",
+        "fr": "Lait pour chat",
+        "es": "Leche para gatos",
+        "de": "Katzenmilch",
+        "ar": "حليب القطط"
+      },
+      "image": "images/cat-milk.png"
+    },
+    {
+      "slug": "cat-litter",
+      "category": "cat",
+      "unit": "bag",
+      "name": {
+        "en": "Cat Litter",
+        "fr": "Litière pour chat",
+        "es": "Arena para gatos",
+        "de": "Katzenstreu",
+        "ar": "رمل القطط"
+      },
+      "image": "images/cat-litter.png"
+    },
+    {
+      "slug": "clumping-cat-litter",
+      "category": "cat",
+      "unit": "bag",
+      "name": {
+        "en": "Clumping Cat Litter",
+        "fr": "Litière agglomérante",
+        "es": "Arena aglomerante",
+        "de": "Klumpstreu",
+        "ar": "رمل قطط متكتل"
+      },
+      "image": "images/clumping-cat-litter.png"
+    },
+    {
+      "slug": "litter-deodorizer",
+      "category": "cat",
+      "unit": "pcs",
+      "name": {
+        "en": "Litter Deodorizer",
+        "fr": "Désodorisant pour litière",
+        "es": "Desodorante para arena",
+        "de": "Streu-Deodorant",
+        "ar": "معطر رمل القطط"
+      },
+      "image": "images/litter-deodorizer.png"
+    },
+    {
+      "slug": "cat-shampoo",
+      "category": "cat",
+      "unit": "bottle",
+      "name": {
+        "en": "Cat Shampoo",
+        "fr": "Shampooing pour chat",
+        "es": "Champú para gatos",
+        "de": "Katzenshampoo",
+        "ar": "شامبو قطط"
+      },
+      "image": "images/cat-shampoo.png"
+    },
+    {
+      "slug": "hairball-paste",
+      "category": "cat",
+      "unit": "pcs",
+      "name": {
+        "en": "Hairball Paste",
+        "fr": "Pâte anti-boules de poils",
+        "es": "Pasta antibolas de pelo",
+        "de": "Malzpaste",
+        "ar": "معجون كرات الشعر"
+      },
+      "image": "images/hairball-paste.png"
+    },
+    {
+      "slug": "bird-food",
+      "category": "birds",
+      "unit": "bag",
+      "name": {
+        "en": "Bird Food",
+        "fr": "Nourriture pour oiseaux",
+        "es": "Comida para pájaros",
+        "de": "Vogelfutter",
+        "ar": "طعام طيور"
+      },
+      "image": "images/bird-food.png"
+    },
+    {
+      "slug": "bird-seed",
+      "category": "birds",
+      "unit": "bag",
+      "name": {
+        "en": "Bird Seed",
+        "fr": "Graines pour oiseaux",
+        "es": "Semillas para pájaros",
+        "de": "Vogelkörner",
+        "ar": "بذور طيور"
+      },
+      "image": "images/bird-seed.png"
+    },
+    {
+      "slug": "millet-spray",
+      "category": "birds",
+      "unit": "pack",
+      "name": {
+        "en": "Millet Spray",
+        "fr": "Grappe de millet",
+        "es": "Espiga de mijo",
+        "de": "Kolbenhirse",
+        "ar": "سنابل الدخن"
+      },
+      "image": "images/millet-spray.png"
+    },
+    {
+      "slug": "bird-treats",
+      "category": "birds",
+      "unit": "pack",
+      "name": {
+        "en": "Bird Treats",
+        "fr": "Friandises pour oiseaux",
+        "es": "Premios para pájaros",
+        "de": "Vogelleckerlis",
+        "ar": "مكافآت الطيور"
+      },
+      "image": "images/bird-treats.png"
+    },
+    {
+      "slug": "bird-grit",
+      "category": "birds",
+      "unit": "box",
+      "name": {
+        "en": "Bird Grit",
+        "fr": "Grit pour oiseaux",
+        "es": "Grit para pájaros",
+        "de": "Vogelgrit",
+        "ar": "حصى الطيور"
+      },
+      "image": "images/bird-grit.png"
+    },
+    {
+      "slug": "cage-sand",
+      "category": "birds",
+      "unit": "bag",
+      "name": {
+        "en": "Cage Sand",
+        "fr": "Sable pour cage",
+        "es": "Arena para jaulas",
+        "de": "Vogelsand",
+        "ar": "رمل الأقفاص"
+      },
+      "image": "images/cage-sand.png"
+    },
+    {
+      "slug": "rabbit-food",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Rabbit Food",
+        "fr": "Nourriture pour lapin",
+        "es": "Comida para conejos",
+        "de": "Kaninchenfutter",
+        "ar": "طعام أرانب"
+      },
+      "image": "images/rabbit-food.png"
+    },
+    {
+      "slug": "guinea-pig-food",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Guinea Pig Food",
+        "fr": "Nourriture pour cochon d’Inde",
+        "es": "Comida para cobayas",
+        "de": "Meerschweinchenfutter",
+        "ar": "طعام خنازير غينيا"
+      },
+      "image": "images/guinea-pig-food.png"
+    },
+    {
+      "slug": "hamster-food",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Hamster Food",
+        "fr": "Nourriture pour hamster",
+        "es": "Comida para hámsteres",
+        "de": "Hamsterfutter",
+        "ar": "طعام هامستر"
+      },
+      "image": "images/hamster-food.png"
+    },
+    {
+      "slug": "small-pet-treats",
+      "category": "small-pets",
+      "unit": "pack",
+      "name": {
+        "en": "Small Pet Treats",
+        "fr": "Friandises pour rongeurs",
+        "es": "Premios para roedores",
+        "de": "Nagerleckerlis",
+        "ar": "مكافآت القوارض"
+      },
+      "image": "images/small-pet-treats.png"
+    },
+    {
+      "slug": "hay",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Hay",
+        "fr": "Foin",
+        "es": "Heno",
+        "de": "Heu",
+        "ar": "تبن"
+      },
+      "image": "images/hay.png"
+    },
+    {
+      "slug": "bedding",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Bedding",
+        "fr": "Litière de cage",
+        "es": "Lecho para jaulas",
+        "de": "Einstreu",
+        "ar": "فرشة الأقفاص"
+      },
+      "image": "images/bedding.png"
+    },
+    {
+      "slug": "wood-shavings",
+      "category": "small-pets",
+      "unit": "bag",
+      "name": {
+        "en": "Wood Shavings",
+        "fr": "Copeaux de bois",
+        "es": "Virutas de madera",
+        "de": "Holzspäne",
+        "ar": "نشارة خشب"
+      },
+      "image": "images/wood-shavings.png"
+    },
+    {
+      "slug": "fish-food",
+      "category": "fish",
+      "unit": "box",
+      "name": {
+        "en": "Fish Food",
+        "fr": "Nourriture pour poissons",
+        "es": "Comida para peces",
+        "de": "Fischfutter",
+        "ar": "طعام أسماك"
+      },
+      "image": "images/fish-food.png"
+    },
+    {
+      "slug": "fish-flakes",
+      "category": "fish",
+      "unit": "box",
+      "name": {
+        "en": "Fish Flakes",
+        "fr": "Flocons pour poissons",
+        "es": "Escamas para peces",
+        "de": "Flockenfutter",
+        "ar": "رقائق أسماك"
+      },
+      "image": "images/fish-flakes.png"
+    },
+    {
+      "slug": "fish-pellets",
+      "category": "fish",
+      "unit": "box",
+      "name": {
+        "en": "Fish Pellets",
+        "fr": "Granulés pour poissons",
+        "es": "Gránulos para peces",
+        "de": "Granulatfutter",
+        "ar": "حبيبات أسماك"
+      },
+      "image": "images/fish-pellets.png"
+    },
+    {
+      "slug": "water-conditioner",
+      "category": "fish",
+      "unit": "bottle",
+      "name": {
+        "en": "Water Conditioner",
+        "fr": "Conditionneur d’eau",
+        "es": "Acondicionador de agua",
+        "de": "Wasseraufbereiter",
+        "ar": "محسّن ماء الحوض"
+      },
+      "image": "images/water-conditioner.png"
+    },
+    {
+      "slug": "aquarium-filter-media",
+      "category": "fish",
+      "unit": "pack",
+      "name": {
+        "en": "Aquarium Filter Media",
+        "fr": "Masse filtrante",
+        "es": "Material filtrante",
+        "de": "Filtermaterial",
+        "ar": "وسائط فلتر الحوض"
+      },
+      "image": "images/aquarium-filter-media.png"
+    },
+    {
+      "slug": "aquarium-cleaner",
+      "category": "fish",
+      "unit": "bottle",
+      "name": {
+        "en": "Aquarium Cleaner",
+        "fr": "Nettoyant pour aquarium",
+        "es": "Limpiador de acuarios",
+        "de": "Aquarienreiniger",
+        "ar": "منظف الحوض"
+      },
+      "image": "images/aquarium-cleaner.png"
+    },
+    {
+      "slug": "pet-shampoo",
+      "category": "general-pet-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Pet Shampoo",
+        "fr": "Shampooing pour animaux",
+        "es": "Champú para mascotas",
+        "de": "Tiershampoo",
+        "ar": "شامبو الحيوانات الأليفة"
+      },
+      "image": "images/pet-shampoo.png"
+    },
+    {
+      "slug": "pet-wipes",
+      "category": "general-pet-care",
+      "unit": "pack",
+      "name": {
+        "en": "Pet Wipes",
+        "fr": "Lingettes pour animaux",
+        "es": "Toallitas para mascotas",
+        "de": "Tierpflegetücher",
+        "ar": "مناديل الحيوانات الأليفة"
+      },
+      "image": "images/pet-wipes.png"
+    },
+    {
+      "slug": "pet-dental-care",
+      "category": "general-pet-care",
+      "unit": "pcs",
+      "name": {
+        "en": "Pet Dental Care",
+        "fr": "Soin dentaire pour animaux",
+        "es": "Higiene dental para mascotas",
+        "de": "Zahnpflege für Tiere",
+        "ar": "عناية أسنان الحيوانات"
+      },
+      "image": "images/pet-dental-care.png"
+    },
+    {
+      "slug": "pet-stain-remover",
+      "category": "general-pet-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Pet Stain Remover",
+        "fr": "Détachant pour animaux",
+        "es": "Quitamanchas para mascotas",
+        "de": "Tierflecken-Entferner",
+        "ar": "مزيل بقع الحيوانات"
+      },
+      "image": "images/pet-stain-remover.png"
+    },
+    {
+      "slug": "pet-odor-remover",
+      "category": "general-pet-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Pet Odor Remover",
+        "fr": "Anti-odeurs pour animaux",
+        "es": "Eliminador de olores para mascotas",
+        "de": "Tiergeruch-Entferner",
+        "ar": "مزيل روائح الحيوانات"
+      },
+      "image": "images/pet-odor-remover.png"
+    },
+    {
+      "slug": "pet-disinfectant",
+      "category": "general-pet-care",
+      "unit": "bottle",
+      "name": {
+        "en": "Pet Disinfectant",
+        "fr": "Désinfectant pour animaux",
+        "es": "Desinfectante para mascotas",
+        "de": "Tierdesinfektionsmittel",
+        "ar": "مطهر للحيوانات الأليفة"
+      },
+      "image": "images/pet-disinfectant.png"
+    }
+  ]
+}
