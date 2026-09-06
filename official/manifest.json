@@ -7,6 +7,11 @@
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
   "default_locale": "en",
+    "shortcuts": {
+    "missing": "icons/missing.png",
+    "favorites": "icons/favorites.png",
+    "recent": "icons/recent.png"
+  },
   "categories": [
     {
       "slug": "fruits",
