@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.household",
   "name": "Household",
-  "version": 1,
+  "version": 2,
   "description": "What keeps the house running: cleaners, laundry, bin bags, foil and the cloths and gloves that go with them.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -10,7 +10,7 @@
   "categories": [
     {
       "slug": "home-cleaning",
-      "icon": "spray",
+      "icon": "icons/home-cleaning.png",
       "name": {
         "en": "Home Cleaning",
         "fr": "Entretien de la maison",
@@ -21,7 +21,7 @@
     },
     {
       "slug": "dishwashing",
-      "icon": "utensils",
+      "icon": "icons/dishwashing.png",
       "name": {
         "en": "Dishwashing",
         "fr": "Vaisselle",
@@ -32,7 +32,7 @@
     },
     {
       "slug": "laundry",
-      "icon": "washing-machine",
+      "icon": "icons/laundry.png",
       "name": {
         "en": "Laundry",
         "fr": "Lessive",
@@ -43,7 +43,7 @@
     },
     {
       "slug": "paper-bathroom",
-      "icon": "toilet-paper",
+      "icon": "icons/paper-bathroom.png",
       "name": {
         "en": "Paper & Bathroom",
         "fr": "Papier et salle de bain",
@@ -54,7 +54,7 @@
     },
     {
       "slug": "waste-storage",
-      "icon": "trash",
+      "icon": "icons/waste-storage.png",
       "name": {
         "en": "Waste & Storage",
         "fr": "Déchets et conservation",
@@ -65,7 +65,7 @@
     },
     {
       "slug": "cleaning-supplies",
-      "icon": "bucket",
+      "icon": "icons/cleaning-supplies.png",
       "name": {
         "en": "Cleaning Supplies",
         "fr": "Accessoires de nettoyage",
@@ -76,7 +76,7 @@
     },
     {
       "slug": "home-consumables",
-      "icon": "house-gear",
+      "icon": "icons/home-consumables.png",
       "name": {
         "en": "Home Consumables",
         "fr": "Consommables maison",

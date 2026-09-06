@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.personal-care",
   "name": "Personal Care",
-  "version": 1,
+  "version": 2,
   "description": "The bathroom shelf: what gets used up and replaced, from shampoo and toothpaste to razors and cotton pads.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -10,7 +10,7 @@
   "categories": [
     {
       "slug": "shower-body",
-      "icon": "bathtub",
+      "icon": "icons/shower-body.png",
       "name": {
         "en": "Shower & Body",
         "fr": "Douche et corps",
@@ -21,7 +21,7 @@
     },
     {
       "slug": "hair-care",
-      "icon": "droplet",
+      "icon": "icons/hair-care.png",
       "name": {
         "en": "Hair Care",
         "fr": "Soins des cheveux",
@@ -32,7 +32,7 @@
     },
     {
       "slug": "oral-care",
-      "icon": "tooth",
+      "icon": "icons/oral-care.png",
       "name": {
         "en": "Oral Care",
         "fr": "Soins bucco-dentaires",
@@ -43,7 +43,7 @@
     },
     {
       "slug": "face-care",
-      "icon": "lotus",
+      "icon": "icons/face-care.png",
       "name": {
         "en": "Face Care",
         "fr": "Soins du visage",
@@ -54,7 +54,7 @@
     },
     {
       "slug": "shaving-grooming",
-      "icon": "scissors",
+      "icon": "icons/shaving-grooming.png",
       "name": {
         "en": "Shaving & Grooming",
         "fr": "Rasage et soin",
@@ -65,7 +65,7 @@
     },
     {
       "slug": "feminine-care",
-      "icon": "flower",
+      "icon": "icons/feminine-care.png",
       "name": {
         "en": "Feminine Care",
         "fr": "Hygiène féminine",
@@ -76,7 +76,7 @@
     },
     {
       "slug": "everyday-hygiene",
-      "icon": "hand-sanitizer",
+      "icon": "icons/everyday-hygiene.png",
       "name": {
         "en": "Everyday Hygiene",
         "fr": "Hygiène quotidienne",
