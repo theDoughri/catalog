@@ -2,10 +2,9 @@
   "schema_version": 2,
   "id": "dev.baggo.personal-care",
   "name": "Personal Care",
-  "version": 2,
+  "version": 3,
   "description": "The bathroom shelf: what gets used up and replaced, from shampoo and toothpaste to razors and cotton pads.",
-  "homepage": "https://github.com/theDoughri/catalog",
-  "author": "theDoughri",
+  "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [
     {
