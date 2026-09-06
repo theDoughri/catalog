@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.official",
-  "name": "Baggo Catalog (Official)",
-  "version": 11,
+  "name": "Grocery",
+  "version": 12,
   "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
