@@ -15,16 +15,25 @@ sense — its own folder, its own permanent `id`, its own `version`, installed,
 updated and removed like anybody else's. They differ in what they DRESS the
 pantry in, not in what a catalog is:
 
-| Folder       | `id`                   | Name                       |
-| ------------ | ---------------------- | -------------------------- |
-| `official/`  | `dev.baggo.official`   | Baggo Catalog (Official)   |
-| `handwoven/` | `dev.baggo.handwoven`  | Baggo Catalog (Handwoven)  |
+| Folder           | `id`                     | Name          |
+| ---------------- | ------------------------ | ------------- |
+| `grocery/`       | `dev.baggo.official`     | Grocery       |
+| `baby-kids/`     | `dev.baggo.baby-kids`    | Baby & Kids   |
+| `personal-care/` | `dev.baggo.personal-care`| Personal Care |
+| `household/`     | `dev.baggo.household`    | Household     |
+| `pet-care/`      | `dev.baggo.pet-care`     | Pet Care      |
 
-`official/` is the one a fresh install seeds from. `handwoven/` currently
-carries the same groceries and the same categories, and is where artwork of its
-own goes. A device may hold both, but their item names collide by design, so
-the second install asks whether to keep the items already there or let the
-incoming catalog take them over.
+`grocery/` is the one a fresh install seeds from, and the only one that is: two
+catalogs of the same groceries would seed a pantry of duplicates. The other four
+are subjects of their own and sit BESIDE it — no two of them share an item name
+in any locale, so a household can hold all five at once.
+
+`grocery/` was called `official/`, and its `id` did not move with it: identity
+is the file's own `id` and never the folder, so a rename is a move rather than a
+new catalog. **`official/` is still here, frozen.** A device records the URL it
+installed FROM, and every picture it holds is an absolute URL into that folder,
+so deleting it would blank every image on every install made before the rename.
+It goes when those installs are gone.
 
 Folder names are URL path segments — the app fetches
 `.../<folder>/manifest.json` — so they stay lowercase and hyphenated whatever
@@ -33,16 +42,19 @@ the catalog calls itself. `name` inside the manifest is what a user reads.
 ## The whole format
 
 ```
-official/
+grocery/
   manifest.json   the catalog: identity, version, categories, items
-  images/         1024x1024 JPEG item photos, one per item slug
-handwoven/
-  manifest.json
+  images/         512x512 transparent PNG item artwork, one per item slug
+  icons/          512x512 category icons, plus the three shortcut icons
+baby-kids/        personal-care/    household/    pet-care/
+  manifest.json     ... the same shape, one folder each
   images/
+  icons/
+official/         frozen: the folder grocery/ was renamed from
 schema/           JSON Schema (draft 2020-12) for the manifest
 ```
 
-A catalog folder holds a manifest and its photos and nothing else. `manifest.json`
+A catalog folder holds a manifest and its pictures and nothing else. `manifest.json`
 is the catalog: the app fetches that one file, and then the photos it names.
 Image paths are relative to the MANIFEST, so a folder is self-contained and can
 be moved, copied or forked whole.

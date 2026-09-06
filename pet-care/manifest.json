@@ -2,10 +2,9 @@
   "schema_version": 2,
   "id": "dev.baggo.pet-care",
   "name": "Pet Care",
-  "version": 2,
+  "version": 3,
   "description": "What the animals get through: food, treats, litter, bedding and the shampoos and cleaners that come with keeping them.",
-  "homepage": "https://github.com/theDoughri/catalog",
-  "author": "theDoughri",
+  "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [
     {

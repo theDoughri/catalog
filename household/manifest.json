@@ -2,10 +2,9 @@
   "schema_version": 2,
   "id": "dev.baggo.household",
   "name": "Household",
-  "version": 2,
+  "version": 3,
   "description": "What keeps the house running: cleaners, laundry, bin bags, foil and the cloths and gloves that go with them.",
-  "homepage": "https://github.com/theDoughri/catalog",
-  "author": "theDoughri",
+  "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [
     {

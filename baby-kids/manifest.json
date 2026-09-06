@@ -2,10 +2,9 @@
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
   "name": "Baby & Kids",
-  "version": 5,
+  "version": 6,
   "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
-  "homepage": "https://github.com/theDoughri/catalog",
-  "author": "theDoughri",
+  "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [
     {
