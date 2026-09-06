@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
   "name": "Baby & Kids",
-  "version": 4,
+  "version": 5,
   "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -10,7 +10,7 @@
   "categories": [
     {
       "slug": "diapering",
-      "icon": "stack",
+      "icon": "icons/diapering.png",
       "name": {
         "en": "Diapering",
         "fr": "Change de bébé",
@@ -21,7 +21,7 @@
     },
     {
       "slug": "bath-skin-care",
-      "icon": "bathtub",
+      "icon": "icons/bath-skin-care.png",
       "name": {
         "en": "Bath & Skin Care",
         "fr": "Bain et soins de la peau",
@@ -32,7 +32,7 @@
     },
     {
       "slug": "feeding-baby-food",
-      "icon": "baby-bottle",
+      "icon": "icons/feeding-baby-food.png",
       "name": {
         "en": "Feeding & Baby Food",
         "fr": "Alimentation de bébé",
@@ -43,7 +43,7 @@
     },
     {
       "slug": "cleaning-hygiene",
-      "icon": "sparkles",
+      "icon": "icons/cleaning-hygiene.png",
       "name": {
         "en": "Cleaning & Hygiene",
         "fr": "Nettoyage et hygiène",
@@ -54,7 +54,7 @@
     },
     {
       "slug": "kids-personal-care",
-      "icon": "soap",
+      "icon": "icons/kids-personal-care.png",
       "name": {
         "en": "Kids Personal Care",
         "fr": "Soins personnels enfants",
@@ -65,7 +65,7 @@
     },
     {
       "slug": "basic-care",
-      "icon": "first-aid-kit",
+      "icon": "icons/basic-care.png",
       "name": {
         "en": "Basic Care",
         "fr": "Soins de base",
