@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.pet-care",
   "name": "Pet Care",
-  "version": 1,
+  "version": 2,
   "description": "What the animals get through: food, treats, litter, bedding and the shampoos and cleaners that come with keeping them.",
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
@@ -10,7 +10,7 @@
   "categories": [
     {
       "slug": "dog",
-      "icon": "dog",
+      "icon": "icons/dog.png",
       "name": {
         "en": "Dog",
         "fr": "Chien",
@@ -21,7 +21,7 @@
     },
     {
       "slug": "cat",
-      "icon": "cat",
+      "icon": "icons/cat.png",
       "name": {
         "en": "Cat",
         "fr": "Chat",
@@ -32,7 +32,7 @@
     },
     {
       "slug": "birds",
-      "icon": "grain",
+      "icon": "icons/birds.png",
       "name": {
         "en": "Birds",
         "fr": "Oiseaux",
@@ -43,7 +43,7 @@
     },
     {
       "slug": "small-pets",
-      "icon": "carrot",
+      "icon": "icons/small-pets.png",
       "name": {
         "en": "Rabbits & Small Pets",
         "fr": "Lapins et rongeurs",
@@ -54,7 +54,7 @@
     },
     {
       "slug": "fish",
-      "icon": "fish",
+      "icon": "icons/fish.png",
       "name": {
         "en": "Fish",
         "fr": "Poissons",
@@ -65,7 +65,7 @@
     },
     {
       "slug": "general-pet-care",
-      "icon": "paw",
+      "icon": "icons/general-pet-care.png",
       "name": {
         "en": "General Pet Care",
         "fr": "Soins généraux",
