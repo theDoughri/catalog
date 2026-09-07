@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.official",
   "name": "Grocery",
-  "version": 16,
+  "version": 17,
   "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
   "homepage": "https://baggo.dev",
   "default_locale": "en",
@@ -11,6 +11,76 @@
     "favorites": "icons/favorites.png",
     "recent": "icons/recent.png"
   },
+  "pins": [
+    {
+      "slug": "pin-1",
+      "image": "pins/pin-1.png"
+    },
+    {
+      "slug": "pin-2",
+      "image": "pins/pin-2.png"
+    },
+    {
+      "slug": "pin-3",
+      "image": "pins/pin-3.png"
+    },
+    {
+      "slug": "pin-4",
+      "image": "pins/pin-4.png"
+    },
+    {
+      "slug": "pin-5",
+      "image": "pins/pin-5.png"
+    },
+    {
+      "slug": "pin-6",
+      "image": "pins/pin-6.png"
+    },
+    {
+      "slug": "pin-7",
+      "image": "pins/pin-7.png"
+    },
+    {
+      "slug": "pin-8",
+      "image": "pins/pin-8.png"
+    },
+    {
+      "slug": "pin-9",
+      "image": "pins/pin-9.png"
+    },
+    {
+      "slug": "pin-10",
+      "image": "pins/pin-10.png"
+    },
+    {
+      "slug": "pin-11",
+      "image": "pins/pin-11.png"
+    },
+    {
+      "slug": "pin-12",
+      "image": "pins/pin-12.png"
+    },
+    {
+      "slug": "pin-13",
+      "image": "pins/pin-13.png"
+    },
+    {
+      "slug": "pin-14",
+      "image": "pins/pin-14.png"
+    },
+    {
+      "slug": "pin-15",
+      "image": "pins/pin-15.png"
+    },
+    {
+      "slug": "pin-16",
+      "image": "pins/pin-16.png"
+    },
+    {
+      "slug": "pin-17",
+      "image": "pins/pin-17.png"
+    }
+  ],
   "categories": [
     {
       "slug": "fruits",
