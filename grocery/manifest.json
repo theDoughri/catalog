@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "dev.baggo.official",
   "name": "Grocery",
-  "version": 19,
+  "version": 20,
   "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
   "homepage": "https://baggo.dev",
   "default_locale": "en",
@@ -131,6 +131,126 @@
     {
       "slug": "pin-30",
       "image": "pins/pin-30.png"
+    },
+    {
+      "slug": "pin-31",
+      "image": "pins/pin-31.png"
+    },
+    {
+      "slug": "pin-32",
+      "image": "pins/pin-32.png"
+    },
+    {
+      "slug": "pin-33",
+      "image": "pins/pin-33.png"
+    },
+    {
+      "slug": "pin-34",
+      "image": "pins/pin-34.png"
+    },
+    {
+      "slug": "pin-35",
+      "image": "pins/pin-35.png"
+    },
+    {
+      "slug": "pin-36",
+      "image": "pins/pin-36.png"
+    },
+    {
+      "slug": "pin-37",
+      "image": "pins/pin-37.png"
+    },
+    {
+      "slug": "pin-38",
+      "image": "pins/pin-38.png"
+    },
+    {
+      "slug": "pin-39",
+      "image": "pins/pin-39.png"
+    },
+    {
+      "slug": "pin-40",
+      "image": "pins/pin-40.png"
+    },
+    {
+      "slug": "pin-41",
+      "image": "pins/pin-41.png"
+    },
+    {
+      "slug": "pin-42",
+      "image": "pins/pin-42.png"
+    },
+    {
+      "slug": "pin-43",
+      "image": "pins/pin-43.png"
+    },
+    {
+      "slug": "pin-44",
+      "image": "pins/pin-44.png"
+    },
+    {
+      "slug": "pin-45",
+      "image": "pins/pin-45.png"
+    },
+    {
+      "slug": "pin-46",
+      "image": "pins/pin-46.png"
+    },
+    {
+      "slug": "pin-47",
+      "image": "pins/pin-47.png"
+    },
+    {
+      "slug": "pin-48",
+      "image": "pins/pin-48.png"
+    },
+    {
+      "slug": "pin-49",
+      "image": "pins/pin-49.png"
+    },
+    {
+      "slug": "pin-50",
+      "image": "pins/pin-50.png"
+    },
+    {
+      "slug": "pin-51",
+      "image": "pins/pin-51.png"
+    },
+    {
+      "slug": "pin-52",
+      "image": "pins/pin-52.png"
+    },
+    {
+      "slug": "pin-53",
+      "image": "pins/pin-53.png"
+    },
+    {
+      "slug": "pin-54",
+      "image": "pins/pin-54.png"
+    },
+    {
+      "slug": "pin-55",
+      "image": "pins/pin-55.png"
+    },
+    {
+      "slug": "pin-56",
+      "image": "pins/pin-56.png"
+    },
+    {
+      "slug": "pin-57",
+      "image": "pins/pin-57.png"
+    },
+    {
+      "slug": "pin-58",
+      "image": "pins/pin-58.png"
+    },
+    {
+      "slug": "pin-59",
+      "image": "pins/pin-59.png"
+    },
+    {
+      "slug": "pin-60",
+      "image": "pins/pin-60.png"
     }
   ],
   "categories": [
