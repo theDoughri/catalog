@@ -1,9 +1,21 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.household",
-  "name": "Household",
-  "version": 3,
-  "description": "What keeps the house running: cleaners, laundry, bin bags, foil and the cloths and gloves that go with them.",
+  "name": {
+    "en": "Household",
+    "fr": "Maison",
+    "es": "Hogar",
+    "de": "Haushalt",
+    "ar": "المنزل"
+  },
+  "version": 4,
+  "description": {
+    "en": "What keeps the house running: cleaners, laundry, bin bags, foil and the cloths and gloves that go with them.",
+    "fr": "Ce qui fait tourner la maison : nettoyants, lessive, sacs-poubelle, papier aluminium, et les chiffons et gants qui vont avec.",
+    "es": "Lo que mantiene la casa en marcha: limpiadores, colada, bolsas de basura, papel de aluminio y los paños y guantes que los acompañan.",
+    "de": "Was den Haushalt am Laufen hält: Reiniger, Wäsche, Müllbeutel, Alufolie und die Tücher und Handschuhe dazu.",
+    "ar": "ما يُبقي البيت يسير: منظفات وغسيل وأكياس قمامة وورق ألمنيوم، والمناشف والقفازات التي تلزمها."
+  },
   "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [

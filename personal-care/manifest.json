@@ -1,9 +1,21 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.personal-care",
-  "name": "Personal Care",
-  "version": 3,
-  "description": "The bathroom shelf: what gets used up and replaced, from shampoo and toothpaste to razors and cotton pads.",
+  "name": {
+    "en": "Personal Care",
+    "fr": "Soins personnels",
+    "es": "Cuidado personal",
+    "de": "Körperpflege",
+    "ar": "العناية الشخصية"
+  },
+  "version": 4,
+  "description": {
+    "en": "The bathroom shelf: what gets used up and replaced, from shampoo and toothpaste to razors and cotton pads.",
+    "fr": "L'étagère de la salle de bain : ce qui s'épuise et se rachète, du shampooing et du dentifrice aux rasoirs et aux cotons.",
+    "es": "La estantería del baño: lo que se acaba y se repone, del champú y la pasta de dientes a las cuchillas y los discos de algodón.",
+    "de": "Das Regal im Bad: was aufgebraucht und nachgekauft wird, von Shampoo und Zahnpasta bis zu Rasierern und Wattepads.",
+    "ar": "رفّ الحمّام: ما ينفد ويُستبدل، من الشامبو ومعجون الأسنان إلى الشفرات وأقراص القطن."
+  },
   "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [

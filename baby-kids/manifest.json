@@ -1,9 +1,21 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.baby-kids",
-  "name": "Baby & Kids",
-  "version": 6,
-  "description": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
+  "name": {
+    "en": "Baby & Kids",
+    "fr": "Bébé et enfants",
+    "es": "Bebé y niños",
+    "de": "Baby & Kind",
+    "ar": "الرضّع والأطفال"
+  },
+  "version": 7,
+  "description": {
+    "en": "Nappies, bottles, bath time and the small emergencies: what a household with young children buys again and again.",
+    "fr": "Couches, biberons, l'heure du bain et les petits imprévus : ce qu'un foyer avec de jeunes enfants rachète sans cesse.",
+    "es": "Pañales, biberones, la hora del baño y las pequeñas urgencias: lo que una casa con niños pequeños compra una y otra vez.",
+    "de": "Windeln, Fläschchen, Baden und die kleinen Notfälle: was ein Haushalt mit kleinen Kindern immer wieder kauft.",
+    "ar": "حفاضات ورضّاعات ووقت الاستحمام والطوارئ الصغيرة: ما يشتريه بيت فيه أطفال صغار مرة بعد مرة."
+  },
   "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [

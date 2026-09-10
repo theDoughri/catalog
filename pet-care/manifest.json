@@ -1,9 +1,21 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.pet-care",
-  "name": "Pet Care",
-  "version": 3,
-  "description": "What the animals get through: food, treats, litter, bedding and the shampoos and cleaners that come with keeping them.",
+  "name": {
+    "en": "Pet Care",
+    "fr": "Animaux",
+    "es": "Mascotas",
+    "de": "Haustiere",
+    "ar": "الحيوانات الأليفة"
+  },
+  "version": 4,
+  "description": {
+    "en": "What the animals get through: food, treats, litter, bedding and the shampoos and cleaners that come with keeping them.",
+    "fr": "Ce que les animaux consomment : nourriture, friandises, litière, couchage, et les shampooings et nettoyants qui vont avec.",
+    "es": "Lo que consumen los animales: comida, premios, arena, lecho y los champús y limpiadores que conlleva tenerlos.",
+    "de": "Was die Tiere verbrauchen: Futter, Leckerlis, Streu, Einstreu und die Shampoos und Reiniger, die zur Haltung gehören.",
+    "ar": "ما تستهلكه الحيوانات: طعام ومكافآت وفرشة ورمل، والشامبو والمنظفات التي تلزم تربيتها."
+  },
   "homepage": "https://baggo.dev",
   "default_locale": "en",
   "categories": [

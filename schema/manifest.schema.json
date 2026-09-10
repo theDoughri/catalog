@@ -17,9 +17,8 @@
       "$ref": "#/$defs/catalogId"
     },
     "name": {
-      "description": "What the user sees in the catalog list, and on the screen that asks them to approve this catalog.",
-      "type": "string",
-      "minLength": 1
+      "description": "What the user sees in the catalog list, and on the screen that asks them to approve this catalog.\n\nLocalized like every other name in the file: a plain string is language-neutral, a locale map is read in the app's language. A catalog that names its items in five languages and itself in one is translated everywhere except the screen that asks for consent.",
+      "$ref": "#/$defs/localizedText"
     },
     "version": {
       "description": "Bumped on every publish. Clients compare this integer — not a tag, not a date — to decide what to re-read.",
@@ -27,9 +26,8 @@
       "minimum": 1
     },
     "description": {
-      "description": "One or two sentences about what is in here. Shown before the user installs it.",
-      "type": "string",
-      "minLength": 1
+      "description": "One or two sentences about what is in here. Shown before the user installs it. Localized like `name`: a plain string, or a locale map.",
+      "$ref": "#/$defs/localizedText"
     },
     "homepage": {
       "description": "Where a user reports a problem with this catalog.",
