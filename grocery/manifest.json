@@ -1,9 +1,21 @@
 {
   "schema_version": 2,
   "id": "dev.baggo.official",
-  "name": "Grocery",
-  "version": 20,
-  "description": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
+  "name": {
+    "en": "Grocery",
+    "fr": "Épicerie",
+    "es": "Comestibles",
+    "de": "Lebensmittel",
+    "ar": "بقالة"
+  },
+  "version": 21,
+  "description": {
+    "en": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
+    "fr": "Le garde-manger de départ livré avec Baggo : les courses du quotidien, avec une catégorie, une unité, une photo et parfois un conseil.",
+    "es": "La despensa inicial que viene con Baggo: la compra de cada día, con su categoría, su unidad, una foto y a veces un consejo.",
+    "de": "Der Grundvorrat, den Baggo mitbringt: alltägliche Lebensmittel mit Kategorie, Einheit, Foto und manchmal einem Tipp.",
+    "ar": "مخزن البداية الذي يأتي مع Baggo: مشتريات يومية، لكل منها فئة ووحدة وصورة وأحيانًا نصيحة."
+  },
   "homepage": "https://baggo.dev",
   "default_locale": "en",
   "shortcuts": {

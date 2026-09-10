@@ -63,9 +63,9 @@ be moved, copied or forked whole.
 {
   "schema_version": 2,
   "id": "uk.baggo.official",
-  "name": "Baggo Official",
+  "name": { "en": "Grocery", "fr": "Épicerie", ... },
   "version": 7,
-  "description": "The starter pantry Baggo ships with: ...",
+  "description": { "en": "The starter pantry Baggo ships with: ...", ... },
   "homepage": "https://github.com/theDoughri/catalog",
   "author": "theDoughri",
   "default_locale": "en",
@@ -99,12 +99,17 @@ catalog that happens to look like the first.
 
 `name` is what a user sees in the catalog list and on the screen that asks
 them to approve this catalog — they approve a catalog, not a URL, so the file
-has to say what it is. `version` is the release number: an integer the author
+has to say what it is. It is a locale map like every other name in the file: a
+catalog that names its shelves and its groceries in five languages and then
+calls ITSELF one thing in English is translated everywhere except the screen
+that asks for consent. `version` is the release number: an integer the author
 increments on every publish, and what clients compare. Not a tag, not a date.
 
 `description`, `homepage`, `author` and `license` are optional, and are for
-the human deciding whether to install this. `homepage` is where they report a
-problem with it, so publish one.
+the human deciding whether to install this. `description` is localized the way
+`name` is; `author` and `license` are names rather than prose and are written
+once. `homepage` is where a user reports a problem with the catalog, so
+publish one.
 
 `default_locale` is the language a client falls back to when a name has no
 entry for the app's own; `expires` (days, default 7, minimum 1) is how often a
@@ -119,9 +124,10 @@ Two sets of rules apply to this file, and a fork should know which is which.
 
 The FORMAT is what any Baggo catalog may be, and `schema/manifest.schema.json`
 describes exactly that: `slug`, `category` and `name` on an item, `slug` and
-`name` on a category, everything else optional. A `name` or a `note` may be a
-plain string instead of a locale map — language-neutral, shown as written —
-and no locale is mandatory. An `image` may be an absolute `https://` URL
+`name` on a category, everything else optional. Any `name` or `note` — the
+catalog's own `name` and `description` included — may be a plain string
+instead of a locale map — language-neutral, shown as written — and no locale
+is mandatory. An `image` may be an absolute `https://` URL
 instead of a path, which is what lets a standalone JSON catalog link out to
 photos it does not host. A catalog is capped at 5 MB, 5,000 items, 200
 categories and 2 MB per image.
@@ -140,7 +146,8 @@ catalog, and only these house rules would object.
 1. Fork this repository, or start an empty one with a `manifest.json` and an
    `images/` folder beside it.
 2. Set `id` to something nobody else will use (reverse-DNS of a domain or
-   GitHub account you control), `name` to yours and `version` to 1, and point
+   GitHub account you control), `name` to yours — one string, or a locale map
+   if you publish in more than one language — and `version` to 1, and point
    `homepage` at wherever someone should report a problem with it.
 3. Replace the `categories` and `items` with yours. Keep the rules below.
 4. Add photos under `images/`, or leave them out — an item with no file
@@ -159,8 +166,11 @@ off them. A wrong slug is retired by adding a new one, not by renaming.
 
 **Names are locale maps.** House rule, not format. Every `name` here carries a
 non-empty value for all five locales the app ships: `en`, `fr`, `es`, `de`,
-`ar`. The app has no other translation source for catalog names, so a missing
-one would leave a shopper with a blank row. The format itself asks for none of
+`ar` — the manifest's own `name` and `description` as much as a category's or
+an item's. The app has no other translation source for catalog names, so a
+missing one would leave a shopper with a blank row, and a catalog that stops
+short of its own two fields is one whose install is described in a language
+its owner may not read. The format itself asks for none of
 them, and accepts a plain string as a language-neutral name.
 
 **Categories are local to the manifest.** An item's `category` must resolve to
@@ -217,6 +227,16 @@ That number — not the tag, not the commit, not the branch — is the whole of
 what a client compares, so a change that reaches `main` without one is a
 change no device will ever pick up. The tag records WHICH release; the integer
 is what makes a device fetch it.
+
+**A manifest naming itself in a locale map waits for a Baggo that can read
+one.** Baggo before that build reads the catalog's own `name` as a plain
+string and nothing else: a map leaves it with no name at all, and a catalog
+with no name is REFUSED whole — an existing install stops updating, and a new
+one cannot be added. `grocery/` alone would survive, because Baggo carries an
+assumed identity for it and would fall back to that; the other four would not.
+So these manifests reach `main` only after a Baggo that reads §4.1 for the
+catalog's own two fields has reached its testers — the same order the
+`official/` retirement waits on, and for the same reason.
 
 Until v9 the app fetched `develop`, so every push was a publish. That was
 convenient while the format was still moving and dangerous once real devices
