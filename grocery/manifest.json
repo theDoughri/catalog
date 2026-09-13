@@ -8,7 +8,7 @@
     "de": "Lebensmittel",
     "ar": "بقالة"
   },
-  "version": 21,
+  "version": 22,
   "description": {
     "en": "The starter pantry Baggo ships with: everyday groceries with a category, a unit, a photo and sometimes a tip.",
     "fr": "Le garde-manger de départ livré avec Baggo : les courses du quotidien, avec une catégorie, une unité, une photo et parfois un conseil.",
@@ -286,6 +286,17 @@
         "es": "Verduras",
         "de": "Gemüse",
         "ar": "خضار"
+      }
+    },
+    {
+      "slug": "fresh-herbs",
+      "icon": "icons/fresh-herbs.png",
+      "name": {
+        "en": "Fresh Herbs",
+        "fr": "Herbes fraîches",
+        "es": "Hierbas frescas",
+        "de": "Frische Kräuter",
+        "ar": "أعشاب طازجة"
       }
     },
     {
@@ -728,6 +739,240 @@
         "ar": "كوسة"
       },
       "image": "images/zucchini.png"
+    },
+    {
+      "slug": "parsley",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Parsley",
+        "fr": "Persil",
+        "es": "Perejil",
+        "de": "Petersilie",
+        "ar": "بقدونس"
+      },
+      "image": "images/parsley.png"
+    },
+    {
+      "slug": "cilantro",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Cilantro",
+        "fr": "Coriandre",
+        "es": "Cilantro",
+        "de": "Koriander",
+        "ar": "كزبرة"
+      },
+      "image": "images/cilantro.png"
+    },
+    {
+      "slug": "mint",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Mint",
+        "fr": "Menthe",
+        "es": "Menta",
+        "de": "Minze",
+        "ar": "نعناع"
+      },
+      "image": "images/mint.png"
+    },
+    {
+      "slug": "basil",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Basil",
+        "fr": "Basilic",
+        "es": "Albahaca",
+        "de": "Basilikum",
+        "ar": "ريحان"
+      },
+      "image": "images/basil.png"
+    },
+    {
+      "slug": "dill",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Dill",
+        "fr": "Aneth",
+        "es": "Eneldo",
+        "de": "Dill",
+        "ar": "شبت"
+      },
+      "image": "images/dill.png"
+    },
+    {
+      "slug": "chives",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Chives",
+        "fr": "Ciboulette",
+        "es": "Cebollino",
+        "de": "Schnittlauch",
+        "ar": "ثوم معمر"
+      },
+      "image": "images/chives.png"
+    },
+    {
+      "slug": "rosemary",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Rosemary",
+        "fr": "Romarin",
+        "es": "Romero",
+        "de": "Rosmarin",
+        "ar": "إكليل الجبل"
+      },
+      "image": "images/rosemary.png"
+    },
+    {
+      "slug": "thyme",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Thyme",
+        "fr": "Thym",
+        "es": "Tomillo",
+        "de": "Thymian",
+        "ar": "زعتر"
+      },
+      "image": "images/thyme.png"
+    },
+    {
+      "slug": "sage",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Sage",
+        "fr": "Sauge",
+        "es": "Salvia",
+        "de": "Salbei",
+        "ar": "ميرمية"
+      },
+      "image": "images/sage.png"
+    },
+    {
+      "slug": "fresh-oregano",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Fresh Oregano",
+        "fr": "Origan frais",
+        "es": "Orégano fresco",
+        "de": "Frischer Oregano",
+        "ar": "أوريغانو طازج"
+      },
+      "image": "images/fresh-oregano.png"
+    },
+    {
+      "slug": "tarragon",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Tarragon",
+        "fr": "Estragon",
+        "es": "Estragón",
+        "de": "Estragon",
+        "ar": "طرخون"
+      },
+      "image": "images/tarragon.png"
+    },
+    {
+      "slug": "fresh-bay-leaves",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Fresh Bay Leaves",
+        "fr": "Feuilles de laurier fraîches",
+        "es": "Hojas de laurel frescas",
+        "de": "Frische Lorbeerblätter",
+        "ar": "ورق غار طازج"
+      },
+      "image": "images/fresh-bay-leaves.png"
+    },
+    {
+      "slug": "lemongrass",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Lemongrass",
+        "fr": "Citronnelle",
+        "es": "Hierba limón",
+        "de": "Zitronengras",
+        "ar": "عشبة الليمون"
+      },
+      "image": "images/lemongrass.png"
+    },
+    {
+      "slug": "marjoram",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Marjoram",
+        "fr": "Marjolaine",
+        "es": "Mejorana",
+        "de": "Majoran",
+        "ar": "بردقوش"
+      },
+      "image": "images/marjoram.png"
+    },
+    {
+      "slug": "sorrel",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Sorrel",
+        "fr": "Oseille",
+        "es": "Acedera",
+        "de": "Sauerampfer",
+        "ar": "حميض"
+      },
+      "image": "images/sorrel.png"
+    },
+    {
+      "slug": "watercress",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Watercress",
+        "fr": "Cresson",
+        "es": "Berros",
+        "de": "Brunnenkresse",
+        "ar": "جرجير الماء"
+      },
+      "image": "images/watercress.png"
+    },
+    {
+      "slug": "curry-leaves",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Curry Leaves",
+        "fr": "Feuilles de curry",
+        "es": "Hojas de curri",
+        "de": "Curryblätter",
+        "ar": "أوراق الكاري"
+      },
+      "image": "images/curry-leaves.png"
+    },
+    {
+      "slug": "kaffir-lime-leaves",
+      "category": "fresh-herbs",
+      "unit": "pack",
+      "name": {
+        "en": "Kaffir Lime Leaves",
+        "fr": "Feuilles de combava",
+        "es": "Hojas de lima kaffir",
+        "de": "Kaffirlimettenblätter",
+        "ar": "أوراق الليمون الكافيري"
+      },
+      "image": "images/kaffir-lime-leaves.png"
     },
     {
       "slug": "milk",
